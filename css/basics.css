@@ -18,6 +18,7 @@
 - Clearing
 - Header Styles
 - Project Grid
+- Projects
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+Pro:wght@400;700&display=swap');
@@ -29,7 +30,7 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 16px;
     box-sizing: border-box;
 }
 .column, .columns {
@@ -39,6 +40,39 @@
 }
 /* For devices larger than 600px */
 @media (min-width: 600px) {
+    .header .content, .container {
+        padding: 0 32px;
+    }
+    .grid .column,
+    .grid .columns {
+        margin-left: 4%;
+    }
+    .grid .column:first-child,
+    .grid .columns:first-child {
+        margin-left: 0; 
+    }
+    .grid .one.column,
+    .grid .one.columns                    { width: 4.66666666667%; }
+    .grid .two.columns                    { width: 13.3333333333%; }
+    .grid .three.columns                  { width: 22%;            }
+    .grid .four.columns                   { width: 30.6666666667%; }
+    .grid .five.columns                   { width: 39.3333333333%; }
+    .grid .six.columns                    { width: 48%;            }
+    .grid .seven.columns                  { width: 56.6666666667%; }
+    .grid .eight.columns                  { width: 65.3333333333%; }
+    .grid .nine.columns                   { width: 74.0%;          }
+    .grid .ten.columns                    { width: 82.6666666667%; }
+    .grid .eleven.columns                 { width: 91.3333333333%; }
+    .grid .twelve.columns                 { width: 100%; margin-left: 0; }
+  
+    .grid .one-third.column               { width: 30.6666666667%; }
+    .grid .two-thirds.column              { width: 65.3333333333%; }
+  
+    .grid .one-half.column                { width: 48%; }
+
+}
+/* For devices larger than 960px */
+@media (min-width: 960px) {
     .column,
     .columns {
         margin-left: 4%;
@@ -47,7 +81,7 @@
     .columns:first-child {
         margin-left: 0; 
     }
-  
+    
     .one.column,
     .one.columns                    { width: 4.66666666667%; }
     .two.columns                    { width: 13.3333333333%; }
@@ -61,12 +95,12 @@
     .ten.columns                    { width: 82.6666666667%; }
     .eleven.columns                 { width: 91.3333333333%; }
     .twelve.columns                 { width: 100%; margin-left: 0; }
-  
+    
     .one-third.column               { width: 30.6666666667%; }
     .two-thirds.column              { width: 65.3333333333%; }
-  
+    
     .one-half.column                { width: 48%; }
-  
+    
     /* Offsets */
     .offset-by-one.column,
     .offset-by-one.columns          { margin-left: 8.66666666667%; }
@@ -90,16 +124,23 @@
     .offset-by-ten.columns          { margin-left: 86.6666666667%; }
     .offset-by-eleven.column,
     .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
-  
+    
     .offset-by-one-third.column,
     .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
     .offset-by-two-thirds.column,
     .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
-  
+    
     .offset-by-one-half.column,
     .offset-by-one-half.columns     { margin-left: 52%; }
-  
-  }
+    
+    .not-grid-big .column,
+    .not-grid-big .columns {
+        width: 100% !important;
+        float: left !important;
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+    }
+}
 
 
 /* Base Styles
@@ -110,16 +151,15 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #3B2F2F;
-    background-color: #FFF7E1;
+    font-family: 'Source Serif Pro', serif;
+    color: #000;
+    background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 2rem;
-    font-family: 'Source Serif Pro', serif;
-
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1 {
@@ -132,8 +172,19 @@ h3 {
     font-size: 3rem;
 }
 h4 {
-    font-size: ‭2.125‬rem;
+    font-size: 2rem;
 }
+h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 0;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
 @media (max-width: 600px) {
     h1 {
         font-size: 4rem;
@@ -145,30 +196,31 @@ h4 {
         font-size: 2rem;
     }
     h4 {
-        font-size: ‭1.5rem;
+        font-size: 1.5rem;
+    }
+
+    p {
+        margin-top: 0;
+        line-height: 1.7rem;
+        font-size: 1rem;
     }
 }
 
-.section-title {
-    /*
-    text-decoration: underline solid #EAB464;*/
-}
-
-p {
-    margin-top: 0;
-    line-height: 1.5rem;
+.section-subtitle {
+    font-weight: 400;
 }
 
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
 a {
     color: #DD6E42;
 }
 a:hover {
     text-decoration: underline wavy #DD6E42;
 }
-
+*/
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -194,6 +246,12 @@ a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
     margin-bottom: 4rem;
+}
+.section-subtitle {
+    margin-bottom: 3rem;
+}
+.body-section {
+    margin-bottom: 3rem;
 }
 
 
@@ -221,7 +279,7 @@ a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .header {
-    background-color: #EAB464;
+    background-color: #fafafa;
     padding-bottom: 4rem;
 }
 .navbar-container {
@@ -257,7 +315,7 @@ a:hover {
 
 .header-nav li a {
     display: block;
-    color: #3B2F2F;
+    color: #000;
     text-align: center;
     text-decoration: none;
 }
@@ -276,21 +334,24 @@ a:hover {
     text-decoration: none;
 }
 .project-wrapper {
-    padding: 2rem 0;
+    padding-bottom: 2rem;
     box-sizing: border-box;
-    color: #3B2F2F;
+    color: #000;
+    /*
     border-top: 0.5rem solid transparent;
-    border-bottom: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid transparent;*/
 }
 .project-wrapper:hover {
+    /*
     border-top: 0.5rem solid #DD6E42;
-    border-bottom: 0.5rem solid #DD6E42;
+    border-bottom: 0.5rem solid #DD6E42;*/
+    background-color: #fafafa;
 }
 .project-image {
     width: 100%;
     padding-bottom: 66.66%;
     margin-bottom: 24px;
-    background-color: #EAB464;
+    background-color: #DEDEDE;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -300,12 +361,20 @@ a:hover {
     background-blend-mode: unset;
 }
 .project-title {
-    font-size: 1.5rem;
-    font-weight: bold;
     line-height: 32px;
     margin-bottom: 16px;
 }
 .project-blurb {
     font-size: 1rem;
     line-height: 24px;
+}
+
+/* Projects
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.team-member {
+    font-weight: bold;
+}
+.team-role {
+    opacity: 70%;
+    margin-bottom: 1rem;
 }
