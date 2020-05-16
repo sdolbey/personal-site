@@ -149,6 +149,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 img {
     width: 100%;
+    display: block;
 }
 
 
@@ -189,6 +190,9 @@ p {
     line-height: 2rem;
     font-size: 1.2rem;
 }
+p.section-subtitle {
+    font-size: 2rem;
+}
 
 @media (max-width: 600px) {
     h1 {
@@ -209,6 +213,9 @@ p {
         line-height: 1.7rem;
         font-size: 1rem;
     }
+    p.section-subtitle {
+        font-size: 1.5rem;
+    }
 }
 
 .navbar {
@@ -223,14 +230,13 @@ p {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
 a {
     color: #DD6E42;
 }
 a:hover {
-    text-decoration: underline wavy #DD6E42;
+    color: #EAB464;
 }
-*/
+
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -258,20 +264,44 @@ a:hover {
     margin-bottom: 4rem;
 }
 .section-subtitle {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 .body-section {
     margin-bottom: 3rem;
+}
+p {
+    margin-block-end: 1em;
 }
 
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+.u-full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+.u-max-full-width {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.u-pull-right {
+    float: right;
+}
+.u-pull-left {
+    float: left;
+}
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+figure {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-block-start: 4em;
+    margin-block-end: 4em;
+}
+figcaption {
+    text-align: center;
+}
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -298,8 +328,11 @@ a:hover {
 .header .img.content {
     padding-top: 4rem;
 }
+.header .img.content img {
+    display: block;
+}
 .navbar {
-    backdrop-filter: saturate(150%) blur(10px);
+    backdrop-filter: blur(10px);
     background-color: rgba(250,250,250,0.9);
     height: 4rem;
     overflow: hidden;
@@ -348,6 +381,16 @@ a:hover {
 
 .light-text .navbar-content li a {
     color: white;
+}
+
+.navbar .name:before {
+    content: "SD";
+}
+
+@media (min-width: 600px) {
+    .navbar .name:before {
+        content: "Steven Dolbey";
+    }
 }
 
 /* Footer Styles
@@ -424,9 +467,33 @@ a:hover {
     opacity: 70%;
     margin-bottom: 1rem;
 }
+.body-section img {
+    margin-bottom: 1em;
+}
+.img-group {
+    display: flex;
+}
+.img-group div:not(:last-child) {
+    padding-right: 16px;
+}
+.img-group img {
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+}
+@media (min-width: 960px) {
+    .big-image {
+        width: 80vw;
+        margin-left: calc(50% - 40vw);
+    }
+}
 
 /* Project Pages
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .planet-9.navbar {
     background-color: rgba(29, 75, 102, 0.9);
+}
+
+.planet-9.header.section {
+    background-color: rgb(29, 75, 102);
 }
