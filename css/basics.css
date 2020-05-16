@@ -151,6 +151,18 @@ img {
     width: 100%;
     display: block;
 }
+::selection {
+    background: #EAB464;
+}
+::-moz-selection {
+    background: #EAB464;
+}
+html {
+    scroll-behavior: smooth;
+}
+.anchor {
+    scroll-margin-top: 8rem;
+}
 
 
 /* Typography
@@ -232,10 +244,15 @@ p.section-subtitle {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
     color: #DD6E42;
+    text-decoration: none;
 }
 a:hover {
-    color: #EAB464;
+    text-decoration: underline solid;
 }
+/*
+a[target="_blank"]::after {
+    content: " ↗";
+}*/
 
 
 /* Buttons
@@ -372,7 +389,7 @@ figcaption {
 }
 
 .navbar-content li a:hover {
-
+    text-decoration: underline;
 }
 
 .light-text {
@@ -401,6 +418,11 @@ figcaption {
 .footer-content {
     padding-top: 4rem;
     padding-bottom: 4rem;
+}
+.footer .copyright::after {
+    content: "© Steven Dolbey";
+    display: block;
+    opacity: 50%;
 }
 
 /* Project Grid
@@ -470,6 +492,17 @@ figcaption {
 .body-section img {
     margin-bottom: 1em;
 }
+@media (min-width: 960px) {
+    .big-image {
+        margin-left: -32.66%;
+        margin-right: -32.66%;
+    }
+    .big-image img {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 .img-group {
     display: flex;
 }
@@ -481,14 +514,15 @@ figcaption {
     width: 100%;
     vertical-align: middle;
 }
-@media (min-width: 960px) {
-    .big-image {
-        width: 80vw;
-        margin-left: calc(50% - 40vw);
-    }
+.last::after {
+    display: block;
+    content: "܀";
+    font-size: 2em;
+    color: #DD6E42;
+    text-align: center;
 }
 
-/* Project Pages
+/* Project Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .planet-9.navbar {
     background-color: rgba(29, 75, 102, 0.9);
@@ -496,4 +530,12 @@ figcaption {
 
 .planet-9.header.section {
     background-color: rgb(29, 75, 102);
+}
+
+.wheelies.navbar {
+    background-color: rgba(246, 146, 98, 0.9);
+}
+
+.wheelies.header.section {
+    background-color: rgb(246, 146, 98);
 }
