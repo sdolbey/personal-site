@@ -34,15 +34,31 @@
     --color-section-background: #fafafa;
     --color-navbar-background: rgba(250,250,250,0.9);
     --color-img-placeholder: #DEDEDE;
+    --color-link: #DD6E42;
+    --color-highlight: #EAB464;
 }
 @media (prefers-color-scheme: dark) {
+    /* brown */
     :root {
-        --color-background: #221B1B;
+        --color-background: #4F4040;
         --color-text-base: #FFF7E1;
         --color-section-background: #3B2F2F;
         --color-navbar-background: rgba(59,47,47,0.9);
         --color-img-placeholder: #3B2F2F;
-    }
+        --color-link: #EAA286;
+        --color-highlight: #E29728;
+    }*/
+
+    /* gray 
+    :root {
+        --color-background: #474747;
+        --color-text-base: #F0F0F0;
+        --color-section-background: #363636;
+        --color-navbar-background: rgba(54,54,54,0.9);
+        --color-img-placeholder: #363636;
+        --color-link: #EAA286;
+        --color-highlight: #E29728;
+    }*/
 }
 
 /* Grid
@@ -182,10 +198,10 @@ img {
     display: block;
 }
 ::selection {
-    background: #EAB464;
+    background: var(--color-highlight);
 }
 ::-moz-selection {
-    background: #EAB464;
+    background: var(--color-highlight);
 }
 html {
     scroll-behavior: smooth;
@@ -273,7 +289,7 @@ p.section-subtitle {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-    color: #DD6E42;
+    color: var(--color-link);
     text-decoration: none;
 }
 a:hover {
@@ -547,7 +563,7 @@ figcaption {
     display: block;
     content: "܀";
     font-size: 2em;
-    color: #DD6E42;
+    color: var(--color-link);
     text-align: center;
 }
 
