@@ -4,6 +4,7 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- Variables
 - Grid
 - Base Styles
 - Typography
@@ -24,6 +25,25 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Source+Sans+Pro:wght@400;600;700;900&family=Source+Serif+Pro:wght@400;600;700&display=swap');
+
+/* Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+    --color-background: #fff;
+    --color-text-base: #000;
+    --color-section-background: #fafafa;
+    --color-navbar-background: rgba(250,250,250,0.9);
+    --color-img-placeholder: #DEDEDE;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #221B1B;
+        --color-text-base: #FFF7E1;
+        --color-section-background: #3B2F2F;
+        --color-navbar-background: rgba(59,47,47,0.9);
+        --color-img-placeholder: #3B2F2F;
+    }
+}
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -180,8 +200,8 @@ html {
 
 body {
     font-family: 'Source Serif Pro', serif;
-    color: #000;
-    background-color: #fff;
+    color: var(--color-text-base);
+    background-color: var(--color-background);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -346,7 +366,7 @@ figcaption {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .header {
-    background-color: #fafafa;
+    background-color: var(--color-section-background);
 }
 .header .text.content {
     padding-top: 6rem;
@@ -361,7 +381,7 @@ figcaption {
 .navbar {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(250,250,250,0.9);
+    background-color: var(--color-navbar-background);
     height: 4rem;
     overflow: hidden;
     width: 100%;
@@ -394,7 +414,7 @@ figcaption {
 
 .navbar-content li a {
     display: inline;
-    color: #000;
+    color: var(--color-text-base);
     text-align: center;
     text-decoration: none;
 }
@@ -428,7 +448,7 @@ figcaption {
 /* Footer Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .footer {
-    background-color: #fafafa;
+    background-color: var(--color-section-background);
 }
 .footer-content {
     padding-top: 4rem;
@@ -448,16 +468,7 @@ figcaption {
 .project-wrapper {
     padding-bottom: 2rem;
     box-sizing: border-box;
-    color: #000;
-    /*
-    border-top: 0.5rem solid transparent;
-    border-bottom: 0.5rem solid transparent;*/
-}
-.project-wrapper:hover {
-    /*
-    border-top: 0.5rem solid #DD6E42;
-    border-bottom: 0.5rem solid #DD6E42;
-    background-color: #fafafa;*/
+    color: var(--color-text-base);
 }
 .project-image {
     position: relative;
@@ -468,9 +479,7 @@ figcaption {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #DEDEDE;
-    /*
-    background-blend-mode: multiply;*/
+    background-color: var(--color-img-placeholder);
 }
 .project-wrapper img {
     position: absolute;
@@ -544,18 +553,19 @@ figcaption {
 
 /* Project Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.planet-9.navbar {
-    background-color: rgba(29, 75, 102, 0.9);
-}
-
 .planet-9.header.section {
     background-color: rgb(29, 75, 102);
 }
-
-.wheelies.navbar {
-    background-color: rgba(246, 146, 98, 0.9);
-}
-
 .wheelies.header.section {
     background-color: rgb(246, 146, 98);
+}
+
+@media (prefers-color-scheme: light) {
+    .planet-9.navbar {
+        background-color: rgba(29, 75, 102, 0.9);
+    }
+    
+    .wheelies.navbar {
+        background-color: rgba(246, 146, 98, 0.9);
+    }
 }
