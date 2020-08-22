@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     var projectIDs = twoRandomNumbers();
     
-    var seeMore = document.getElementsByClassName("see-more row")[0];
+    var seeMore = document.getElementsByClassName("see-more")[0];
     
     // first project
     firstProject = data.projects[projectIDs[0]];
