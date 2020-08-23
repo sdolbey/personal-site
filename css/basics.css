@@ -270,7 +270,12 @@ body {
 .gallery {
     background-color: var(--color-section-background);
 }
-
+@media (prefers-color-scheme: dark) {
+    img.dark-invert {
+        filter: invert(1);
+        mix-blend-mode: screen;
+    }
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
