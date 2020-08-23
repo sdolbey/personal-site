@@ -429,6 +429,12 @@ p {
     margin-right: auto;
     padding: 2em;
 }
+.full-bleed .wrapper > img {
+    width: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -609,22 +615,6 @@ figcaption {
 }
 .body-section img {
     margin-bottom: 1em;
-}
-@media (min-width: 960px) {
-    .big-image {
-        
-        margin-left: -32.66%;
-        margin-right: -32.66%;
-        
-        /*
-        margin-left: -26.53%;
-        margin-right: -26.53%;*/
-    }
-    .big-image img {
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 .img-group {
     display: flex;
