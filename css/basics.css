@@ -34,7 +34,8 @@
     --color-background: #fff;
     --color-text-base: #000;
     --color-section-background: #fafafa;
-    --color-navbar-background: rgba(250,250,250,0.9);
+    /* --color-navbar-background: rgba(250,250,250,0.9); */
+    --color-navbar-background: rgb(250,250,250);
     --color-img-placeholder: #DEDEDE;
     --color-link: #DD6E42;
     --color-highlight: #EAB464;
@@ -45,7 +46,8 @@
         --color-background: #4F4040;
         --color-text-base: #F0F0F0;
         --color-section-background: #3B2F2F;
-        --color-navbar-background: rgba(59,47,47,0.9);
+        /* --color-navbar-background: rgba(59,47,47,0.9); */
+        --color-navbar-background: rgb(59,47,47);
         --color-img-placeholder: #3B2F2F;
         --color-link: #EAA286;
         --color-highlight: #E29728;
@@ -270,12 +272,13 @@ body {
 .gallery {
     background-color: var(--color-section-background);
 }
+/*
 @media (prefers-color-scheme: dark) {
     img.dark-invert {
         filter: invert(1);
         mix-blend-mode: screen;
     }
-}
+}*/
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -477,8 +480,8 @@ figcaption {
     display: block;
 }
 .navbar {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    /* -webkit-backdrop-filter: blur(10px); */
+    /* backdrop-filter: blur(10px); */
     background-color: var(--color-navbar-background);
     height: 4rem;
     overflow: hidden;
@@ -486,8 +489,12 @@ figcaption {
     position: fixed;
     z-index: 10;
     top: 0;
-    /*
-    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,.26);*/
+    box-shadow: none;
+    /* box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,.26); */
+    transition: all 100ms ease;
+}
+.navbar.scrolled {
+    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,.26);
 }
 .navbar-content {
     width: 100%;
@@ -647,12 +654,13 @@ figcaption {
     background-color: rgb(246, 146, 98);
 }
 
+
 @media (prefers-color-scheme: light) {
     .planet-9.navbar {
-        background-color: rgba(29, 75, 102, 0.9);
+        background-color: rgb(29, 75, 102);
     }
     
     .wheelies.navbar {
-        background-color: rgba(246, 146, 98, 0.9);
+        background-color: rgb(246, 146, 98);
     }
 }
