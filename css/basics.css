@@ -265,6 +265,7 @@ html {
 }
 .anchor {
     scroll-margin-top: 8rem;
+    scroll-snap-margin-top: 8rem;
 }
 body {
     overflow-x: hidden;
@@ -364,10 +365,10 @@ a {
 a:hover {
     text-decoration: underline;
 }
-/*
+
 a[target="_blank"]::after {
     content: " ↗";
-}*/
+}
 
 
 /* Buttons
