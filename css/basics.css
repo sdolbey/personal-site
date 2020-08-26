@@ -237,14 +237,6 @@
     
     .offset-by-one-half.column,
     .offset-by-one-half.columns     { margin-left: 52%; }
-    
-    .not-grid-big .column,
-    .not-grid-big .columns {
-        width: 100% !important;
-        float: left !important;
-        box-sizing: border-box !important;
-        margin-left: 0 !important;
-    }
 }
 
 
