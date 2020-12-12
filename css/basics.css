@@ -16,6 +16,7 @@
 - Tables
 - Spacing
 - Utilities
+- Image Utilities
 - Clearing
 - Header Styles
 - Footer Styles
@@ -41,28 +42,28 @@
     --color-highlight: #EAB464;
 }
 @media (prefers-color-scheme: dark) {
-    /* brown */
+    /* brown 
     :root {
         --color-background: #4F4040;
         --color-text-base: #F0F0F0;
         --color-section-background: #3B2F2F;
-        /* --color-navbar-background: rgba(59,47,47,0.9); */
+        --color-navbar-background: rgba(59,47,47,0.9);
         --color-navbar-background: rgb(59,47,47);
         --color-img-placeholder: #3B2F2F;
         --color-link: #EAA286;
         --color-highlight: #E29728;
-    }
+    }*/
 
-    /* gray 
+    /* gray */
     :root {
         --color-background: #474747;
         --color-text-base: #F0F0F0;
         --color-section-background: #363636;
-        --color-navbar-background: rgba(54,54,54,0.9);
+        --color-navbar-background: rgb(54,54,54);
         --color-img-placeholder: #363636;
         --color-link: #EAA286;
         --color-highlight: #E29728;
-    }*/
+    }
 }
 
 /* New Grid
@@ -125,7 +126,7 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 1rem;
     box-sizing: border-box;
 }
 .column, .columns {
@@ -146,7 +147,7 @@
 /* For devices larger than 600px */
 @media (min-width: 600px) {
     .header .text.content, .container, .navbar-content, .footer-content {
-        padding: 0 32px;
+        padding: 0 2rem;
     }
     .grid .column,
     .grid .columns {
@@ -262,16 +263,6 @@ html {
 body {
     overflow-x: hidden;
 }
-.gallery {
-    background-color: var(--color-section-background);
-}
-/*
-@media (prefers-color-scheme: dark) {
-    img.dark-invert {
-        filter: invert(1);
-        mix-blend-mode: screen;
-    }
-}*/
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -301,7 +292,7 @@ h4 {
     font-size: 2rem;
 }
 h5 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -326,6 +317,10 @@ p.section-subtitle {
     }
     h4 {
         font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1.2rem;
+        font-weight: bold;
     }
 
     p {
@@ -415,21 +410,60 @@ p {
 .u-pull-left {
     float: left;
 }
+
+/* Image Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .full-bleed {
     width: 100vw;
     margin-left: calc(50% - 50vw);
+    padding: 0;
 }
 .full-bleed .wrapper {
-    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
-    padding: 2em;
+    padding: 0;
 }
 .full-bleed .wrapper > img {
-    width: auto;
+    width: 100%;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+.gallery {
+    background-color: var(--color-section-background);
+}
+.gallery .wrapper {
+    max-width: 1280px;
+    padding: 2rem;
+}
+@media (min-width: 600px) {
+    /*
+    .full-bleed {
+        width: calc(100% + 4rem);
+        margin-left: -2rem;
+    }
+    .full-bleed .wrapper {
+        padding: 0 2rem;
+    }*/
+}
+@media (min-width: 960px) {
+    
+    .large {
+        max-width: 1280px;
+        width: calc(100% + 12rem);
+        margin-left: -6rem;
+        padding: 0;
+    }
+}
+
+img.remove-background {
+    mix-blend-mode: multiply;
+}
+@media (prefers-color-scheme: dark) {
+    img.dark-invert {
+        filter: invert(1);
+        mix-blend-mode: screen;
+    }
 }
 
 /* Misc
@@ -450,7 +484,8 @@ figcaption {
 /* Self Clearing Goodness */
 .container:after,
 .row:after,
-.u-cf {
+.u-cf,
+.full-bleed {
   content: "";
   display: table;
   clear: both;
@@ -655,5 +690,6 @@ figcaption {
     
     .wheelies.navbar {
         background-color: rgb(246, 146, 98);
+        /* #F69262 */
     }
 }
