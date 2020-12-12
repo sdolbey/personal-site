@@ -376,6 +376,40 @@ a[target="_blank"]::after {
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-img-placeholder); 
+}
+th:first-child,
+td:first-child {
+  padding-left: 0; 
+}
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+.table-view {
+
+}
+.table-wrapper {
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.sticky-col {
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: var(--color-background);
+}
+.first-col {
+    left: 0;
+    max-width: 25%;
+    white-space: normal;
+    font-weight: bold;
+    border-right: 1px solid var(--color-img-placeholder);
+}
 
 
 /* Spacing
@@ -518,7 +552,6 @@ figcaption {
     z-index: 10;
     top: 0;
     box-shadow: none;
-    /* box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,.26); */
     transition: all 100ms ease;
 }
 .navbar.scrolled {
