@@ -1,0 +1,8 @@
+.header.section {
+    background-color: rgb(29, 75, 102);
+}
+@media (prefers-color-scheme: light) {
+    .navbar {
+        background-color: rgb(29, 75, 102);
+    }
+}

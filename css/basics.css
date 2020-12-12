@@ -22,7 +22,6 @@
 - Footer Styles
 - Project Grid
 - Project Pages
-- Project Styles
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Source+Sans+Pro:wght@400;600;700;900&family=Source+Serif+Pro:wght@400;600;700&display=swap');
@@ -706,23 +705,3 @@ figcaption {
     text-align: center;
 }
 
-/* Project Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.planet-9.header.section {
-    background-color: rgb(29, 75, 102);
-}
-.wheelies.header.section {
-    background-color: rgb(246, 146, 98);
-}
-
-
-@media (prefers-color-scheme: light) {
-    .planet-9.navbar {
-        background-color: rgb(29, 75, 102);
-    }
-    
-    .wheelies.navbar {
-        background-color: rgb(246, 146, 98);
-        /* #F69262 */
-    }
-}
