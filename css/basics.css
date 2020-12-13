@@ -33,6 +33,7 @@
 :root {
     --color-background: #fff;
     --color-text-base: #000;
+    --color-text-headers: #000;
     --color-section-background: #fafafa;
     /* --color-navbar-background: rgba(250,250,250,0.9); */
     --color-navbar-background: rgb(250,250,250);
@@ -57,6 +58,7 @@
     :root {
         --color-background: #474747;
         --color-text-base: #F0F0F0;
+        --color-text-headers: #F0F0F0;
         --color-section-background: #363636;
         --color-navbar-background: rgb(54,54,54);
         --color-img-placeholder: #363636;
@@ -259,6 +261,12 @@ html {
     scroll-margin-top: 8rem;
     scroll-snap-margin-top: 8rem;
 }
+@media (max-width: 600px) {
+    .anchor {
+        scroll-margin-top: 6rem;
+        scroll-snap-margin-top: 6rem;
+    }
+}
 body {
     overflow-x: hidden;
 }
@@ -276,6 +284,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 2rem;
     font-family: 'Source Sans Pro', sans-serif;
+    color: var(--color-text-headers);
 }
 
 h1 {
@@ -285,26 +294,32 @@ h2 {
     font-size: 3.75rem;
 }
 h3 {
-    font-size: 3rem;
+    font-size: 2.2rem;
+    font-weight: 700;
 }
 h4 {
     font-size: 2rem;
+    font-weight: 600;
 }
 h5 {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.875rem;
+    font-weight: 600;
 }
 
 p {
     margin-top: 0;
-    line-height: 2rem;
-    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-size: 1.3125rem;
 }
 p.section-subtitle {
     font-size: 2rem;
+    line-height: 2.8rem;
 }
 
 @media (max-width: 600px) {
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 1.2rem;
+    }
     h1 {
         font-size: 4rem;
     }
@@ -314,21 +329,22 @@ p.section-subtitle {
     h3 {
         font-size: 2rem;
     }
-    h4 {
+    /* h4 {
         font-size: 1.5rem;
-    }
+    } */
     h5 {
-        font-size: 1.2rem;
+        font-size: 1.375rem;
         font-weight: bold;
     }
 
     p {
         margin-top: 0;
-        line-height: 1.7rem;
-        font-size: 1rem;
+        line-height: 1.75rem;
+        font-size: 1.125rem;
     }
     p.section-subtitle {
         font-size: 1.5rem;
+        line-height: 2.2rem;
     }
 }
 
@@ -424,6 +440,17 @@ td:last-child {
 }
 p {
     margin-block-end: 1em;
+}
+@media (max-width: 600px) {
+    .section {
+        margin-bottom: 3rem;
+    }
+    .section-subtitle {
+        margin-bottom: 1rem;
+    }
+    .body-section {
+        margin-bottom: 2rem;
+    }
 }
 
 
@@ -533,6 +560,11 @@ figcaption {
 .header .text.content {
     padding-top: 6rem;
     padding-bottom: 4rem;
+}
+@media (max-width: 600px) {
+    .header .text.content {
+        padding-bottom: 3rem;
+    }
 }
 .header .img.content {
     padding-top: 4rem;
@@ -663,18 +695,20 @@ figcaption {
     background-blend-mode: unset;
 }
 .project-title {
-    line-height: 32px;
-    margin-bottom: 16px;
+    line-height: 2rem;
+    margin-bottom: 1rem;
 }
 .project-blurb {
-    font-size: 1rem;
-    line-height: 24px;
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 /* Project Pages
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .team-member {
-    font-weight: bold;
+    font-weight: 600;
+    line-height: 2.2rem;
+    font-size: 1.3125rem;
 }
 .team-role {
     opacity: 70%;
