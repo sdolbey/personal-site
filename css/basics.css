@@ -56,15 +56,20 @@
 
     /* gray */
     :root {
-        --color-background: #474747;
-        --color-text-base: #F0F0F0;
+        --color-background: #333;
+        --color-text-base: #DEDEDE;
         --color-text-headers: #F0F0F0;
-        --color-section-background: #363636;
-        --color-navbar-background: rgb(54,54,54);
-        --color-img-placeholder: #363636;
+        --color-section-background: #222;
+        --color-navbar-background: #333;
+        --color-img-placeholder: #555;
         --color-link: #EAA286;
         --color-highlight: #E29728;
     }
+
+    /* material gray */
+    /* :root {
+        --color-background: #121212;
+    } */
 }
 
 /* New Grid
@@ -575,7 +580,7 @@ figcaption {
 .navbar {
     /* -webkit-backdrop-filter: blur(10px); */
     /* backdrop-filter: blur(10px); */
-    background-color: var(--color-navbar-background);
+    background-color: var(--color-section-background);
     height: 4rem;
     overflow: hidden;
     width: 100%;
@@ -587,7 +592,16 @@ figcaption {
 }
 .navbar.scrolled {
     box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,.26);
+    background-color: var(--color-background);
 }
+/* @media (prefers-color-scheme: dark) {
+    .navbar {
+        background-color: var(--color-section-background);
+    }
+    .navbar.scrolled {
+        background-color: var(--color-background);
+    }
+} */
 .navbar-content {
     width: 100%;
     float: left;
@@ -640,6 +654,10 @@ figcaption {
 
 .container.no-header {
     margin-top: 8rem;
+}
+
+.navbar.no-header {
+    background-color: var(--color-background);
 }
 
 /* Footer Styles
