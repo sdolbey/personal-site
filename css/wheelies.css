@@ -25,7 +25,7 @@
     background-color: rgb(246, 146, 98);
 }
 @media (prefers-color-scheme: light) {
-    .navbar {
+    .navbar, .navbar.scrolled {
         background-color: rgb(246, 146, 98);
         /* #F69262 */
     }

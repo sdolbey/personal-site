@@ -15,7 +15,7 @@
     /* :root {
         --color-text-headers: #1D4B66;
     } */
-    .navbar {
+    .navbar, .navbar.scrolled {
         background-color: rgb(29, 75, 102);
     }
 }
