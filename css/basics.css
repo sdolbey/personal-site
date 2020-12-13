@@ -266,9 +266,6 @@ body {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-:root {
-    font-size: 18px;
-}
 body {
     font-family: 'Source Serif Pro', serif;
     color: var(--color-text-base);
