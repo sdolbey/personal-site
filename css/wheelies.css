@@ -1,6 +1,7 @@
 /* :root {
     --color-background: #FDE4D8;
     --color-text-base: #270E02;
+    --color-text-headers: ;
     --color-section-background: #fafafa;
     --color-navbar-background: rgb(250,250,250);
     --color-img-placeholder: #DEDEDE;
@@ -9,13 +10,14 @@
 } */
 /* @media (prefers-color-scheme: dark) {
     :root {
-        --color-background: #4E1D04;
-        --color-text-base: #FDE4D8;
-        --color-section-background: #3A1503;
-        --color-navbar-background: #3A1503;
-        --color-img-placeholder: #3A1503;
-        --color-link: #EAA286;
-        --color-highlight: #E29728;
+        --color-background: #5a3f31;
+        --color-text-base: #fff;
+        --color-text-headers: #fff;
+        --color-section-background: #4a2e20;
+        --color-navbar-background: #4a2e20;
+        --color-img-placeholder: #4a2e20;
+        --color-link: #f9bb9f;
+        --color-highlight: #F69262;
     }
 } */
 
@@ -26,5 +28,20 @@
     .navbar {
         background-color: rgb(246, 146, 98);
         /* #F69262 */
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .navbar {
+        background-color: #F69262;
+        color: #000;
+    }
+    .navbar-content li a {
+        color: #000;
+    }
+    .navbar.scrolled {
+        background-color: var(--color-background);
+    }
+    .navbar.scrolled, .navbar.scrolled li a {
+        color: var(--color-text-base);
     }
 }

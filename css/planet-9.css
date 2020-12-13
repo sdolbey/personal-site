@@ -1,8 +1,29 @@
+/* :root {
+    --color-link: #CF8872;
+    --color-highlight: #75a6a3;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-link: #E9B99D;
+    }
+} */
+
 .header.section {
     background-color: rgb(29, 75, 102);
 }
 @media (prefers-color-scheme: light) {
+    /* :root {
+        --color-text-headers: #1D4B66;
+    } */
     .navbar {
         background-color: rgb(29, 75, 102);
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .navbar {
+        background-color: rgb(29, 75, 102);
+    }
+    .navbar.scrolled {
+        background-color: var(--color-background);
     }
 }
