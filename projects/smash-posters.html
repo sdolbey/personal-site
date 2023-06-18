@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ffffff">
-    <title>Steven Dolbey / Smash Bros. Posters</title>
+    <meta charset='utf-8'>
+    <title>Smash Bros. Posters - Steven Dolbey</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="theme-color" content="#b1293f">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/basics.css">
-    <script src="../js/navstyle.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/article.css'>
+    <link rel="stylesheet" href="../css/zoom.css">
+    <!--<script src="../js/navstyle.js"></script>-->
     <script src="../js/suggestprojects.js"></script>
 </head>
-<body>
-    <div class="navbar no-header">
+<body class="kirby">
+    <div class="navbar">
         <div class="navbar-content">
             <ul>
                 <li>
@@ -22,100 +24,100 @@
             </ul>
         </div>
     </div>
-    <div class="container no-header">
-        <div class="section">
-            <h2 class="section-title">Smash Bros. Posters</h2>
-            <p class="section-subtitle">
-                Vector posters of characters from Super Smash Bros. Ultimate.
-            </p>
+    <article id="smash-posters" class="project">
+        <div class="header">
+            <header>
+                <hgroup>
+                    <h1 class="section-title">
+                        Smash Bros. Posters
+                    </h1>
+                    <p>
+                        Vector posters of characters from Super Smash Bros. Ultimate.
+                    </p>
+                </hgroup>
+            </header>
         </div>
-        <div class="section">
-            <div class="row">
-                <div class="eight columns offset-by-two">
-                    <div class="body-section">
-                        <h3>How It Happened</h3>
-                        <p>
-                            Initially, I had only made the Kirby poster for a class assignment, but after I posted it on Reddit, people loved it and asked me to make more. Pikachu came out really nice, but I'm still not completely happy with Mario, and I never got around to doing other characters. Maybe someday!
-                        </p>
-                        <!--
-                        <figure class="big-image">
-                            <div class="img-group">
-                                <div style="flex: 0.7">
-                                    <img src="../img/projects/smash-posters/mario-small.png" alt="Mario poster">
-                                </div>
-                                <div style="flex: 0.7">
-                                    <img src="../img/projects/smash-posters/kirby-small.png" alt="Kirby poster">
-                                </div>
-                                <div style="flex: 0.7">
-                                    <img src="../img/projects/smash-posters/pikachu-small.png" alt="Pikachu poster">
-                                </div>
-                            </div>
-                            <figcaption>Mario, Kirby, and Pikachu</figcaption>
-                        </figure>
-                        -->
-                    </div>
-                </div>
-            </div>
-            <div class="gallery full-bleed">
-                <div class="wrapper">
+        <div class="article-body">
+            <div class="article-content">
+                <h2>How it happened</h2>
+                <p>Initially, I had only made the Kirby poster for a class assignment, but after I posted it on Reddit, people loved it and asked me to make more. Pikachu came out really nice, but I'm still not completely happy with Mario, and I never got around to doing other characters. Maybe someday!</p>
+                <figure class="wide">
                     <div class="grid max-3">
-                        <img src="../img/projects/smash-posters/mario-small.png" alt="Mario poster">
-                        <img src="../img/projects/smash-posters/kirby-small.png" alt="Kirby poster">
-                        <img src="../img/projects/smash-posters/pikachu-small.png" alt="Pikachu poster">
+                        <img loading="lazy" srcset="../img/projects/smash-posters/mario-small.webp" src="../img/projects/smash-posters/mario-small.png" alt="Mario vector poster." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/smash-posters/kirby-small.webp" src="../img/projects/smash-posters/kirby-small.png" alt="Kirby vector poster." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/smash-posters/pikachu-small.webp" src="../img/projects/smash-posters/pikachu-small.png" alt="Pikachu vector poster." data-action="zoom" style>
                     </div>
-
-                </div>
-            </div>    
-            <div class="row">
+                </figure>
                 <p class="last"></p>
             </div>
         </div>
-    </div>
+    </article>
+    <script src="../js/zoom-vanilla.min.js"></script>
     <div class="footer">
         <div class="footer-content">
-            <div class="row">
-                <div class="six columns section">
-                    <h2 class="section-title">See More</h2>
-                    <div class="see-more grid max-2 half">
-                        <a class="project-link-wrapper" href="#">
-                            <div class="project-wrapper">
-                                <div class="project-image"></div>
-                                <h4 class="project-title">Very Cool Project</h4>
-                                <div class="project-blurb">Wow look at how cool this project is. It really helped people.</div>
+            <div class="grid max-3">
+                <div class="section span2">
+                    <h2 class="section-title">See more</h2>
+                    <div class="see-more grid max-2">
+                        <a class="card-link u-hidden" href="#">
+                            <div class="project card project-wrapper">
+                                <div class="grid project gapless">
+                                    <div class="project-image"></div>
+                                    <div class="vertical content">
+                                        <h3>
+                                            Title
+                                        </h3>
+                                        <p>
+                                            Blurb
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </a>
-                        <a class="project-link-wrapper" href="#">
-                            <div class="project-wrapper">
-                                <div class="project-image"></div>
-                                <h4 class="project-title">Very Cool Project</h4>
-                                <div class="project-blurb">Wow look at how cool this project is. It really helped people.</div>
+                        <a class="card-link u-hidden" href="#">
+                            <div class="project card project-wrapper">
+                                <div class="grid project gapless">
+                                    <div class="project-image"></div>
+                                    <div class="vertical content">
+                                        <h3>
+                                            Title
+                                        </h3>
+                                        <p>
+                                            Blurb
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="card-link span2">
+                            <div class="card">
+                                <div class="horizontal content">
+                                    <span class="material-symbols-outlined">home</span>
+                                    <h4>Return to home</h4>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <p><a href="../index.html#work">See everything</a></p>
                 </div>
-                <div class="six columns section">
-                    <h2 class="section-title">Let's Connect</h2>
-                    <div class="row">
-                        <div class="six columns">
-                            <p class="section-subtitle">
-                                <a href="mailto:stevendolbey@gmail.com?subject=Hello!" target="_blank">Email Me</a>
-                            </p>
-                            <p class="section-subtitle">
-                                <a href="../static/Steven Dolbey Resume.pdf" target="_blank">Résumé</a>
-                            </p>
-                        </div>
-                        <div class="six columns">
-                            <p class="section-subtitle">
-                                <a href="https://dribbble.com/sdolbey" target="_blank">Dribbble</a>
-                            </p>
-                            <p class="section-subtitle">
-                                <a href="https://github.com/sdolbey" target="_blank">GitHub</a>
-                            </p>
-                            <p class="section-subtitle">
-                                <a href="https://twitter.com/stevendolbey" target="_blank">Twitter</a>
-                            </p>
-                        </div>
+                <div class="section span1">
+                    <h2 class="section-title">Let's connect</h2>
+                    <div class="grid restrained">
+                        <a href="mailto:stevendolbey@gmail.com?subject=Hello!" target="_blank" class="card-link">
+                            <div class="card">
+                                <div class="horizontal content">
+                                    <span class="material-symbols-outlined">mail</span>
+                                    <h4>Email me</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="../static/Steven Dolbey Resume.pdf" target="_blank" class="card-link">
+                            <div class="card">
+                                <div class="horizontal content">
+                                    <span class="material-symbols-outlined">description</span>
+                                    <h4>See my résumé</h4>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>

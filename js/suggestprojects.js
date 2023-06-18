@@ -2,30 +2,44 @@ document.addEventListener("DOMContentLoaded", function() {
     var data = {
         "projects": [
             {
+                "id": "planet-9",
                 "title": "Planet 9",
-                "blurb": "Helping the public understand why Pluto was demoted to a dwarf planet so they can confidently add their name to our petition to change that.",
+                "blurb": "Advocacy website for reinstating Pluto's planethood.",
                 "thumbnail": "../img/thumbs/planet-9.png",
-                "url": "planet-9.html"
+                "url": "planet-9.html",
+                "style": "planet-9"
             },
             {
+                "id": "wheelies",
                 "title": "Wheelies",
-                "blurb": "Helping those with mobility issues know which places are accessible and accommodating so they can plan trips and live confidently.",
+                "blurb": "Helping wheelchair users and caretakers find accessible businesses.",
                 "thumbnail": "../img/thumbs/wheelies.png",
-                "url": "wheelies.html"
+                "url": "wheelies.html",
+                "style": "wheelies"
             },
             {
+                "id": "smash-posters",
                 "title": "Smash Bros. Posters",
                 "blurb": "Vector posters of characters from Super Smash Bros. Ultimate.",
                 "thumbnail": "../img/thumbs/kirby-thumb.png",
-                "url": "smash-posters.html"
+                "url": "smash-posters.html",
+                "style": "kirby"
+            },
+            {
+                "id": "fnps",
+                "title": "Florida Native Plant Society",
+                "blurb": "Making planting native easier than ever.",
+                "thumbnail": "../img/thumbs/fnps.png",
+                "url": "fnps.html",
+                "style": "fnps"
             }
         ]
     }
     
     function getCurrentProjectID() {
-        var title = document.getElementsByClassName("section-title")[0].innerText;
+        var currentID = document.getElementsByTagName("article")[0].id;
         for (let i = 0; i < Object.keys(data.projects).length; i++) {
-            if(data.projects[i].title == title) {
+            if(data.projects[i].id == currentID) {
                 return i;
             }
         }
@@ -60,17 +74,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
     first.href = firstProject.url;
 
-    var firstImage = first.firstElementChild.firstElementChild;
+    // Set CSS class for visibility
+    first.className = 'card-link';
+
+    // Set CSS class for colors
+    first.firstElementChild.className += ' ' + firstProject.style;
+
+    // Insert image within div.project-image
+    var firstImage = first.getElementsByClassName("project-image")[0];
     var newImage = document.createElement("img");
     newImage.setAttribute("src", firstProject.thumbnail);
     var altText = firstProject.title + ' thumbnail';
     newImage.setAttribute("alt", altText);
     firstImage.appendChild(newImage);
 
-    firstImage.nextElementSibling.innerText = firstProject.title;
+    // Set title
+    first.getElementsByTagName("h3")[0].innerText = firstProject.title;
 
-    firstImage.nextElementSibling.nextElementSibling.innerText = firstProject.blurb;
+    // Set blurb
+    first.getElementsByTagName("p")[0].innerText = firstProject.blurb;
     
+
+
     // second project
     secondProject = data.projects[projectIDs[1]];
 
@@ -78,16 +103,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
     second.href = secondProject.url;
 
-    var secondImage = second.firstElementChild.firstElementChild;
+    // Set CSS class for visibility
+    second.className = 'card-link';
+
+    // Set CSS class for colors
+    second.firstElementChild.className += ' ' + secondProject.style;
+
+    // Insert image within div.project-image
+    var secondImage = second.getElementsByClassName("project-image")[0];
     newImage = document.createElement("img");
     newImage.setAttribute("src", secondProject.thumbnail);
     altText = secondProject.title + ' thumbnail';
     newImage.setAttribute("alt", altText);
     secondImage.appendChild(newImage);
 
-    secondImage.nextElementSibling.innerText = secondProject.title;
+    // Set title
+    second.getElementsByTagName("h3")[0].innerText = secondProject.title;
 
-    secondImage.nextElementSibling.nextElementSibling.innerText = secondProject.blurb;
+    // Set blurb
+    second.getElementsByTagName("p")[0].innerText = secondProject.blurb;
     
     
 });

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f69262">
-    <title>Steven Dolbey / Wheelies</title>
+    <meta charset='utf-8'>
+    <title>Wheelies - Steven Dolbey</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="theme-color" content="#99461a">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/basics.css">
-    <link rel="stylesheet" href="../css/wheelies.css">
-    <script src="../js/navstyle.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/article.css'>
+    <link rel="stylesheet" href="../css/zoom.css">
+    <!--<script src="../js/navstyle.js"></script>-->
     <script src="../js/suggestprojects.js"></script>
 </head>
-<body>
+<body class="wheelies">
     <div class="navbar">
         <div class="navbar-content">
             <ul>
@@ -23,572 +24,404 @@
             </ul>
         </div>
     </div>
-    <div class="header section">
-        <div class="img content">
-            <img src="../img/headers/wheelies-banner.png" alt="Wheelies header">
+    <article id="wheelies" class="project">
+        <div class="header">
+            <header>
+                <hgroup>
+                    <h1 class="section-title">
+                        Wheelies
+                    </h1>
+                    <p>
+                        Helping wheelchair users and caretakers find accessible businesses.
+                    </p>
+                </hgroup>
+            </header>
         </div>
-    </div>
-    <div class="container">
-        <div class="section">
-            <h2 class="section-title">Wheelies</h2>
-            <p class="section-subtitle">
-                Helping those with mobility issues know which places are accessible and accommodating so they can plan trips and live confidently.
-            </p>
-        </div>
-        <div class="section">
-            <div class="row">
-                <div class="six columns">
-                    <div class="body-section">
-                        <h3>Problem Definition</h3>
-                        <p>
-                            It can be hard to know which places are fully accessible or even where the accessible entrance is. Our goal was to design an app that was attractive and easy to use and didn’t rely entirely on users to fill out the map.
-                        </p>
-                    </div>
-                </div>
-                <div class="six columns">
-                    <div class="body-section">
-                        <h3>Audience</h3>
-                        <p>
-                            Our primary target users are people with mobility issues. Secondary users include their family, friends, and caretakers. Businesses and local governments are also part of the process. Businesses would be able to self-report what accommodations they provide, which users would then judge for accuracy. Local governments would be able to access ADA violation reports and take action against businesses that fail to accommodate all people.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="six columns">
-                    <div class="body-section">
-                        <h3>Team</h3>
-                        <div class="team-member">
-                            Yoandy
-                        </div>
-                        <div class="team-role">
-                            Project Manager, Graphic Designer
-                        </div>
-                        <div class="team-member">
-                            Simon
-                        </div>
-                        <div class="team-role">
-                            Content
-                        </div>
-                        <div class="team-member">
-                            Stephen
-                        </div>
-                        <div class="team-role">
-                            Graphic Designer, User Testing
-                        </div>
-                        <div class="team-member">
-                            Matt
-                        </div>
-                        <div class="team-role">
-                            Content, User Testing
-                        </div>
-                        <div class="team-member">
-                            Me
-                        </div>
-                        <div class="team-role">
-                            UI/UX Designer
-                        </div>
-                    </div>
-                </div>
-                <div class="six columns">
-                    <div class="body-section">
-                        <h3>Constraints</h3>
-                        <p>
-                            Time and availability constraints ensured we would never move past the design phase for this project. It never got built, but we weren’t expected to. The assignment was to design something using user-centered design principles.
-                        </p>
-                        <p>
-                            If it had been built, I suspect we would have run into the same problem as other apps in this space: not enough users to reach critical mass of accessibility reviews. We could avoid the small database of places by using Google or some other mapping service as a base, but user reviews would still be a trickle compared to what we need to make the app worthwhile.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="eight columns offset-by-two">
-                    <div class="body-section">
-                        <h3>Design Process</h3>
-                        <p>
-                            It can be hard to know which places are fully accessible or even where the accessible entrance is. A member of our team, Simon, knows this struggle intimately. Looking at existing apps that attempt to solve this problem, few had good interfaces or extensive databases. Most relied too heavily on input from a tiny userbase to fill out a massive world of businesses and venues. Our goal was to design an app that was attractive and easy to use and didn’t rely entirely on users to fill out the map.
-                        </p>
-                        <p>
-                            Our solution was basically Google Maps but focused on accessibility. A familiar interface, but with the information our users care about front and center. Some of the goals we defined for ourselves (should this product go to market) were to help at least one person with mobility issues, help at least one business be more accessible, and to beat time-on-task results of similar apps.
-                        </p>
-                        <p>
-                            One of our ideas to combat the issue of lack of ratings was to encourage businesses to add their own ratings, which would then be verified by users. Businesses found to be lying or in violation of ADA guidelines could be reported via the app.
-                        </p>
-                        <div class="table-view">
-                            <div class="table-wrapper">
-                                <table class="shadow-please">
-                                    <thead>
-                                        <tr>
-                                          <th class="sticky-col first-col top-element">App\Feature</th>
-                                          <th>iOS App</th>
-                                          <th>Android App</th>
-                                          <th>Search</th>
-                                          <th>Facebook Sign-in</th>
-                                          <th>Google Sign-in</th>
-                                          <th>Categories of Places</th>
-                                          <th>Favorites</th>
-                                          <th>Sort by Proximity</th>
-                                          <th>User Reviews</th>
-                                          <th>Use App Without Account</th>
-                                          <th>Map View</th>
-                                          <th>Accessibility Filters</th>
-                                          <th>Add Places</th>
-                                          <th>Email Sign-in</th>
-                                          <th>Photographing Entrances</th>
-                                          <th>Reporting Unavailable Entrances</th>
-                                          <th>Notifications</th>
-                                          <th>Contact/Call Button</th>
-                                          <th>Navigation Link</th>
-                                          <th>Multi-Language Support</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                          <td class="sticky-col first-col top-element">Parking Mobility</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>No</td>
-                                          <td>No</td>
-                                          <td>No</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                        </tr>
-                                        <tr>
-                                          <td class="sticky-col first-col top-element">NReach</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>No</td>
-                                          <td>No</td>
-                                          <td>Yes</td>
-                                          <td>No</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>No</td>
-                                          <td>Yes</td>
-                                          <td>No</td>
-                                          <td>No</td>
-                                          <td>No</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>No</td>
-                                        </tr>
-                                        <tr>
-                                          <td class="sticky-col first-col top-element">Better Access Map</td>
-                                          <td>Yes</td>
-                                          <td>No</td>
-                                          <td>Yes</td>
-                                          <td>No</td>
-                                          <td>No</td>
-                                          <td>Yes</td>
-                                          <td>No</td>
-                                          <td>No</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>No</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>No</td>
-                                          <td>No</td>
-                                          <td>No</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                          <td>Yes</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="sticky-col first-col top-element">iAccess Life</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="sticky-col first-col top-element">Wheelguide Accessibility</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="sticky-col first-col top-element">Mapp4all</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="sticky-col first-col top-element">Wheel Mate</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="sticky-col first-col top-element">Wheel Map</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="sticky-col first-col top-element">On Wheels</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="sticky-col first-col top-element">Route4U</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="sticky-col first-col top-element">Accessibility Map</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="sticky-col first-col top-element">Access Earth</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="sticky-col first-col top-element">Accessible Dispatch NYC</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="sticky-col first-col top-element">AccessNow</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="sticky-col first-col top-element">Ride Moovmo</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                        </tr>
-                                      </tbody>
-                                </table>
-                            </div>
-                        </div>
+        <div class="article-body">
+            <div class="article-content">
+                <h2>
+                    Project context
+                </h2>
+                <p>
+                    Wheelies is a concept app that helps people with disabilities find businesses that are fully accessible and accommodating. This project was done as part of a college course on user-centered design. Revisions were made later to flesh things out that had only received a surface level treatment before the deadline.
+                </p>
+                <h3>
+                    Design challenge
+                </h3>
+                <p>
+                    Our assignment was very open-ended: design an application using user-centered design principles. A member of our team uses a wheelchair to get around and suggested the topic. We needed to do background research on our potential users and existing products, design, test, get feedback, and iterate.
+                </p>
+                <h3>
+                    My role
+                </h3>
+                <p>
+                    I took up the role of UX designer and was responsible for wireframing and prototyping. User testing was administered by my teammates.
+                </p>
 
-                        <figure>
-                            <img class="remove-background dark-invert large" src="../img/projects/wheelies/navigation-map.png">
-                            <figcaption>Navigation map (yes, my handwriting is gorgeous)</figcaption>
-                        </figure>
-                        <p>
-                            For the interface, I went from information architecture straight to a simple prototype in Adobe XD. Normally, I would sketch it out first, but I had a very clear vision of how I wanted it to look, so I didn’t feel the need this time. At this stage, we didn’t have any branding or style guidelines. It was just a barebones layout with stock Android light theme colors. The focus was on structure.
-                        </p>
-                        <figure>
-                            <img class="large" src="../img/projects/wheelies/first-wireframes.png">
-                            <figcaption>Early wireframes</figcaption>
-                        </figure>
-                        <p>
-                            For testing, Stephen initially performed a user task analysis using the think aloud protocol with a similar app, Wheelguide, available on both iOS and Android. He asked the user to create an account, find a Publix grocery store, and review its accessibility. The user found the onboarding process and search to be a little clunky but was able to find a Publix and review it. She wished there was a map view for search results to better judge distance from her current location but thought the accessibility review process was well-done. Wheelguide was one of the better apps we found during our market research, so this was the standard we were up against.
-                        </p>
-                        <p>
-                            The next round of testing was done by Matt with my prototype. The goal was, again, to find a Publix. The user thought it was well-designed, but initially had trouble finding the search bar and suggested the option to move it to the top. I chose to put it at the bottom of the screen, above the bottom navigation tabs, because it would be easier to reach. However, this placement subverted user expectations and caused initial confusion. Future iterations would have the search bar at the top, where it is in Google Maps.
-                        </p>
-                        <figure class="large">
-                            <div class="wrapper">
-                                <img src="../img/projects/wheelies/lab-6-wireframes.png">
-                                <figcaption>Expanded wireframes featuring bottom search bar and screens for search results and places</figcaption>
-                            </div>
-                        </figure>
-                        <p>
-                            For branding, Yoandy whipped up some quick experimental designs using the original prototype and I pulled elements of the most popular one into the final prototype, which saw the addition of a simple settings page and review submission page. Around this time, Simon also put together our style guide.
-                        </p>
-                        <figure class="large">
-                            <div class="wrapper">
-                                <img src="../img/projects/wheelies/final-wireframes.png">
-                                <figcaption>Final wireframes with branding</figcaption>
-                            </div>
-                        </figure>
-                        <p>
-                            A final user task analysis was performed by Matt. The user was asked to find a Publix, like before, and also find the bookmarks page. There was a little confusion with the bookmarks when the user clicked the button to save that location rather than the tab at the bottom, but otherwise, the user had little difficulty navigating the prototype and liked the design.
-                        </p>
-                        <p>
-                            Overall, our design was focused and effective, if a little derivative, but that was on purpose. Getting user feedback was incredibly valuable during this project. It helped me realize that just because a design choice makes sense, doesn’t mean it’ll be immediately intuitive for users.
-                        </p>
+                <h2>
+                    Research insights
+                </h2>
+                <h3>
+                    Wheelchair users want to know where accessible entrances are before they go
+                </h3>
+                <p>
+                    We surveyed potential users and found that many of them have had past experiences of being unable to find an entrance they could use. One respondent mentioned going in circles around a building looking for an accessible entrance before. Respondents were also excited by the idea of reporting businesses in violation of ADA rules for entrances. When it comes to how they locate accessible entrances now, respondents were split between checking pictures on something like Google Maps or simply showing up and hoping for the best. When asked how knowing where accessible entrances are in advance would help them, respondents said it would help them be on-time for appointments and special events.
+                </p>
+                <h3>
+                    Similar apps are strongly regional
+                </h3>
+                <p>
+                    We analyzed 15 existing apps that serve the same niche. We found that, generally, these apps have strong regional biases. They rely on crowdsourced data, which results in a <strong>regional feedback loop.</strong> Areas that already have some usable data will maintain and build a userbase, while other areas will fail to see adoption or opt for a competing app. Some apps even have language barriers due to incomplete localization. Wheelies would likely suffer from the same regional feedback loops. Some apps, like Accessible Dispatch NYC, realized this limitation and focused on a specific market.
+                </p>
+                <h3>
+                    Most competing apps offer only the basics
+                </h3>
+                <p>
+                    Most competing apps offer some kind of sorting and filtering of locations by category, proximity, and accessibility. Two thirds of them include contact information so users can call the business to verify accessibility.
+                </p>
+                <p>
+                    However, less than half of competing apps allow photographing entrances or reporting inaccessible entrances. These were features that aligned with what our survey respondents mentioned using or being excited about.
+                </p>
+                <h3>
+                    Testing the competition
+                </h3>
+                <p>
+                    A teammate ran a user task analysis using the think aloud protocol with Wheelguide. In our earlier analysis, Wheelguide had a generally polished interface, though it was unique among the 15 apps we looked at in that it didn't have a map view for finding places.
+                </p>
+                <p>
+                    The user was asked to create an account, find a Publix grocery store and review its accessibility. She found the onboarding process to be a little clunky and the icon-based search filters were too ambiguous for her, but she was able to find the nearest Publix with a text search. She lamented the lack of a map view in search results to better judge distance from her current location. Tapping the store opened a bottom sheet with an accessibility report card rather than the store's profile, which initially confused her. The review process went smoothly, and she liked the color coding and happy face/sad face rating system.
+                </p>
+                <figure>
+                    <img loading="lazy" srcset="../img/projects/wheelies/research_wheelguide_uta.webp" src="../img/projects/wheelies/research_wheelguide_uta.jpg" alt="Frame from the video of the user task analysis one of my teammates performed with a similar app called Wheelguide. The left half of the frame shows the phone with the profile of a Publix within the app. The right half of the screen shows the test subject, with her face obscured to protect her privacy.">
+                    <figcaption class="caption">A frame from our recording of the Wheelguide session.</figcaption>
+                </figure>
+
+                <h2>
+                    Initial exploration and design process
+                </h2>
+                <h3>
+                    Finding more data sources
+                </h3>
+                <p>
+                    Most apps in this niche have small, often regional databases. One idea we had to alleviate this was to <strong>ask businesses to self-report.</strong> This data would need to be verified by users, but it would still be <em>something</em> where competing apps often have <em>nothing</em>.
+                </p>
+                <p>
+                    The business stakeholders we surveyed agreed that considering the needs of those with disabilities was beneficial to their businesses. Accessible businesses that add themselves to our database would be promoting themselves to a customer base that may not have considered visiting otherwise.
+                </p>
+                <h3>
+                    Building a simple prototype
+                </h3>
+                <p>
+                    I started with a three-tab bottom app bar and a search bar. There was a Map tab, Explore tab (browse places by category), and Bookmarks tab (where users could browse their saved places). <strong>In the age of ever bigger phones, I opted to anchor the search bar to the bottom of the screen to make it easier to reach with one hand.</strong>
+                </p>
+                <figure>
+                    <div class="grid min-2 max-3">
+                        <img loading="lazy" srcset="../img/projects/wheelies/p1_map.webp" src="../img/projects/wheelies/p1_map.png" alt="Map screen from the first prototype." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/wheelies/p1_explore.webp" src="../img/projects/wheelies/p1_explore.png" alt="Explore screen from the first prototype." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/wheelies/p1_bookmarks.webp" src="../img/projects/wheelies/p1_bookmarks.png" alt="Bookmarks screen from the first prototype." data-action="zoom" style>
                     </div>
-                    <div class="body-section">
-                        <h3>Retrospective</h3>
-                        <p>
-                            I’m mostly happy with how the project turned out. The design was clean and users found it easy to navigate. Unfortunately, the final stretch of this project was during quarantine due to COVID-19, and motivation among the team was at an all-time low. I would have liked to flesh out the final prototype a bit more – add visuals and names to the categories on the explore and bookmarks tabs, for example. The final prototype gets the idea across, but it’s a little underwhelming, visually. 
-                        </p>
-                        <p class="last"></p>
+                    <figcaption>Early prototypes featured a bottom search bar.</figcaption>
+                </figure>
+                <p>
+                    The prototype was expanded to include a search flow with a grocery store's profile page and external navigation modal.
+                </p>
+                <figure class="wide">
+                    <div class="grid min-2 max-4">
+                        <img loading="lazy" srcset="../img/projects/wheelies/p1_search.webp" src="../img/projects/wheelies/p1_search.png" alt="Search screen from the first prototype." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/wheelies/p1_search_results.webp" src="../img/projects/wheelies/p1_search_results.png" alt="Search results screen from the first prototype." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/wheelies/p1_place.webp" src="../img/projects/wheelies/p1_place.png" alt="Place profile screen from the first prototype." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/wheelies/p1_navigate.webp" src="../img/projects/wheelies/p1_navigate.png" alt="Navigate modal from the first prototype." data-action="zoom" style>
                     </div>
+                    <figcaption>A simple search flow was added for testing. Tapping the address would open the user's default navigation app.</figcaption>
+                </figure>
+                <h3>
+                    Testing our first prototype
+                </h3>
+                <p>
+                    Another member of the team tested our prototype with a new user. The goal, as with our testing with Wheelguide, was to find a nearby Publix grocery store.
+                </p>
+                <p>
+                    The user liked the design, but initially had trouble finding the search bar and suggested the option to move it to the top. I had placed it at the bottom with good intentions, but <strong>this search bar placement subverted user expectations and made the app less intuitive and familiar.</strong> Future iterations would have the search bar at the top, where it is in Google Maps. Other than the search bar placement, the user had no trouble completing their task.
+                </p>
+                <h3>
+                    Adding some color and final validation
+                </h3>
+                <p>
+                    One of our designers whipped up some quick experimental designs using the original prototype, and I pulled elements of the most popular one into the next iteration. I also added a simple settings page and review submission screen.
+                </p>
+                <figure class="wide">
+                    <div class="grid min-2 max-5">
+                        <img loading="lazy" srcset="../img/projects/wheelies/p2_splash.webp" src="../img/projects/wheelies/p2_splash.png" alt="Splash screen featuring the Wheelies logo made by a teammate." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/wheelies/p2_map.webp" src="../img/projects/wheelies/p2_map.png" alt="Map screen from the final prototype." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/wheelies/p2_explore.webp" src="../img/projects/wheelies/p2_explore.png" alt="Explore screen from the final prototype." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/wheelies/p2_bookmarks.webp" src="../img/projects/wheelies/p2_bookmarks.png" alt="Bookmarks screen from the final prototype." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/wheelies/p2_settings.webp" src="../img/projects/wheelies/p2_settings.png" alt="Settings screen from the final prototype." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/wheelies/p2_search.webp" src="../img/projects/wheelies/p2_search.png" alt="Search screen from the final prototype." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/wheelies/p2_search_results.webp" src="../img/projects/wheelies/p2_search_results.png" alt="Search results screen from the final prototype." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/wheelies/p2_place.webp" src="../img/projects/wheelies/p2_place.png" alt="Place profile from the final prototype. A Publix grocery store is shown." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/wheelies/p2_navigate.webp" src="../img/projects/wheelies/p2_navigate.png" alt="Navigation modal from the place profile screen from the final prototype." data-action="zoom" style>
+                        <img loading="lazy" srcset="../img/projects/wheelies/p2_review.webp" src="../img/projects/wheelies/p2_review.png" alt="accessibility review screen from the final prototype." data-action="zoom" style>
+                    </div>
+                    <figcaption>The final set of wireframes we turned in. The search bar was moved to the top, which performed better in testing.</figcaption>
+                </figure>
+                <p>
+                    A final user task analysis was performed with the more colorful prototype. The user was asked to find a Publix and check its accessibility rating. That went smoothly, and <strong>accessing the search screen was faster than previous iterations.</strong>
+                </p>
+                <figure>
+                    <img loading="lazy" srcset="../img/projects/wheelies/research_wheelies_p2_uta.webp" src="../img/projects/wheelies/research_wheelies_p2_uta.jpg" alt="Frame from the recording of our user task analysis with the final prototype. The user is seen clicking the search bar, located at the top.">
+                    <figcaption class="caption">A frame from our recording of the final prototype's testing session. The user had no trouble finding the top-anchored search bar.</figcaption>
+                </figure>
+                <p>
+                    This is where things left off. Overall, our design was focused and effective. Validating our designs with user testing was incredibly valuable during this project. Relocating the search bar to a spot people can reach makes sense, but we still need to check our assumptions with testing, and the testing showed that meeting user expectations may be more important than ergonomics, at least at first.
+                </p>
+
+                <h2>
+                    Revisiting Wheelies
+                </h2>
+                <p>
+                    When we completed this project in school, I was satisfied with what we had done and what I had learned, but I knew there were areas in the prototype where I didn't do enough. The Explore and Bookmarks tabs, for example, were just orange rectangles with placeholder text. I wanted to go back and flesh things out and include things that we had talked about but never showed. <strong>This project had a lot of research put into it, and I wanted to honor that effort by building a prototype to be proud of.</strong>
+                </p>
+                <figure class="wide">
+                    <div class="grid min-2 max-4">
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_map.webp" src="../img/projects/wheelies/p3_map.png" alt="The Map tab has a top-anchored search bar and bottom navigation tabs." data-action="zoom" style>
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_explore_new_framed.webp" src="../img/projects/wheelies/p3_explore_new_framed.png" alt="The top of the new Explore tab surfaces nearby places that have recently been reviewed for the first time." data-action="zoom" style>
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_place_top_framed.webp" src="../img/projects/wheelies/p3_place_top_framed.png" alt="Top of the place profile for a Publix grocery store. The accessibility rating, address and contact information are visible." data-action="zoom" style>
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_review_1_framed.webp" src="../img/projects/wheelies/p3_review_1_framed.png" alt="Step 1 of the reivew process asks users to confirm the location of the entrance on a satellite map." data-action="zoom" style>
+                    </div>
+                    <figcaption>
+                        The revised Wheelies includes lots of detail that was glossed over in prior iterations.
+                    </figcaption>
+                </figure>
+                <h3>
+                    The place profile we intended to build
+                </h3>
+                <p>
+                    The original prototype had a very barebones representation of what a location's profile page might look like. It had a picture, title, category, address, phone number, operating hours, and accessibility rating. 
+                </p>
+                <p>
+                    <strong>Early in the project, much of the focus was specifically on helping people find accessible entrances.</strong> We had also discussed including user comments so folks could give others a heads up for anything that might give them trouble. Neither of these features were properly demonstrated in the prototypes. These oversights have been addressed. 
+                </p>
+                <p>
+                    Now, there's a satellite map with a pin over the main entrance, plus a row of user photos from ground level. I also fleshed out the accessibility rating details, which now includes a checklist of the features from the review process. A comments section follows with notes from reviewers, which users can mark as helpful.
+                </p>
+                <figure class="wide">
+                    <div class="grid min-2 max-3">
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_place_top_framed.webp" src="../img/projects/wheelies/p3_place_top_framed.png" alt="Top of the place profile for a Publix grocery store. The accessibility rating, address and contact information are visible." data-action="zoom" style>
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_place_ratings_framed.webp" src="../img/projects/wheelies/p3_place_ratings_framed.png" alt="Section of the place profile showing the main entrance location and photos, plus ratings for accessibility features the store either has or doesn't have." data-action="zoom" style>
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_place_comments_framed.webp" src="../img/projects/wheelies/p3_place_comments_framed.png" alt="The comments section on the place profile. Two users have left comments. One about how helpful the staff were, and another about which parts of the store are difficult to navigate in a wheelchair." data-action="zoom" style>
+                    </div>
+                    <figcaption>The revised place profile has the information our users care about front-and-center.</figcaption>
+                </figure>
+                <p>
+                    The overflow menu is where the edit and share options live, as well as options to report inaccessible entrances and for business owners to claim their locations for self-reporting. At the end of the entrance photo row is a button to upload another. By tucking it at the end, it would make an appearance only when the available photos haven't satisfied the user.
+                </p>
+                <figure>
+                    <div class="grid min-2">
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_place_menu_framed.webp" src="../img/projects/wheelies/p3_place_menu_framed.png" alt="The overflow menu at the top of the place profile. Options include correcting details of, sharing, reporting, and claiming the business." data-action="zoom" style>
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_place_add_entrance_photo_framed.webp" src="../img/projects/wheelies/p3_place_add_entrance_photo_framed.png" alt="A button to upload another entrance photo sits at the end of the photo row." data-action="zoom" style>
+                    </div>
+                    <figcaption>Photographing entrances and reporting inaccessible locations were features our users were excited about, but they weren't shown in the original prototypes. Now they're here!</figcaption>
+                </figure>
+                <p>
+                    The top bar also gets a less ambiguous bookmark button and no longer coexists with the bottom navigation bar, which had a similar icon for the Bookmarks screen. This was a minor source of confusion in user testing. When a place hasn't been bookmarked, it has a little plus sign at the top right corner. When a place has been bookmarked, it changes to a small checkmark.
+                </p>
+                <h3>
+                    A more complete review process
+                </h3>
+                <p>
+                    The review process now has more of a focus on the main entrance. Users are asked to confirm the point on the map where the door can be found and to rate whether the entrance is easy to find, has powered doors, and is wheelchair accessible. The other ratings have also been expanded upon with more descriptive titles and help text. Taking a cue from Wheelguide, the “accessible interior” rating has been split into “space for internal circulation” and “low counters/tables”. Finally, there's an optional section for comments so folks can add details they think others would like to know before they go.
+                </p>
+                <figure class="wide">
+                    <div class="grid min-2 max-4">
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_review_1_framed.webp" src="../img/projects/wheelies/p3_review_1_framed.png" alt="Step 1 of the reivew process asks users to confirm the location of the entrance on a satellite map." data-action="zoom" style>
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_review_2_framed.webp" src="../img/projects/wheelies/p3_review_2_framed.png" alt="Step 2 of the review process asks users if the entrance is easy to find, has powered doors, and is wheelchair accessible." data-action="zoom" style>
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_review_3_framed.webp" src="../img/projects/wheelies/p3_review_3_framed.png" alt="Step 3 of the review process asks users to rate other aspects of the place, such as whether there is an accessible restroom, accessible vehicle parking, accommodating staff, enough space for wheelchair users to get around, and if low counters and tables are available for wheelchair users." data-action="zoom" style>
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_review_4_framed.webp" src="../img/projects/wheelies/p3_review_4_framed.png" alt="The final step of the review process gives users a comment box to add anything they think other people should know before they go." data-action="zoom" style>
+                    </div>
+                    <figcaption>The expanded review process uses a stepper pattern to guide users through.</figcaption>
+                </figure>
+                <h3>
+                    Making it easier to explore
+                </h3>
+                <h4>
+                    Fleshing out the Explore tab with recommendations
+                </h4>
+                <p>
+                    Unlike Google Maps, Wheelies wouldn't have a user's location history to tailor business suggestions, so I opted to use current location to surface nearby places that have recently received accessibility reviews, as well as local places with highly positive ratings. These sit in their own horizontally scrolling lanes, and the list of categories follows.
+                </p>
+                <figure>
+                    <div class="grid min-2">
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_explore_new_framed.webp" src="../img/projects/wheelies/p3_explore_new_framed.png" alt="The top of the new Explore tab surfaces nearby places that have recently been reviewed for the first time." data-action="zoom" style>
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_explore_favorites_framed.webp" src="../img/projects/wheelies/p3_explore_favorites_framed.png" alt="The next row on the new Explore tab has nearby places that are highly rated for their accessibility, followed by a list of categories." data-action="zoom" style>
+                    </div>
+                    <figcaption>
+                        In addition to categories, the new Explore tab surfaces local places that have been recently reviewed for the first time, as well as places that are highly regarded by reviewers.
+                    </figcaption>
+                </figure>
+                <h4>
+                    A more flexible search experience
+                </h4>
+                <p>
+                    Search filters have been brought out into the open and sit above the list of results. Places rated as accessible get a wheelchair icon, so users can find good places at a glance. A floating action button lets users see their results on a map to make it easier to judge real distances.
+                </p>
+                <figure>
+                    <div class="grid min-2">
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_search_framed.webp" src="../img/projects/wheelies/p3_search_framed.png" alt="The search modal is largely unchanged from the previous iteration, though a microphone icon button has been added to the right side of the input field for voice search." data-action="zoom" style>
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_search_results_framed.webp" src="../img/projects/wheelies/p3_search_results_framed.png" alt="Search results are presented as a list. Details include category, address, distance, and accessibility. Filters above the list let users see only places that have been rated as accessible or are currently open. A floating action button lets users see their search results on a map." data-action="zoom" style>
+                    </div>
+                    <figcaption>
+                        The updated search process gives users more ways to find what they're looking for.
+                    </figcaption>
+                </figure>
+                <h3>
+                    Keeping things simple with Bookmarks
+                </h3>
+                <p>
+                    The Bookmarks tab lets users quickly revisit their favorite spots or save new ones for later.
+                </p>
+                <figure>
+                    <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_bookmarks_framed.webp" src="../img/projects/wheelies/p3_bookmarks_framed.png" alt="The bookmarks list included a thumbnail, the place category and its address. By default, it's sorted by recently added." data-action="zoom" style>
+                    <figcaption>
+                        Bookmarks can be sorted to user preference. By default, it's by recently added.
+                    </figcaption>
+                </figure>
+                <h3>
+                    Facilitating user contributions
+                </h3>
+                <p>
+                    An app like Wheelies needs information from users to provide value. The Contribute tab (not included in prior designs) encourages users to post entrance photos and to review the places they've visited. The top of the screen features the user's contributions so far, such as the number of reviews they've posted or the number of likes their comments have received.
+                </p>
+                <p>
+                    It surfaces places that a user has recently looked at in the app, as well as comments from other users about those places. Once the user visits those places, they can quickly rate the comments that were helpful and tap into the profile to review the location's accessibility. Another section asks users to add entrance photos for places that don't have any.
+                </p>
+                <figure class="wide">
+                    <div class="grid min-2 max-4">
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_contribute_top_framed.webp" src="../img/projects/wheelies/p3_contribute_top_framed.png" alt="The top of the Contribute tab encourages users to add reviews, photos, and comments. The user's stats are visible." data-action="zoom" style>
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_contribute_recent_framed.webp" src="../img/projects/wheelies/p3_contribute_recent_framed.png" alt="The Contribute tab includes the user's recently viewed places to remind them to review the places after they visit." data-action="zoom" style>
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_contribute_comments_framed.webp" src="../img/projects/wheelies/p3_contribute_comments_framed.png" alt="Comments from previous reviews of recently viewed places appear so the user can quickly rate the ones that helped them." data-action="zoom" style>
+                        <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_contribute_photos_framed.webp" src="../img/projects/wheelies/p3_contribute_photos_framed.png" alt="The Contribute tab surfaces places that have no entrance photos." data-action="zoom" style>
+                    </div>
+                    <figcaption>
+                        User contributions are the lifeblood of an app like Wheelies, so the Contribute tab serves to encourage users to add what they can.
+                    </figcaption>
+                </figure>
+                <h3>
+                    Increased contrast across the board
+                </h3>
+                <p>
+                    The original prototype had plenty of interactive elements that didn't meet standards for accessible contrast ratios. These mistakes have been fixed. Buttons, icons, and navigation tabs all have higher contrast color choices that should make them easier to read.
+                </p>
+                <figure>
+                    <img class="borderless" loading="lazy" srcset="../img/projects/wheelies/p3_contrast.webp" src="../img/projects/wheelies/p3_contrast.png" alt="A collage of selected elements whose contrast ratios have been increased in this revision. Various buttons, icons, and chips are included, along with the bottom navigation bar.">
+                    <figcaption>
+                        A collage of selected elements whose contrast ratios have been increased in this revision. The previous iteration often paired orange with white, which doesn't have enough contrast.
+                    </figcaption>
+                </figure>
+                <h2>
+                    Prototype
+                </h2>
+                <p>
+                    Screenshots not enough? I also made a click-through prototype.
+                </p>
+                <div class="card-collection">
+                    <a class="card-link" href="https://www.figma.com/proto/aHjNDSnzN4eBCoHx0zeA7w/Wheelies?page-id=4%3A2&type=design&node-id=20-1132&viewport=761%2C-73%2C0.16&scaling=scale-down&starting-point-node-id=20%3A1132&show-proto-sidebar=0" target="_blank" rel="noopener noreferrer">
+                        <div class="prototype card">
+                            <img loading="lazy" srcset="../img/projects/wheelies/thumb_prototype.webp" src="../img/projects/wheelies/thumb_prototype.png" alt="Wheelies Figma prototype thumbnail">
+                            <div class="vertical content">
+                                <h4>
+                                    Wheelies prototype
+                                </h4>
+                                <p>
+                                    Explore the Wheelies prototype at your own pace.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+                <h2>
+                    Reflection
+                </h2>
+                <p>
+                    This was fun to come back to. I could have left things as they were. It was good enough for the class. I think we got a 100% in the end, since the project was far more about the design process rather than the outcome. However, I didn't want to put myself in the position of presenting this project in an interview and getting to the Explore or Bookmarks tabs and being like, “Ta-da! Here's the part where I didn't even bother!”
+                </p>
+                <p>
+                    I care about the quality of my work. My portfolio is meant to be a showcase of how I approach a problem and what I can do, and the work we turned in at the end of the semester during a plague wasn't a great reflection of that.
+                </p>
+
+                <p class="last"></p>
+                <!--<figure>
+                    <img loading="lazy" srcset="../img/projects/wheelies/" src="../img/projects/wheelies/" alt="" data-action="zoom" style>
+                    <figcaption class="caption"></figcaption>
+                </figure>-->
             </div>
         </div>
-    </div>
+    </article>
+    <script src="../js/zoom-vanilla.min.js"></script>
     <div class="footer">
         <div class="footer-content">
-            <div class="row">
-                <div class="six columns section">
-                    <h2 class="section-title">See More</h2>
-                    <div class="see-more grid max-2 half">
-                        <a class="project-link-wrapper" href="#">
-                            <div class="project-wrapper">
-                                <div class="project-image"></div>
-                                <h4 class="project-title">Very Cool Project</h4>
-                                <div class="project-blurb">Wow look at how cool this project is. It really helped people.</div>
+            <div class="grid max-3">
+                <div class="section span2">
+                    <h2 class="section-title">See more</h2>
+                    <div class="see-more grid max-2">
+                        <a class="card-link u-hidden" href="#">
+                            <div class="project card project-wrapper">
+                                <div class="grid project gapless">
+                                    <div class="project-image"></div>
+                                    <div class="vertical content">
+                                        <h3>
+                                            Title
+                                        </h3>
+                                        <p>
+                                            Blurb
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </a>
-                        <a class="project-link-wrapper" href="#">
-                            <div class="project-wrapper">
-                                <div class="project-image"></div>
-                                <h4 class="project-title">Very Cool Project</h4>
-                                <div class="project-blurb">Wow look at how cool this project is. It really helped people.</div>
+                        <a class="card-link u-hidden" href="#">
+                            <div class="project card project-wrapper">
+                                <div class="grid project gapless">
+                                    <div class="project-image"></div>
+                                    <div class="vertical content">
+                                        <h3>
+                                            Title
+                                        </h3>
+                                        <p>
+                                            Blurb
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="card-link span2">
+                            <div class="card">
+                                <div class="horizontal content">
+                                    <span class="material-symbols-outlined">home</span>
+                                    <h4>Return to home</h4>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <p><a href="../index.html#work">See everything</a></p>
                 </div>
-                <div class="six columns section">
-                    <h2 class="section-title">Let's Connect</h2>
-                    <div class="row">
-                        <div class="six columns">
-                            <p class="section-subtitle">
-                                <a href="mailto:stevendolbey@gmail.com?subject=Hello!" target="_blank">Email Me</a>
-                            </p>
-                            <p class="section-subtitle">
-                                <a href="../static/Steven Dolbey Resume.pdf" target="_blank">Résumé</a>
-                            </p>
-                        </div>
-                        <div class="six columns">
-                            <p class="section-subtitle">
-                                <a href="https://dribbble.com/sdolbey" target="_blank">Dribbble</a>
-                            </p>
-                            <p class="section-subtitle">
-                                <a href="https://github.com/sdolbey" target="_blank">GitHub</a>
-                            </p>
-                            <p class="section-subtitle">
-                                <a href="https://twitter.com/stevendolbey" target="_blank">Twitter</a>
-                            </p>
-                        </div>
+                <div class="section span1">
+                    <h2 class="section-title">Let's connect</h2>
+                    <div class="grid restrained">
+                        <a href="mailto:stevendolbey@gmail.com?subject=Hello!" target="_blank" class="card-link">
+                            <div class="card">
+                                <div class="horizontal content">
+                                    <span class="material-symbols-outlined">mail</span>
+                                    <h4>Email me</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="../static/Steven Dolbey Resume.pdf" target="_blank" class="card-link">
+                            <div class="card">
+                                <div class="horizontal content">
+                                    <span class="material-symbols-outlined">description</span>
+                                    <h4>See my résumé</h4>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>

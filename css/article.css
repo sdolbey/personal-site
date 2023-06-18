@@ -1,0 +1,128 @@
+body {
+    width: 100%;
+}
+
+/* moved to basics
+article > div.header {
+    background-color: var(--color-primary-off-white);
+    padding: 6rem 1rem 4rem 1rem;
+    margin-bottom: 4rem;
+    border-bottom: 1rem solid var(--color-primary);
+}*/
+article > div.header {
+    padding: 6rem 1rem 4rem 1rem;
+}
+
+article > div.header h1 {
+    margin: 0 auto 1rem auto;
+}
+article > div.header p {
+    margin: 0 auto;
+}
+
+.first-heading {
+    margin-top: 4rem;
+}
+
+article {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.article-body {
+    /*
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem; 
+    */
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.article-content {
+    
+}
+
+.article-outline {
+    display: none;
+}
+
+.article-outline ul {
+    list-style-type: none;
+}
+
+.article-outline > ul {
+    position: sticky;
+    top: 4rem;
+}
+
+@media (min-width: 600px) {
+    article p, article h1, article h2, article h3, article h4, article h5 {
+        max-width: 512px;
+        max-width: 32rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+article p {
+    font-size: 1rem;
+    line-height: 1.8em;
+    margin: 1.8em auto;
+}
+
+figure img {
+    outline: 1px solid var(--color-surface);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+figure > figcaption {
+    max-width: 32rem;
+    margin: 1.8rem auto;
+}
+
+/* useless flex stuff that I replaced with grid but don't want to delete because I'm a code hoarder
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row > .cell {
+    flex: 1 1 auto;
+}
+
+figure .row > .cell:not(:last-child) {
+    padding-right: 1rem;
+}
+
+.row img {
+    max-width: 100%;
+} */
+
+img.borderless {
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+article figure {
+    max-width: 40rem;
+    width: 100%;
+    height: auto;
+    margin: 3.6rem auto 3.6rem auto;
+}
+
+.wide {
+    max-width: 60rem;
+}
+
+article .card, article .card-collection {
+    max-width: 576px;
+    max-width: 36rem;
+}

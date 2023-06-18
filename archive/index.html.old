@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#ffffff">
     <title>Steven Dolbey / Home</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/basics-old.css">
+    <link rel="stylesheet" href="css/basics.css">
+    <script src="js/navstyle.js"></script>
 </head>
 <body>
     <div class="navbar">
         <div class="navbar-content">
             <ul>
                 <li>
-                    <a href="index.html" class="name"></a>
+                    <a href="index.html">Steven Dolbey</a>
                     <span> / </span>
                     <a href="index.html" class="page">Home</a>
                 </li>
@@ -29,7 +30,7 @@
                         I'm looking for a junior level UI/UX design position at a company with a vibrant team of talented designers that can help me learn and grow.
                     </p>
                     <p>
-                        Currently, I'm finishing up my web design degree at the University of Central Florida and will graduate in December. In the meantime, I'm available for summer positions.
+                        Currently, I'm finishing up my web design degree at the University of Central Florida and will graduate in December.
                     </p>
                     <p>
                         In my free time, I enjoy tending to my houseplants and playing some games. I love hiking, too, but I have to leave Florida for that!
@@ -42,10 +43,10 @@
         </div>
     </div>
     <div class="container">
-        <div id="work" class="grid section anchor">
+        <div id="work" class="section anchor">
             <h2 class="section-title">Case Studies</h2>
-            <div class="row">
-                <a class="project-link-wrapper six columns" href="projects/planet-9.html">
+            <div class="grid max-2">
+                <a class="card-link" href="projects/planet-9.html">
                     <div class="project-wrapper">
                         <div class="project-image">
                             <img src="img/thumbs/planet-9.png" alt="Planet 9 Thumbnail">
@@ -54,7 +55,7 @@
                         <div class="project-blurb">Helping the public understand why Pluto was demoted to a dwarf planet so they can confidently add their name to our petition to change that.</div>
                     </div>
                 </a>
-                <a class="project-link-wrapper six columns" href="projects/wheelies.html">
+                <a class="card-link" href="projects/wheelies.html">
                     <div class="project-wrapper">
                         <div class="project-image">
                             <img src="img/thumbs/wheelies.png" alt="Wheelies Thumbnail">
@@ -65,10 +66,10 @@
                 </a>
             </div>
         </div>
-        <div class="grid section">
+        <div class="section">
             <h2 class="section-title">Smaller Projects</h2>
-            <div class="row">
-                <a class="project-link-wrapper three columns" href="projects/smash-posters.html">
+            <div class="grid max-4">
+                <a class="card-link" href="projects/smash-posters.html">
                     <div class="project-wrapper">
                         <div class="project-image">
                             <img src="img/thumbs/kirby-thumb.png" alt="Kirby Thumbnail">
@@ -77,21 +78,21 @@
                         <div class="project-blurb">Vector posters of characters from Super Smash Bros. Ultimate.</div>
                     </div>
                 </a>
-                <a class="project-link-wrapper three columns" href="#">
+                <a class="card-link" href="#">
                     <div class="project-wrapper">
                         <div class="project-image"></div>
                         <h4 class="project-title">Very Cool Project</h4>
                         <div class="project-blurb">Wow look at how cool this project is. It really helped people.</div>
                     </div>
                 </a>
-                <a class="project-link-wrapper three columns" href="#">
+                <a class="card-link" href="#">
                     <div class="project-wrapper">
                         <div class="project-image"></div>
                         <h4 class="project-title">Very Cool Project</h4>
                         <div class="project-blurb">Wow look at how cool this project is. It really helped people.</div>
                     </div>
                 </a>
-                <a class="project-link-wrapper three columns" href="#">
+                <a class="card-link" href="#">
                     <div class="project-wrapper">
                         <div class="project-image"></div>
                         <h4 class="project-title">Very Cool Project</h4>
@@ -110,7 +111,7 @@
                         <a href="mailto:stevendolbey@gmail.com?subject=Hello!" target="_blank">Email Me</a>
                     </p>
                     <p class="section-subtitle">
-                        <a href="../static/Steven Dolbey Resume.pdf" target="_blank">Résumé</a>
+                        <a href="static/Steven Dolbey Resume.pdf" target="_blank">Résumé</a>
                     </p>
                 </div>
                 <div class="six columns">

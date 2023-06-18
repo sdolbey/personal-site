@@ -20,6 +20,13 @@
         --color-highlight: #F69262;
     }
 } */
+:root {
+    --color-primary: #99461a;
+    --color-primary-bright: #ffdbcc;
+    --color-primary-tint: #ffdbcc;
+    --color-primary-rich-black: #201a18;
+    --color-primary-off-white: #f4ded5;
+}
 
 .header.section {
     background-color: rgb(246, 146, 98);

@@ -1,0 +1,17 @@
+:root {
+    --color-primary: #4B6709;
+    --color-primary-bright: #CCEF86;
+    --color-primary-tint: #DEE6C6;
+    --color-primary-rich-black: #1B1C18;
+    --color-primary-off-white: #E2E4D4;
+}
+
+@layer colors {
+    :root{
+        --color-primary: #4B6709;
+        --color-primary-bright: #CCEF86;
+        --color-primary-tint: #DEE6C6;
+        --color-primary-rich-black: #1B1C18;
+        --color-primary-off-white: #E2E4D4;
+    }
+}

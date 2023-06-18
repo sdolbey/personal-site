@@ -7,6 +7,13 @@
         --color-link: #E9B99D;
     }
 } */
+:root {
+    --color-primary: #1d4b66;
+    --color-primary-bright: #c8e6ff;
+    --color-primary-tint: #d2e5f5;
+    --color-primary-rich-black: #191c1e;
+    --color-primary-off-white: #dde3ea;
+}
 
 .header.section {
     background-color: rgb(29, 75, 102);
