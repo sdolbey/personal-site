@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
     firstImage.appendChild(newImage);
 
     // Set title
-    first.getElementsByTagName("h3")[0].innerText = firstProject.title;
+    first.getElementsByTagName("h4")[0].innerText = firstProject.title;
 
     // Set blurb
     first.getElementsByTagName("p")[0].innerText = firstProject.blurb;
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
     secondImage.appendChild(newImage);
 
     // Set title
-    second.getElementsByTagName("h3")[0].innerText = secondProject.title;
+    second.getElementsByTagName("h4")[0].innerText = secondProject.title;
 
     // Set blurb
     second.getElementsByTagName("p")[0].innerText = secondProject.blurb;
