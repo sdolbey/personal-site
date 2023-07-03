@@ -10,7 +10,7 @@ article > div.header {
     border-bottom: 1rem solid var(--color-primary);
 }*/
 article > div.header {
-    padding: 6rem 1rem 4rem 1rem;
+    padding: 6rem 0rem 4rem 0rem;
 }
 
 article > div.header h1 {
@@ -18,8 +18,12 @@ article > div.header h1 {
 }
 article > div.header p {
     margin: 0 auto;
+    text-wrap: balance;
 }
-
+article > div.header .header-image {
+    max-width: 40rem;
+    margin: 0 auto;
+}
 .first-heading {
     margin-top: 4rem;
 }
@@ -29,13 +33,7 @@ article {
     margin-right: auto;
 }
 
-div.article-body {
-    /*
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem; 
-    */
+div.article-body:not(.container) {
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -69,16 +67,23 @@ div.article-body {
 article p {
     font-size: 1rem;
     line-height: 1.8em;
-    margin: 1.8em auto;
+    margin: 0 auto 1.8em auto;
+}
+
+article figure {
+    max-width: 40rem;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 8rem auto;
 }
 
 figure img {
     outline: 1px solid var(--color-surface);
     border-radius: 4px;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 100%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 figure > figcaption {
@@ -111,12 +116,7 @@ img.borderless {
     box-shadow: none;
 }
 
-article figure {
-    max-width: 40rem;
-    width: 100%;
-    height: auto;
-    margin: 3.6rem auto 3.6rem auto;
-}
+
 
 .wide {
     max-width: 60rem;
@@ -125,4 +125,78 @@ article figure {
 article .card, article .card-collection {
     max-width: 576px;
     max-width: 36rem;
+}
+
+article > .card-collection {
+    background-color: aqua;
+}
+
+.block {
+    display: block;
+    margin-bottom: 8rem;
+}
+.block.snug, figure.snug, figure.midblock {
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 1100px) {
+    .block {
+        display: grid;
+    }
+    /* article image content goes on the right */
+    article header.grid .header-image {
+        grid-area: img;
+        width: 1fr;
+    }
+    /* article text content goes on the left */
+    article header.grid hgroup {
+        grid-area: content;
+        width: 1fr;
+    }
+    /* articles are two columns throughout */
+    article header.grid {
+        display: grid;
+        grid-template-areas: "content img";
+        grid-template-columns: minmax(28rem, 32rem) 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+    article .block {
+        grid-template-columns: minmax(28rem, 32rem) 1fr;
+        gap: 1.8rem 2rem;
+    }
+    article .block.full {
+        grid-template-columns: 1fr;
+    }
+    article .block > .midblock {
+        grid-row: 1 / span 6;
+    }
+    article .block > .left {
+        grid-column: 1;
+    }
+    article .block > .right {
+        grid-column: 2;
+    }
+    article .block > .left > p:last-child  {
+        margin-bottom: 0;
+    }
+    /*
+    article .block div p:first-child {
+        margin-top: 0;
+    }*/
+    article .block.center {
+        align-items: center;
+    }
+    article .u-max-full-width {
+        max-width: unset;
+    }
+    article .block > figure, article .block > .card-collection {
+        margin-bottom: 0;
+    }
+}
+
+figure .window {
+    outline: 1px solid var(--color-surface);
+    max-height: 360px;
+    overflow-y: auto;
 }

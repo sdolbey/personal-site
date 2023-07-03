@@ -27,7 +27,10 @@
     </div>
     <article id="planet-9" class="project">
         <div class="header">
-            <header>
+            <header class="grid">
+                <div class="header-image project-image">
+                    <img loading="lazy" srcset="../img/thumbs/planet-9.webp" src="../img/thumbs/planet-9.png" alt="Planet 9 project thumbnail showing the History page in a browser window.">
+                </div>
                 <hgroup>
                     <h1 class="section-title">
                         Planet 9
@@ -38,121 +41,143 @@
                 </hgroup>
             </header>
         </div>
-        <div class="article-body">
+        <div class="article-body container">
             <div class="article-content">
-                <h2 class="first-heading">Project context</h2>
-                <p>
-                    Planet 9 is an advocacy website that educates the public about Pluto's history and why it is no longer considered a planet. It encourages visitors to add their name to a petition to have Pluto reinstated as a full planet. This was done as part of a college course.
-                </p>
-
-                <h3>Design challenge and constraints</h3>
-                <p>
-                    As part of my web design curriculum, we were split into groups of five and tasked with designing and building a website advocating for something. Other teams did topics such as animal welfare and waste management, but our topic was more lighthearted: reinstating Pluto to its rightful status as the ninth planet of our solar system. <strong>The project requirements were pretty loose and open-ended, but the final website did need to have five pages.</strong>
-                </p>
-
-                <h3>My role</h3>
-                <p>
-                    Originally, I was only supposed to do the information architecture and layout design. However, my role unexpectedly expanded to include development, as well. <strong>In the end, I was responsible for all but the graphics and writing.</strong>
-                </p>
-
-                <h2>Design process</h2>
-                <p>
-                    We decided our required five pages would be:
-                </p>
-                <div class="card-collection grid">
-                    <div class="card">
-                        <div class="content horizontal">
-                            <span class="material-symbols-outlined">counter_1</span>
-                            <div class="vertical">
-                                <h5>
-                                    Home
-                                </h5>
-                                <p>
-                                    Quick blurb about our mission and a CTA button for our petition.
-                                </p>
-                            </div>
-                        </div>
+                <div class="block snug">
+                    <div>
+                        <h2 class="first-heading">Project context</h2>
+                        <p>
+                            Planet 9 is an advocacy website that educates the public about Pluto's history and why it is no longer considered a planet. It encourages visitors to add their name to a petition to have Pluto reinstated as a full planet. This was done as part of a college course.
+                        </p>
                     </div>
-                    <div class="card">
-                        <div class="content horizontal">
-                            <span class="material-symbols-outlined">counter_2</span>
-                            <div class="vertical">
-                                <h5>
-                                    History
-                                </h5>
-                                <p>
-                                    The story of Pluto's discovery with a timeline of events.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content horizontal">
-                            <span class="material-symbols-outlined">counter_3</span>
-                            <div class="vertical">
-                                <h5>
-                                    Controversies
-                                </h5>
-                                <p>
-                                    Pros and Cons for Pluto's case as a planet, plus discussion within the scientific community about the crucial “clearing your neighborhood” requirement for planethood that Pluto doesn't meet.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content horizontal">
-                            <span class="material-symbols-outlined">counter_4</span>
-                            <div class="vertical">
-                                <h5>
-                                    Join us
-                                </h5>
-                                <p>
-                                    Petition, newsletter, and socials.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content horizontal">
-                            <span class="material-symbols-outlined">counter_5</span>
-                            <div class="vertical">
-                                <h5>
-                                    Shop
-                                </h5>
-                                <p>
-                                    Shirts, stickers, and backpacks to show support for Pluto.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
-                    
-                <p>
-                    I made a sitemap showing how these pages might link to one another and sketched out how they might look at different screen sizes.
-                </p>
-                <figure>
-                    <img class="dark-invert" loading="lazy" srcset="../img/projects/planet-9/sitemap.webp" src="../img/projects/planet-9/sitemap.png" alt="Mindmap chart showing an early sitemap" data-action="zoom" style>
-                    <figcaption class="caption">Early sitemap.</figcaption>
-                </figure>
-                <figure>
-                    <img class="dark-invert" loading="lazy" srcset="../img/projects/planet-9/sketches.webp" src="../img/projects/planet-9/sketches.png" alt="Simple sketches of our five pages at desktop and mobile breakpoints." data-action="zoom" style>
-                    <figcaption class="caption">I sketched out how our five pages might look and adapt to different screen sizes.</figcaption>
-                </figure>
-                <p>
-                    Our visual designer made color and typeface choices before any UI work was done. Making higher fidelity mock-ups in Adobe XD gave us an opportunity to see how those choices looked in practice and adjust. The colors were maintained, but typefaces were replaced for better readability.
-                </p>
-                <figure>
-                    <img loading="lazy" srcset="../img/projects/planet-9/high-fidelity-home.webp" src="../img/projects/planet-9/high-fidelity-home.png" alt="Screenshot of high fidelity mockups in Adobe XD.">
-                    <figcaption class="caption">Working at a higher fidelity gave us an opportunity to adjust our typefaces.</figcaption>
-                </figure>
-                <p>
-                    Unfortunately, this is about when things went south. The day before our third milestone (the develop phase) was due, it became apparent that our developer was struggling. He was building the website in Webflow's drag-and-drop tool, which led to a rat's nest of CSS classes with absolute positioning on everything. It was completely unresponsive—basically a PDF in a browser. It's a shame he didn't reach out for help with the CSS, because I had to redo most of the development in little more than a day to get it in on-time.
-                </p>
-                <p>
-                    Leading up to the final due date, I spent time adding content and adjusting pages to look closer to the prototypes. By the end, I was happy with it, even if I hadn't intended to take on that much responsibility.
-                </p>
-                <figure class="wide">
+                <div class="block snug">
+                    <div>
+                        <h3>Design challenge and constraints</h3>
+                        <p>
+                            As part of my web design curriculum, we were split into groups of five and tasked with designing and building a website advocating for something. Other teams did topics such as animal welfare and waste management, but our topic was more lighthearted: reinstating Pluto to its rightful status as the ninth planet of our solar system. <strong>The project requirements were pretty loose and open-ended, but the final website did need to have five pages.</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="block">
+                    <div>
+                        <h3>My role</h3>
+                        <p>
+                            Originally, I was only supposed to do the information architecture and layout design. However, my role unexpectedly expanded to include development, as well. <strong>In the end, I was responsible for all but the graphics and writing.</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="block snug">
+                    <div>
+                        <h2>Design process</h2>
+                        <p>
+                            We decided our required five pages would be:
+                        </p>
+                        <div class="card-collection grid">
+                            <div class="card">
+                                <div class="content horizontal">
+                                    <span class="material-symbols-outlined">counter_1</span>
+                                    <div class="vertical">
+                                        <h5>
+                                            Home
+                                        </h5>
+                                        <p>
+                                            Quick blurb about our mission and a CTA button for our petition.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="content horizontal">
+                                    <span class="material-symbols-outlined">counter_2</span>
+                                    <div class="vertical">
+                                        <h5>
+                                            History
+                                        </h5>
+                                        <p>
+                                            The story of Pluto's discovery with a timeline of events.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="content horizontal">
+                                    <span class="material-symbols-outlined">counter_3</span>
+                                    <div class="vertical">
+                                        <h5>
+                                            Controversies
+                                        </h5>
+                                        <p>
+                                            Pros and Cons for Pluto's case as a planet, plus discussion within the scientific community about the crucial “clearing your neighborhood” requirement for planethood that Pluto doesn't meet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="content horizontal">
+                                    <span class="material-symbols-outlined">counter_4</span>
+                                    <div class="vertical">
+                                        <h5>
+                                            Join us
+                                        </h5>
+                                        <p>
+                                            Petition, newsletter, and socials.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="content horizontal">
+                                    <span class="material-symbols-outlined">counter_5</span>
+                                    <div class="vertical">
+                                        <h5>
+                                            Shop
+                                        </h5>
+                                        <p>
+                                            Shirts, stickers, and backpacks to show support for Pluto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <p>
+                            I made a sitemap showing how these pages might link to one another and sketched out how they might look at different screen sizes.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid max-2 u-max-full-width">
+                    <figure class="snug">
+                        <img class="dark-invert" loading="lazy" srcset="../img/projects/planet-9/sitemap.webp" src="../img/projects/planet-9/sitemap.png" alt="Mindmap chart showing an early sitemap" data-action="zoom" style>
+                        <figcaption class="caption">Early sitemap.</figcaption>
+                    </figure>
+                    <figure class="snug">
+                        <img class="dark-invert" loading="lazy" srcset="../img/projects/planet-9/sketches.webp" src="../img/projects/planet-9/sketches.png" alt="Simple sketches of our five pages at desktop and mobile breakpoints." data-action="zoom" style>
+                        <figcaption class="caption">I sketched out how our five pages might look and adapt to different screen sizes.</figcaption>
+                    </figure>
+                </div>
+                <div class="block snug">
+                    <div>
+                        <p>
+                            <strong>Our visual designer made color and typeface choices before any UI work was done.</strong> Making higher fidelity mock-ups in Adobe XD gave us an opportunity to see how those choices looked in practice and adjust. <strong>The colors were maintained, but typefaces were replaced for better readability.</strong>
+                        </p>
+                    </div>
+                    <figure>
+                        <img loading="lazy" srcset="../img/projects/planet-9/high-fidelity-home.webp" src="../img/projects/planet-9/high-fidelity-home.png" alt="Screenshot of high fidelity mockups in Adobe XD.">
+                        <figcaption class="caption">Working at a higher fidelity gave us an opportunity to adjust our typefaces.</figcaption>
+                    </figure>
+                </div>
+                <div class="block snug">
+                    <div>
+                        <p>
+                            <strong>Unfortunately, this is about when things went south. The day before our third milestone (the develop phase) was due, it became apparent that our developer was struggling.</strong> In an attempt to match the prototypes as closely as possible, he was building the website in Webflow's drag-and-drop tool, which led to a rat's nest of CSS classes with absolute positioning on everything. <strong>It was completely unresponsive—basically a PDF in a browser.</strong> It's a shame he didn't reach out for help with the CSS, because <strong>I had to redo most of the development in little more than a day to get it in on-time.</strong>
+                        </p>
+                        <p>
+                            Leading up to the final due date, I spent time adding content and adjusting pages to look closer to the prototypes. <strong>By the end, I was happy with it, even if I hadn't intended to take on that much responsibility.</strong>
+                        </p>
+                    </div>
+                </div>
+                <figure class="u-max-full-width">
                     <div class="grid min-2 max-3">
                         <img loading="lazy" srcset="../img/projects/planet-9/home_desktop_cropped.webp" src="../img/projects/planet-9/home_desktop_cropped.png" alt="" data-action="zoom" style>
                         <img loading="lazy" srcset="../img/projects/planet-9/history_desktop_cropped.webp" src="../img/projects/planet-9/history_desktop_cropped.png" alt="" data-action="zoom" style>
@@ -169,21 +194,24 @@
                     </div>
                     <figcaption>Timeline and Pro/Con list on mobile.</figcaption>
                 </figure>
-
-                <h2>Reflection</h2>
-                <p>
-                    I had good HTML and CSS foundations going into this, but I had to learn a few tricks to get things to look like the prototypes. For example, I used a background image for the custom bullet points on the Controversies page. With more time, I might have implemented a proper responsive grid instead of eyeballing it with margins and padding in media queries. I didn't have time to make the timeline feature collapse and expand, either.
-                </p>
-                <p>
-                    Looking back, it might have been better if we had picked a different topic. You'd think there would be more information about Pluto, but there really isn't—certainly not enough to fill out five pages, anyway. However, it would have been difficult to see that one coming without doing a lot of research ahead of time.
-                </p>
-                <p>
-                    Communication issues also held us back. The style guide and visual design guide were assigned to different team members, but there was confusion as to which contained what, so one designer accidentally did both. And of course, there were the issues with development that led to me doing most of it last minute. Better communication would have saved us all a lot of headache. 
-                </p>
-                <p>
-                    Part of it is on me. I wanted to focus on UX going into this and didn't want to miss the opportunity by being too eager to write the code. After all, this was the web design degree program, so I had (perhaps misplaced) faith that any one of us could throw together a simple website. Going forward, I want to be more up-front with what I can contribute to a team and encourage my teammates to do the same. <strong>Being open and honest about our skills and limitations and having the courage to ask for help is so important for good teamwork.</strong>
-                </p>
-                <p class="last"></p>
+                <div class="block snug">
+                    <div>
+                        <h2>Reflection</h2>
+                        <p>
+                            I had good HTML and CSS foundations going into this, but I had to learn a few tricks to get things to look like the prototypes. For example, I used a background image for the custom bullet points on the Controversies page. With more time, I might have implemented a proper responsive grid instead of eyeballing it with margins and padding in media queries. I didn't have time to make the timeline feature collapse and expand, either.
+                        </p>
+                        <p>
+                            <strong>Looking back, it might have been better if we had picked a different topic.</strong> You'd think there would be more information about Pluto, but there really isn't—certainly not enough to fill out five pages, anyway. However, it would have been difficult to see that one coming without doing a lot of research ahead of time.
+                        </p>
+                        <p>
+                            Communication issues also held us back. The style guide and visual design guide were assigned to different team members, but there was confusion as to which contained what, so one designer accidentally did both. And of course, there were the issues with development that led to me doing most of it last minute. <strong>Better communication would have saved us all a lot of headache.</strong>
+                        </p>
+                        <p>
+                            Part of it is on me. I wanted to focus on UX going into this and didn't want to miss the opportunity by being too eager to write the code. After all, this was the web design degree program, so I had (perhaps misplaced) faith that any one of us could throw together a simple website. Going forward, I want to be more up-front with what I can contribute to a team and encourage my teammates to do the same. <strong>Being open and honest about our skills and limitations and having the courage to ask for help is so important for good teamwork.</strong>
+                        </p>
+                        <p class="last"></p>
+                    </div>
+                </div>
                 <!--<figure>
                         <img loading="lazy" srcset="../img/projects/planet-9/" src="../img/projects/planet-9/" alt="" data-action="zoom" style>
                         <figcaption class="caption"></figcaption>

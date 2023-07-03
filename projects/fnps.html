@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/basics.css">
     <link rel='stylesheet' type='text/css' media='screen' href='../css/article.css'>
+    <!--<link rel="stylesheet" href="../css/twocolumn.css">-->
     <link rel="stylesheet" href="../css/zoom.css">
     <!--<link rel="stylesheet" href="../css/fnps.css">-->
     <!--<script src="../js/navstyle.js"></script>-->
@@ -28,7 +29,10 @@
     </div>
     <article id="fnps" class="project">
         <div class="header">
-            <header>
+            <header class="grid">
+                <div class="header-image project-image">
+                    <img loading="lazy" srcset="../img/thumbs/fnps.webp" src="../img/thumbs/fnps.png" alt="FNPS project thumbnail showing selected mobile screens.">
+                </div>
                 <hgroup>
                     <h1 class="section-title">
                         Florida Native Plant&nbsp;Society
@@ -39,407 +43,626 @@
                 </hgroup>
             </header>
         </div>
-        <div class="article-body">
+        <div class="article-body container">
             <div class="article-content">
                 <section aria-labelledby="project_context">
-                    <h2 class="first-heading" id="project_context">
-                        Project context
-                    </h2>
-                    <p>
-                        The Florida Native Plant Society (FNPS) is a non-profit organization dedicated to preserving Florida's remaining natural places and conserving the plants that call them home. <strong>Their website hosts an extensive database of Florida's native plants</strong> and serves as an excellent resource for gardeners and landscapers looking to add some native plants to their projects.
-                    </p>
-                    <p>
-                        This was a personal project. I was teaching myself Figma and needed a project I could really sink my teeth into—something that would force me to interact with as many of Figma's features as possible. FNPS didn't ask me to do this. I consider it my way of giving back for all I've learned from them and the work that they do.
-                    </p>
-                    <h3>
-                        The problem
-                    </h3>
-                    <p>
-                        While visitors may be interested in planting native, <strong>the FNPS plant database may be too intimidating for less seasoned gardeners.</strong>
-                    </p>
-                    <p>
-                        Visitors have very little information to help them decide what plants to click on. <strong>The list is just text</strong>, with no pictures or supplemental information about each plant. Less experienced visitors may feel lost and give up.
-                    </p>
-                    <figure class="wide">
-                        <img loading="lazy" srcset="../img/projects/fnps/old_plant_list_desktop.webp" src="../img/projects/fnps/old_plant_list_desktop.png" alt="Screenshot showing how the plant search page looked before. Search and filter options sit above the list in expandable cards. The list is text-based, with scientific names set in bright red hyperlinks and common names immediately following on the same line. Some plants have a red heart next to them, indicating a landscaping favorite. The left sidebar features large buttons to learn about attracting butterflies and wildlife, as well as an advertisement for a custom Florida native license plate." data-action="zoom" style>
-                        <figcaption class="caption">Before: Plant search page, desktop</figcaption>
-                    </figure>
-                    <p>
-                        For FNPS, encouraging people to plant native is part of their mission. They provide a valuable resource with their plant database, but for it to be effective, <strong>it needs to be easy for gardeners of all backgrounds to find what they're looking for.</strong>
-                    </p>
-                    <p>
-                        What could be done to increase the likelihood of a visitor finding the right plant in the database for their garden or landscape?
-                    </p>
-                    <h3>
-                        Key design goals
-                    </h3>
-                    <div class="card-collection grid">
-                        <div class="design-goal card">
-                            <div class="content horizontal">
-                                <span class="material-symbols-outlined">lightbulb</span>
-                                <div class="vertical">
-                                    <h4>
-                                        Beginner friendly
-                                    </h4>
-                                    <p>
-                                        Entries in the list should include enough information to meaningfully describe each plant.
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="block snug">
+                        <div>
+                            <h2 class="first-heading" id="project_context">
+                                Project context
+                            </h2>
+                            <p>
+                                The Florida Native Plant Society (FNPS) is a non-profit organization dedicated to preserving Florida's remaining natural places and conserving the plants that call them home. <strong>Their website hosts an extensive database of Florida's native plants and serves as an excellent resource for gardeners and landscapers looking to add some native plants to their projects.</strong>
+                            </p>
+                            <p>
+                                This was a personal project. I was teaching myself Figma and needed a project I could really sink my teeth into—something that would force me to interact with as many of Figma's features as possible. FNPS didn't ask me to do this. I consider it my way of giving back for all I've learned from them and the work that they do.
+                            </p>
                         </div>
-                        <div class="design-goal card">
-                            <div class="content horizontal">
-                                <span class="material-symbols-outlined">recommend</span>
-                                <div class="vertical">
-                                    <h4>
-                                        Provide relevant, actionable recommendations
-                                    </h4>
-                                    <p>
-                                        The goal is to help visitors find the right plants for their needs. We should prioritize plants that they can actually find.
-                                    </p>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="block snug">
+                        <div class="left">
+                            <h3>
+                                The problem
+                            </h3>
+                            <p>
+                                While visitors may be interested in planting native, <strong>the FNPS plant database may be too intimidating for less seasoned gardeners.</strong>
+                            </p>
+                            <p>
+                                Visitors have very little information to help them decide what plants to click on. <strong>The list is just text, with no pictures or supplemental information about each plant.</strong> Less experienced visitors may feel lost and give up.
+                            </p>
                         </div>
-                        <div class="design-goal card">
-                            <div class="content horizontal">
-                                <span class="material-symbols-outlined">bolt</span>
-                                <div class="vertical">
-                                    <h4>
-                                        Maintain full functionality
-                                    </h4>
-                                    <p>
-                                        The database has powerful filters. We want to make good use of them.
-                                    </p>
-                                </div>
-                            </div>
+                        <figure class="wide midblock right">
+                            <img loading="lazy" srcset="../img/projects/fnps/old_plant_list_desktop.webp" src="../img/projects/fnps/old_plant_list_desktop.png" alt="Screenshot showing how the plant search page looked before. Search and filter options sit above the list in expandable cards. The list is text-based, with scientific names set in bright red hyperlinks and common names immediately following on the same line. Some plants have a red heart next to them, indicating a landscaping favorite. The left sidebar features large buttons to learn about attracting butterflies and wildlife, as well as an advertisement for a custom Florida native license plate." data-action="zoom" style>
+                            <figcaption class="caption">The original plant list's lack of images or details about each plant made it difficult to browse.</figcaption>
+                        </figure>
+                        <div class="left">
+                            <p>
+                                For FNPS, encouraging people to plant native is part of their mission. <strong>They provide a valuable resource with their plant database, but for it to be effective, it needs to be easy for gardeners of all backgrounds to find what they're looking for.</strong>
+                            </p>
+                            <p>
+                                What could be done to increase the likelihood of a visitor finding the right plant in the database for their garden or landscape?
+                            </p>
                         </div>
-                        <div class="design-goal card">
-                            <div class="content horizontal">
-                                <span class="material-symbols-outlined">width</span>
-                                <div class="vertical">
-                                    <h4>
-                                        Scannable at any size
-                                    </h4>
-                                    <p>
-                                        The database should look nice and make good use of space on all screen sizes.
-                                    </p>
+                    </div>
+                    <div class="block">
+                        <div>
+                            <h3>
+                                Key design goals
+                            </h3>
+                            <div class="card-collection grid">
+                                <div class="design-goal card">
+                                    <div class="content horizontal">
+                                        <span class="material-symbols-outlined">lightbulb</span>
+                                        <div class="vertical">
+                                            <h5>
+                                                Beginner friendly
+                                            </h5>
+                                            <p>
+                                                Entries in the list should include enough information to meaningfully describe each plant.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="design-goal card">
+                                    <div class="content horizontal">
+                                        <span class="material-symbols-outlined">recommend</span>
+                                        <div class="vertical">
+                                            <h5>
+                                                Provide relevant, actionable recommendations
+                                            </h5>
+                                            <p>
+                                                The goal is to help visitors find the right plants for their needs. We should prioritize plants that they can actually find.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="design-goal card">
+                                    <div class="content horizontal">
+                                        <span class="material-symbols-outlined">bolt</span>
+                                        <div class="vertical">
+                                            <h5>
+                                                Maintain full functionality
+                                            </h5>
+                                            <p>
+                                                The database has powerful filters. We want to make good use of them.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="design-goal card">
+                                    <div class="content horizontal">
+                                        <span class="material-symbols-outlined">width</span>
+                                        <div class="vertical">
+                                            <h5>
+                                                Scannable at any size
+                                            </h5>
+                                            <p>
+                                                The database should look nice and make good use of space on all screen sizes.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section aria-labelledby="exploration_and_design">
-                    <h2 id="exploration_and_design">
-                        Exploration and design
-                    </h2>
-                    <h3>
-                        An improved plant list browsing experience
-                    </h3>
-                    <p>
-                        The area of focus for this project was the plant list, so most of my time was spent exploring new layouts for it and how I might make individual list entries more informative for browsing. This is the solution I landed on.
-                    </p>
-                    <figure class="wide">
+                    <div class="block snug">
+                        <div>
+                            <h2 id="exploration_and_design">
+                                Exploration and design
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="block snug">
+                        <div>
+                            <h3>
+                                Making a plant list for everyone
+                            </h3>
+                            <p>
+                                The area of focus for this project was the plant list, so most of my time was spent exploring new layouts for it and how I might make individual list entries more informative for browsing. This is the solution I landed on.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="u-max-full-width snug">
                         <img loading="lazy" srcset="../img/projects/fnps/new_plant_list_all_desktop_cropped.webp" src="../img/projects/fnps/new_plant_list_all_desktop_cropped.png" alt="Screenshot showing the redesigned plant search page at a desktop breakpoint. The left 80% of the screen contains the plant list. Entries expand into a tabular layout. On the right is a sidebar containing the new landscaping favorites toggle, sorting options, and redesigned search filters." data-action="zoom" style>
-                        <figcaption class="caption">After: Plant search page, desktop</figcaption>
+                        <figcaption class="caption">The redesigned plant list has several key changes that make it easier to browse.</figcaption>
                     </figure>
-                    <h4>
-                        Entries now include a picture and landscaping-oriented details to help visitors decide what to click
-                    </h4>
-                    <p>
-                        I explored all sorts of data points, but I settled on lifespan and plant form because that's how plants are organized at the garden center in the real world.
-                    </p>
-                    <figure>
-                        <img loading="lazy" srcset="../img/projects/fnps/vignette_new_plant_entries.webp" src="../img/projects/fnps/vignette_new_plant_entries.png" alt="Redesigned plant entries sit in a column. Each entry has a leading thumbnail on the left with optional landscaping favorites badge for recommended plants. Details include the scientific name, common name, plant lifespan and plant form.">
-                        <figcaption class="caption">Redesigned plant entries include a thumbnail and helpful details</figcaption>
-                    </figure>
-                    <h4>
-                        Providing actionable recommendations by elevating Landscaping Favorites
-                    </h4>
-                    <p>
-                        Landscaping Favorites are plants that FNPS says are <strong>easy to find and easy to grow.</strong> They were marked with a heart on the list, but there was no way to filter for them.
-                    </p>
-                    <p>
-                        Landscaping Favorites have been elevated from a footnote to the stars of the show. A toggle switch above sort and filter hides the rest of the plants so <strong>landscaping-oriented visitors can focus on just the plants they're most likely to be able to find and grow.</strong> This makes it easier for visitors to find actionable recommendations and helps FNPS by getting more ecosystem-supporting native plants in the ground instead of non-native contractor specials from Lowe's.
-                    </p>
-                    <figure class="wide">
-                        <img loading="lazy" srcset="../img/projects/fnps/new_plant_list_rec_desktop_cropped.webp" src="../img/projects/fnps/new_plant_list_rec_desktop_cropped.png" alt="Screenshot showing the redesigned plant list on a large screen. The landscaping favorites toggle in the sidebar is active, so only plants marked as landscaping favorites are visible in the list." data-action="zoom" style>
-                        <figcaption class="caption">New plant search page with Landscaping Favorites toggle active</figcaption>
-                    </figure>
-                    <h4>
-                        A scannable list, on any device
-                    </h4>
-                    <p>
-                        On desktop, plant entries spread out into a breathable, tabular layout.
-                    </p>
-                    <p>
-                        On mobile, entries are stacked instead of wrapping to the next line. <strong>Each piece of information is consistently located from plant to plant.</strong> No more awkward line breaks!
-                    </p>
-                    <figure>
-                        <div class="grid min-2">
-                            <img class="borderless" loading="lazy" srcset="../img/projects/fnps/old_plant_list_mobile_framed.webp" src="../img/projects/fnps/old_plant_list_mobile_framed.png" alt="Screenshot showing the old plant list on a smartphone. Common names wrap to the next line, making the list hard to scan." data-action="zoom" style>
-                            <img class="borderless" loading="lazy" srcset="../img/projects/fnps/new_plant_list_all_top_mobile_framed.webp" src="../img/projects/fnps/new_plant_list_all_top_mobile_framed.png" alt="Screenshot showing how the redesigned plant entries look on a smartphone. The scientific name, common name, plant lifespan and plant form all appear in the same place within each entry, making the list easier to scan." data-action="zoom" style>
+                    <div class="block snug">
+                        <div>
+                            <h4>
+                                Entries now include a picture and landscaping-oriented details to help visitors decide what to click
+                            </h4>
+                            <p>
+                                I explored all sorts of data points, but <strong>I settled on lifespan and plant form because that's how plants are organized at the garden center in the real world.</strong>
+                            </p>
                         </div>
-                        <figcaption class="caption">Before and after; common names are much easier to scan when&nbsp;they&nbsp;have&nbsp;their&nbsp;own&nbsp;line.</figcaption>
-                    </figure>
-                    <h4>
-                        Sorting and filtering tools kept in reach
-                    </h4>
-                    <p>
-                        On desktop, where there's lots of room, they are always visible in a sidebar.
-                    </p>
-                    <p>
-                        On mobile, they stay at the top, but a floating action button is available to quickly return to them. Filters require a refresh to apply, so adjusting them without losing your place is not important.
-                    </p>
-                    <figure>
-                        <div class="grid min-2">
-                            <img class="borderless" loading="lazy" srcset="../img/projects/fnps/new_plant_list_all_mobile_framed.webp" src="../img/projects/fnps/new_plant_list_all_mobile_framed.png" alt="Screenshot showing the top of the redesigned plant search page on a smartphone. The search tools are here." data-action="zoom" style>
-                            <img class="borderless" loading="lazy" srcset="../img/projects/fnps/new_plant_list_all_mobile_middle_framed.webp" src="../img/projects/fnps/new_plant_list_all_mobile_middle_framed.png" alt="Screenshot showing the middle of the redesigned plant list on a smartphone. A floating action button sits in the bottom right corner. Tapping it will scroll to the top where the search tools are." data-action="zoom" style>
+                        <figure class="snug">
+                            <img loading="lazy" srcset="../img/projects/fnps/vignette_new_plant_entries.webp" src="../img/projects/fnps/vignette_new_plant_entries.png" alt="Redesigned plant entries sit in a column. Each entry has a leading thumbnail on the left with optional landscaping favorites badge for recommended plants. Details include the scientific name, common name, plant lifespan and plant form.">
+                            <figcaption class="caption">Redesigned plant entries include a thumbnail and helpful details</figcaption>
+                        </figure>
+                    </div>
+                    <div class="block snug">
+                        <div>
+                            <h4>
+                                Providing actionable recommendations by elevating Landscaping Favorites
+                            </h4>
+                            <p>
+                                <strong>Landscaping Favorites are plants that FNPS says are easy to find and easy to grow.</strong> They were marked with a heart on the list, but <strong>there was no way to filter for them.</strong>
+                            </p>
+                            <p>
+                                Landscaping Favorites have been elevated from a footnote to the stars of the show. A toggle switch above sort and filter hides the rest of the plants so <strong>landscaping-oriented visitors can focus on just the plants they're most likely to be able to find and grow.</strong> This makes it easier for visitors to find actionable recommendations and helps FNPS by getting more ecosystem-supporting native plants in the ground instead of non-native contractor specials from Lowe's.
+                            </p>
                         </div>
-                        <figcaption class="caption">Search tools sit at the top on mobile. As you scroll, a floating action button appears that will bring you back to them.</figcaption>
-                    </figure>
-                    <h3>
-                        Making sense of the mess with user&nbsp;research
-                    </h3>
-                    <p>
-                        After exploring different layouts for the plant database and plant profiles, I turned my attention to the content. The plant profiles had lots of information about each plant, but the arrangement wasn't ideal. <strong>I took all the data points from the plant profiles and used an open card sort</strong> with a few users to see how they would group them. Though the sample size was small, <strong>there was strong consensus among users</strong>, so I was still able to get some useful insights out of it.
-                    </p>
-                    <p>
-                        Running statistical analysis on the results revealed three main groups of information, which I labeled Site Conditions, Ecology, and Plant Specs. <strong>Within the larger ecology-focused grouping, an interesting subgrouping emerged.</strong> All participants grouped: how to use it, where it grows, and where to get it. <strong>This led to a new, more actionable section on the plant profile</strong> called “Grow this plant” that attempts to answer the question, “Is this the right plant for me?”
-                    </p>
-                    <p>
-                        I used the card sort results to help me rearrange the rest of the plant profile as well as the list of filters for the plant database.
-                    </p>
-                    <figure>
-                        <img loading="lazy" srcset="../img/projects/fnps/research_card_sort_results.webp" src="../img/projects/fnps/research_card_sort_results.png" alt="Diagram showing how closely related each datapoint is, based on how users grouped them in an open card sort test. There are three primary groups. Within the ecology-focused group in the middle is a group of three: where to acquire, landscaping uses, and native range." data-action="zoom" style>
-                        <figcaption class="caption">The results of the card sort analysis. Note the group of three at the top of the middle red box.</figcaption>
-                    </figure>
-                    <h3>
-                        A more actionable plant profile
-                    </h3>
-                    <p>
-                        The plant profiles were serviceable, but needed some fine tuning and rearrangements.
-                    </p>
-                    <figure>
-                        <img loading="lazy" srcset="../img/projects/fnps/old_plant_profile_desktop.webp" src="../img/projects/fnps/old_plant_profile_desktop.png" alt="Screenshot showing the original plant profile design. A picture carousel sits at the top of a left sidebar with large buttons to external pages underneath. This entire sidebar appears above the plant information on mobile devices.">
-                        <figcaption class="caption">The original plant profile. Note the left sidebar with buttons and logos. All of that appears between the gallery and information on mobile.</figcaption>
-                    </figure>
-                    <h4>
-                        First things first
-                    </h4>
-                    <p>
-                        <strong>Using insights from the card sort results</strong>, I rearranged the plant profile to try to answer the question, <strong>“Is this the right plant for me?”</strong> as quickly as possible.
-                    </p>
-                    <p>
-                        The page begins with a new section, “Grow this plant”, which includes <strong>recommended landscaping uses</strong>, the <strong>native range</strong> of the plant, and <strong>where it can be purchased</strong> (with a link to the Florida Association of Native Nurseries to find a local place that carries it).
-                    </p>
-                    <p>
-                        If applicable, a banner marking a plant as a “Landscaping Favorite” appears at the top. Previously, plants were only given this designation on the plant list.
-                    </p>
-                    <figure class="wide">
-                        <img loading="lazy" srcset="../img/projects/fnps/new_plant_profile_desktop.webp" src="../img/projects/fnps/new_plant_profile_desktop.png" alt="Screenshot showing the new plant profile in its entirety.">
-                        <figcaption class="caption">Driven by research, the redesigned plant profile features a new section featuring recommended landscaping uses, the native range, and where to get the plant. Other datapoints have been rearranged based on the results of the card sort analysis.</figcaption>
-                    </figure>
-                    <h4>
-                        Putting things in context
-                    </h4>
-                    <p>
-                        Before, external links to FANN and the UCF ISB Plant Atlas sat below the gallery as part of the desktop sidebar. On mobile, they appeared between the gallery and the plant information and required scrolling an entire screen length before being able to read anything about the plant. Now, these <strong>obtrusive links have been moved to contextually appropriate locations.</strong>
-                    </p>
-                    <figure>
-                        <div class="grid min-2">
-                            <img class="borderless" loading="lazy" srcset="../img/projects/fnps/old_plant_profile_links_mobile_framed.webp" src="../img/projects/fnps/old_plant_profile_links_mobile_framed.png" alt="Screenshot showing how much screen space was taken by external links on mobile. An entire screen length must be scrolled before seeing plant information." data-action="zoom" style>
-                            <img class="borderless" loading="lazy" srcset="../img/projects/fnps/new_plant_profile_mobile_framed.webp" src="../img/projects/fnps/new_plant_profile_mobile_framed.png" alt="Screenshot showing the top of the new plant profile. Plant information begins immediately after the picture gallery." data-action="zoom" style>
+                        <figure class="wide snug">
+                            <img loading="lazy" srcset="../img/projects/fnps/new_plant_list_rec_desktop_cropped.webp" src="../img/projects/fnps/new_plant_list_rec_desktop_cropped.png" alt="Screenshot showing the redesigned plant list on a large screen. The landscaping favorites toggle in the sidebar is active, so only plants marked as landscaping favorites are visible in the list." data-action="zoom" style>
+                            <figcaption class="caption">New plant search page with Landscaping Favorites toggle active (top right)</figcaption>
+                        </figure>
+                    </div>
+                    <div class="block snug">
+                        <div>
+                            <h4>
+                                A scannable list, on any device
+                            </h4>
+                            <p>
+                                On desktop, plant entries spread out into a breathable, tabular layout.
+                            </p>
+                            <p>
+                                On mobile, entries are stacked instead of wrapping to the next line. <strong>Each piece of information is consistently located from plant to plant.</strong> No more awkward line breaks!
+                            </p>
                         </div>
-                        <figcaption class="caption">Before, large buttons and logos must be scrolled past to learn about the plant. Now, plant information begins immediately below the gallery, with those links moved to more appropriate spots.</figcaption>
-                    </figure>
-                    <h4>
-                        Frictionless picture browsing
-                    </h4>
-                    <p>
-                        Plant pictures sit in a column on desktop and a freely scrolling row on smaller screens, making it much easier to browse them compared to clicking through the carousel from the original.
-                    </p>
-                    <h3>
-                        A more helpful home page
-                    </h3>
-                    <p>
-                        The home page serves as the reception area of the website, but <strong>the original home page was unfocused and lacked a clear hierarchy.</strong>
-                    </p>
-                    <figure>
-                        <img loading="lazy" srcset="../img/projects/fnps/old_home_desktop.webp" src="../img/projects/fnps/old_home_desktop.png" alt="Screenshot showing the original FNPS home page. There is a large image carousel at the top, below the navigation bar. Next, a row of images with corresponding buttons for donating, joining, and finding plants. Then, two more rows of cards with buttons to learn about what FNPS does.">
-                        <figcaption class="caption">The original home page had too many things fighting for a visitor's attention.</figcaption>
-                    </figure>
-                    <p>
-                        I needed to redesign it to be a useful directory, so I identified three broad categories of visitors:
-                    </p>
-                    <div class="card-collection grid">
-                        <div class="persona card">
-                            <div class="content horizontal">
-                                <span class="material-symbols-outlined">question_mark</span>
-                                <div class="vertical">
-                                    <h4>The uninitiated</h4>
-                                    <p>Visitors who were directed here and don't know much about FNPS or what they do.</p>
-                                </div>
+                        <figure class="snug">
+                            <div class="grid min-2">
+                                <img class="borderless" loading="lazy" srcset="../img/projects/fnps/old_plant_list_mobile_framed.webp" src="../img/projects/fnps/old_plant_list_mobile_framed.png" alt="Screenshot showing the old plant list on a smartphone. Common names wrap to the next line, making the list hard to scan." data-action="zoom" style>
+                                <img class="borderless" loading="lazy" srcset="../img/projects/fnps/new_plant_list_all_top_mobile_framed.webp" src="../img/projects/fnps/new_plant_list_all_top_mobile_framed.png" alt="Screenshot showing how the redesigned plant entries look on a smartphone. The scientific name, common name, plant lifespan and plant form all appear in the same place within each entry, making the list easier to scan." data-action="zoom" style>
                             </div>
+                            <figcaption class="caption">Before and after; common names are much easier to scan when&nbsp;they&nbsp;have&nbsp;their&nbsp;own&nbsp;line.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="block">
+                        <div>
+                            <h4>
+                                Sorting and filtering tools kept in reach
+                            </h4>
+                            <p>
+                                On desktop, where there's lots of room, they are always visible in a sidebar.
+                            </p>
+                            <p>
+                                On mobile, they stay at the top, but a floating action button is available to quickly return to them. Filters require a refresh to apply, so adjusting them without losing your place is not important.
+                            </p>
                         </div>
-                        <div class="persona card">
-                            <div class="content horizontal">
-                                <span class="material-symbols-outlined">potted_plant</span>
-                                <div class="vertical">
-                                    <h4>Plant people</h4>
-                                    <p>Visitors who like plants, want to learn about plants, want to find plants.</p>
-                                </div>
+                        <figure>
+                            <div class="grid min-2">
+                                <img class="borderless" loading="lazy" srcset="../img/projects/fnps/new_plant_list_all_mobile_framed.webp" src="../img/projects/fnps/new_plant_list_all_mobile_framed.png" alt="Screenshot showing the top of the redesigned plant search page on a smartphone. The search tools are here." data-action="zoom" style>
+                                <img class="borderless" loading="lazy" srcset="../img/projects/fnps/new_plant_list_all_mobile_middle_framed.webp" src="../img/projects/fnps/new_plant_list_all_mobile_middle_framed.png" alt="Screenshot showing the middle of the redesigned plant list on a smartphone. A floating action button sits in the bottom right corner. Tapping it will scroll to the top where the search tools are." data-action="zoom" style>
                             </div>
+                            <figcaption class="caption">Search tools sit at the top on mobile. As you scroll, a floating action button appears that will bring you back to them.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="block">
+                        <div>
+                            <h3>
+                                Making sense of the mess with user&nbsp;research
+                            </h3>
+                            <p>
+                                After exploring different layouts for the plant database and plant profiles, I turned my attention to the content. The plant profiles had lots of information about each plant, but the arrangement wasn't ideal. <strong>I took all the data points from the plant profiles and used an open card sort</strong> with a few users to see how they would group them. Though the sample size was small, <strong>there was strong consensus among users</strong>, so I was still able to get some useful insights out of it.
+                            </p>
+                            <p>
+                                Running statistical analysis on the results revealed three main groups of information, which I labeled Site Conditions, Ecology, and Plant Specs. <strong>Within the larger ecology-focused grouping, an interesting subgrouping emerged.</strong> All participants grouped: how to use it, where it grows, and where to get it. <strong>This led to a new, more actionable section on the plant profile called “Grow this plant” that attempts to answer the question, “Is this the right plant for me?”</strong>
+                            </p>
+                            <p>
+                                I used the card sort results to help me rearrange the rest of the plant profile as well as the list of filters for the plant database.
+                            </p>                            
                         </div>
-                        <div class="persona card">
-                            <div class="content horizontal">
-                                <span class="material-symbols-outlined">groups</span>
-                                <div class="vertical">
-                                    <h4>FNPS members</h4>
-                                    <p>Visitors who want to engage with FNPS. Likely strong overlap with plant people.</p>
+                        <figure>
+                            <img loading="lazy" srcset="../img/projects/fnps/research_card_sort_results.webp" src="../img/projects/fnps/research_card_sort_results.png" alt="Diagram showing how closely related each datapoint is, based on how users grouped them in an open card sort test. There are three primary groups. Within the ecology-focused group in the middle is a group of three: where to acquire, landscaping uses, and native range." data-action="zoom" style>
+                            <figcaption class="caption">The results of the card sort analysis. Note the group of three at the top of the middle red box.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="block snug">
+                        <div>
+                            <h3>
+                                A more actionable plant profile
+                            </h3>
+                            <p>
+                                Once someone finds a plant that catches their eye, they need to make sure it's a good fit. <strong>The redesigned plant profile uses insights from the card sort to make the vetting process a piece of cake.</strong>
+                            </p>
+                        </div>
+                        <!--
+                        <figure>
+                            <div class="window">
+                                <img loading="lazy" srcset="../img/projects/fnps/old_plant_profile_desktop.webp" src="../img/projects/fnps/old_plant_profile_desktop.png" alt="Screenshot showing the original plant profile design. A picture carousel sits at the top of a left sidebar with large buttons to external pages underneath. This entire sidebar appears above the plant information on mobile devices.">
+                            </div>
+                            <figcaption class="caption">The original plant profile. Note the left sidebar with buttons and logos. All of that appears between the gallery and information on mobile.</figcaption>
+                        </figure>-->
+                    </div>
+                    <figure class="u-max-full-width snug">
+                        <img loading="lazy" srcset="../img/projects/fnps/new_plant_profile_desktop_cropped.webp" src="../img/projects/fnps/new_plant_profile_desktop_cropped.png" alt="Screenshot showing the redesigned plant profile at the desktop breakpoint." data-action="zoom" style>
+                        <figcaption class="caption">After: Plant profile, desktop</figcaption>
+                    </figure>
+                    <div class="block snug">
+                        <div>
+                            <h4>
+                                First things first
+                            </h4>
+                            <p>
+                                <strong>Using insights from the card sort results, I rearranged the plant profile to try to answer the question, “Is this the right plant for me?” as quickly as possible.</strong>
+                            </p>
+                            <p>
+                                The page begins with a new section, “Grow this plant”, which includes <strong>recommended landscaping uses</strong>, the <strong>native range</strong> of the plant, and <strong>where it can be purchased</strong> (with a link to the Florida Association of Native Nurseries to find a local place that carries it).
+                            </p>
+                            <p>
+                                If applicable, a banner marking a plant as a “Landscaping Favorite” appears at the top. Previously, plants were only given this designation on the plant list.
+                            </p>
+                        </div>
+                        <figure class="snug">
+                            <img loading="lazy" srcset="../img/projects/fnps/vignette_grow_this_plant.webp" src="../img/projects/fnps/vignette_grow_this_plant.png" alt="Vignette of the new section of the redesigned plant profile, 'Grow this plant'." data-action="zoom" style>
+                            <figcaption>Driven by research, the redesigned plant profile features a new section featuring recommended landscaping uses, the native range, and where to get the plant.</figcaption>
+                        </figure>
+                        <!--
+                        <figure class="wide">
+                            <div class="window">
+                                <img loading="lazy" srcset="../img/projects/fnps/new_plant_profile_desktop.webp" src="../img/projects/fnps/new_plant_profile_desktop.png" alt="Screenshot showing the new plant profile in its entirety.">
+                            </div>
+                            <figcaption class="caption">Driven by research, the redesigned plant profile features a new section featuring recommended landscaping uses, the native range, and where to get the plant. Other datapoints have been rearranged based on the results of the card sort analysis.</figcaption>
+                        </figure>-->
+                    </div>
+                    <div class="block snug">
+                        <div>
+                            <h4>
+                                Putting things in context
+                            </h4>
+                            <p>
+                                Before, external links to FANN and the UCF ISB Plant Atlas sat below the gallery as part of the desktop sidebar. On mobile, they appeared between the gallery and the plant information and required scrolling an entire screen length before being able to read anything about the plant. Now, these <strong>obtrusive links have been moved to contextually appropriate locations.</strong>
+                            </p>                            
+                        </div>
+                        <figure class="snug">
+                            <div class="grid min-2">
+                                <img class="borderless" loading="lazy" srcset="../img/projects/fnps/old_plant_profile_links_mobile_framed.webp" src="../img/projects/fnps/old_plant_profile_links_mobile_framed.png" alt="Screenshot showing how much screen space was taken by external links on mobile. An entire screen length must be scrolled before seeing plant information." data-action="zoom" style>
+                                <img class="borderless" loading="lazy" srcset="../img/projects/fnps/new_plant_profile_mobile_framed.webp" src="../img/projects/fnps/new_plant_profile_mobile_framed.png" alt="Screenshot showing the top of the new plant profile. Plant information begins immediately after the picture gallery." data-action="zoom" style>
+                            </div>
+                            <figcaption class="caption">Before, large buttons and logos must be scrolled past to learn about the plant. Now, plant information begins immediately below the gallery, with those links moved to more appropriate spots.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="block">
+                        <div>
+                            <h4>
+                                Frictionless picture browsing
+                            </h4>
+                            <p>
+                                Plant pictures sit in a column on desktop and a freely scrolling row on smaller screens, making it much easier to browse them compared to clicking through the carousel from the original.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block snug">
+                        <div class="left">
+                            <h3>
+                                A more helpful home page
+                            </h3>
+                            <p>
+                                The home page serves as the reception area of the website, but <strong>the original home page was unfocused and lacked a clear hierarchy.</strong>
+                            </p>
+                        </div>                        
+                        <figure class="midblock right snug">
+                            <img loading="lazy" srcset="../img/projects/fnps/old_home_desktop.webp" src="../img/projects/fnps/old_home_desktop.png" alt="Screenshot showing the original FNPS home page. There is a large image carousel at the top, below the navigation bar. Next, a row of images with corresponding buttons for donating, joining, and finding plants. Then, two more rows of cards with buttons to learn about what FNPS does." data-action="zoom" style>
+                            <figcaption class="caption">The original home page had too many things fighting for a visitor's attention.</figcaption>
+                        </figure>
+                        <div class="left">
+                            <p>
+                                I needed to redesign it to be a useful directory, so I identified three broad categories of visitors:
+                            </p>
+                            <div class="card-collection grid">
+                                <div class="persona card">
+                                    <div class="content horizontal">
+                                        <span class="material-symbols-outlined">question_mark</span>
+                                        <div class="vertical">
+                                            <h5>The uninitiated</h5>
+                                            <p>Visitors who were directed here and don't know much about FNPS or what they do.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="persona card">
+                                    <div class="content horizontal">
+                                        <span class="material-symbols-outlined">potted_plant</span>
+                                        <div class="vertical">
+                                            <h5>Plant people</h5>
+                                            <p>Visitors who like plants, want to learn about plants, want to find plants.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="persona card">
+                                    <div class="content horizontal">
+                                        <span class="material-symbols-outlined">groups</span>
+                                        <div class="vertical">
+                                            <h5>FNPS members</h5>
+                                            <p>Visitors who want to engage with FNPS. Likely strong overlap with plant people.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p>
-                        The primary call to action button directs visitors to the <strong>plant database</strong>, which is arguably the <strong>best resource on the website</strong> and provides high value to visitors, endearing support.
-                    </p>
-                    <p>
-                        Following this is a section about FNPS and what they do, with links to read more. Perfect for the uninitiated.
-                    </p>
-                    <p>
-                        Then, a section about why planting native is worth doing, with links to learn more, search the plant database, and goal-oriented gardening (i.e. a butterfly garden or a bird sanctuary). Good for the uninitiated and helpful for plant people.
-                    </p>
-                    <p>
-                        Finally, a section for news and events for existing members.
-                    </p>
-                    <figure class="wide">
-                        <img loading="lazy" srcset="../img/projects/fnps/new_home_desktop.webp" src="../img/projects/fnps/new_home_desktop.png" alt="Screenshot showing the redesigned home page. It includes a new, eye-catching top banner with a call-to-action button for the plant database. Below are three main sections catering to different kinds of visitors: an about section to explain what FNPS does, a section about native plants, and a section for news and events.">
-                        <figcaption class="caption">The redesigned home page has a more limited color palette and fewer things drawing the viewer's eye. Sections are designed for different groups of visitors.</figcaption>
-                    </figure>
-                    <h3>
-                        A more engaging reading experience
-                    </h3>
-                    <p>
-                        Static pages like those in the About section were generally fine, but would benefit from better content design and interconnectivity.
-                    </p>
-                    <figure>
-                        <img loading="lazy" srcset="../img/projects/fnps/old_conservation_desktop.webp" src="../img/projects/fnps/old_conservation_desktop.png" alt="Screenshot of the original Conservation page. There is a table of related links in a sidebar on the left.">
+                    <!--
+                    <figure class="u-max-full-width">
+                        <img loading="lazy" srcset="../img/projects/fnps/new_home_desktop_cropped.webp" src="../img/projects/fnps/new_home_desktop_cropped.png" alt="Screenshot showing the top of the new home page. It features a large banner with a call-to-action button that takes visitors to the plant database." data-action="zoom" style>
+                    </figure>-->
+                    <div class="block center snug">
+                        <div>
+                            <p>
+                                <strong>The primary call to action button directs visitors to the plant database, which is arguably the best resource on the website and provides high value to visitors, endearing support.</strong>
+                            </p>
+                        </div>
+                        <figure class="wide snug">
+                            <img loading="lazy" srcset="../img/projects/fnps/new_home_desktop_1.webp" src="../img/projects/fnps/new_home_desktop_1.png" alt="Screenshot showing part of the redesigned home page. At the top is a new, eye-catching top banner with a call-to-action button for the plant database." data-action="zoom" style>
+                            <figcaption>The redesigned home page is dominated by a new, eye-catching banner and call-to-action.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="block center snug">
+                        <div>
+                            <p>
+                                Following this is a section about FNPS and what they do, with links to read more. Perfect for the uninitiated.
+                            </p>
+                        </div>
+                        <figure class="wide snug">
+                            <img loading="lazy" srcset="../img/projects/fnps/new_home_desktop_2.webp" src="../img/projects/fnps/new_home_desktop_2.png" alt="Screenshot showing part of the redesigned home page. This section includes details about FNPS and links to learn more." data-action="zoom" style>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div class="block center snug">
+                        <div>
+                            <p>
+                                Then, a section about why planting native is worth doing, with links to learn more, search the plant database, and goal-oriented gardening (i.e. a butterfly garden or a bird sanctuary). Good for the uninitiated and helpful for plant people.
+                            </p>
+                        </div>
+                        <figure class="wide snug">
+                            <img loading="lazy" srcset="../img/projects/fnps/new_home_desktop_3.webp" src="../img/projects/fnps/new_home_desktop_3.png" alt="Screenshot showing part of the redesigned home page. This section is about native plants, with links to useful resources." data-action="zoom" style>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div class="block center snug">
+                        <div>
+                            <p>
+                                Next, a section for alerts, news, and blog posts. Most relevant for existing members.
+                            </p>
+                        </div>
+                        <figure class="wide snug">
+                            <img loading="lazy" srcset="../img/projects/fnps/new_home_desktop_4.webp" src="../img/projects/fnps/new_home_desktop_4.png" alt="Screenshot showing part of the redesigned home page. " data-action="zoom" style>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div class="block center snug">
+                        <div>
+                            <p>
+                                Finally, a section showing upcoming events.
+                            </p>
+                        </div>
+                        <figure class="wide snug">
+                            <img loading="lazy" srcset="../img/projects/fnps/new_home_desktop_5.webp" src="../img/projects/fnps/new_home_desktop_5.png" alt="Screenshot showing part of the redesigned home page. " data-action="zoom" style>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div class="block center">
+                        <div>
+                            <p>
+                                A donation box appears at the end, with tiles that mirror the original home page's content.
+                            </p>
+                        </div>
+                        <figure class="wide">
+                            <img loading="lazy" srcset="../img/projects/fnps/new_home_desktop_6.webp" src="../img/projects/fnps/new_home_desktop_6.png" alt="Screenshot showing part of the redesigned home page. " data-action="zoom" style>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <!--
+                    <div class="block">
+                        <div class="left">
+                            <p>
+                                The primary call to action button directs visitors to the <strong>plant database</strong>, which is arguably the <strong>best resource on the website</strong> and provides high value to visitors, endearing support.
+                            </p>
+                        </div>
+                        <div class="left">
+                            <p>
+                                Following this is a section about FNPS and what they do, with links to read more. Perfect for the uninitiated.
+                            </p>
+                        </div>
+                        <div class="left">
+                            <p>
+                                Then, a section about why planting native is worth doing, with links to learn more, search the plant database, and goal-oriented gardening (i.e. a butterfly garden or a bird sanctuary). Good for the uninitiated and helpful for plant people.
+                            </p>
+                        </div>
+                        <div class="left">
+                            <p>
+                                Next, a section for alerts, news, and blog posts. Most relevant for existing members.
+                            </p>
+                        </div>
+                        <div class="left">
+                            <p>
+                                Finally, a section showing upcoming events.
+                            </p>
+                        </div>
+                        <div class="left">
+                            <p>
+                                A donation box appears at the end, with tiles that mirror the original home page's content.
+                            </p>
+                        </div>
+                        <figure class="wide midblock right">
+                            <img loading="lazy" srcset="../img/projects/fnps/new_home_desktop.webp" src="../img/projects/fnps/new_home_desktop.png" alt="Screenshot showing the redesigned home page. It includes a new, eye-catching top banner with a call-to-action button for the plant database. Below are three main sections catering to different kinds of visitors: an about section to explain what FNPS does, a section about native plants, and a section for news and events.">
+                            <figcaption class="caption">The redesigned home page has a more limited color palette and fewer things drawing the viewer's eye. Sections are designed for different groups of visitors.</figcaption>
+                        </figure>
+                    </div>-->
+                    <div class="block snug">
+                        <div>
+                            <h3>
+                                A more engaging reading experience
+                            </h3>
+                            <p>
+                                Static pages like those in the About section were generally fine, but would benefit from better content design and interconnectivity.
+                            </p>
+                            <p>
+                                <strong>About pages now include relevant images, pages, calls to action, and lateral navigation for further reading.</strong>
+                            </p>
+                            <p>
+                                Originally, the related pages table from the desktop sidebar sat at the very bottom of the page on mobile. It's now part of the main content flow, after the first section, where it's more likely to be seen.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="u-max-full-width">
+                        <div class="grid min-2">
+                            <img loading="lazy" srcset="../img/projects/fnps/old_conservation_desktop.webp" src="../img/projects/fnps/old_conservation_desktop.png" alt="Screenshot of the original Conservation page. There is a table of related links in a sidebar on the left." data-action="zoom" style>
+                            <img loading="lazy" srcset="../img/projects/fnps/new_conservation_desktop.webp" src="../img/projects/fnps/new_conservation_desktop.png" alt="Screenshot of the redesigned Conservation page, featuring more pictures and interactive components." data-action="zoom" style>
+                        </div>
                         <figcaption class="caption">There were several missed opportunities for links and images on the original page.</figcaption>
                     </figure>
-                    <p>
-                        About pages now include relevant images, pages, calls to action, and lateral navigation for further reading.
-                    </p>
-                    <p>
-                        Originally, the related pages table from the desktop sidebar sat at the very bottom of the page on mobile. It's now part of the main content flow, after the first section, where it's more likely to be seen.
-                    </p>
+                    
+                    
+                    <!--
                     <figure class="wide">
                         <img loading="lazy" srcset="../img/projects/fnps/new_conservation_desktop.webp" src="../img/projects/fnps/new_conservation_desktop.png" alt="Screenshot of the redesigned Conservation page, featuring more pictures and interactive components.">
                         <figcaption class="caption">The redesigned Conservation page.</figcaption>
-                    </figure>
-                    <h3>
-                        Noteworthy global changes
-                    </h3>
-                    <h4>
-                        Simplified navigation
-                    </h4>
-                    <p>
-                        Top level navigation items were consolidated, where appropriate, to reduce the number of items in the navigation bar.
-                    </p>
-                    <p>
-                        Navigation items related to membership or donating were consolidated to a single “Support FNPS” call-to-action button and moved to the far end.
-                    </p>
-                    <figure class="wide">
+                    </figure>-->
+                    <div class="block snug">
+                        <div>
+                            <h3>
+                                Noteworthy global changes
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="block snug">
+                        <div>
+                            
+                            <h4>
+                                Simplified navigation
+                            </h4>
+                            <p>
+                                Top level navigation items were consolidated, where appropriate, to reduce the number of items in the navigation bar.
+                            </p>
+                            <p>
+                                Navigation items related to membership or donating were consolidated to a single “Support FNPS” call-to-action button and moved to the far end.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="u-max-full-width snug">
                         <img class="borderless" loading="lazy" srcset="../img/projects/fnps/vignette_old_navbar.webp" src="../img/projects/fnps/vignette_old_navbar.png" alt="The orignal navigation bar. The background is dark green. There are nine top level destinations, including home, plus three buttons on the right." data-action="zoom" style>
                         <img class="borderless" loading="lazy" srcset="../img/projects/fnps/vignette_new_navbar.webp" src="../img/projects/fnps/vignette_new_navbar.png" alt="The redesigned navigation bar. The background is beige. Top level destinations have been reduced to five and icons are included. There are two buttons on the right end: search and Support FNPS. There is now enough room to spell out the name of the organization next to the logo on the left." data-action="zoom" style>
                         <figcaption class="caption">Top navigation bar, before and after.</figcaption>
                     </figure>
-                    <h4>
-                        Breadcrumbs
-                    </h4>
-                    <p>
-                        Nested pages, like plant profiles, now include Breadcrumbs at the top so visitors linked there directly can find their way back to the parent page.
-                    </p>
-                    <figure>
-                        <img loading="lazy" srcset="../img/projects/fnps/vignette_breadcrumbs.webp" src="../img/projects/fnps/vignette_breadcrumbs.png" alt="" data-action="zoom" style>
-                        <figcaption class="caption">Breadcrumbs make it easy for visitors to return to search results or go up a level to categorical pages.</figcaption>
-                    </figure>
-                    <h4>
-                        End-of-page navigation buttons
-                    </h4>
-                    <p>
-                        New navigation buttons let visitors step through sibling pages or return to a parent page. For example, moving to the next page in a section or returning to the plant database from a plant profile.
-                    </p>
-                    <figure>
-                        <img loading="lazy" srcset="../img/projects/fnps/vignette_lateral_navigation.webp" src="../img/projects/fnps/vignette_lateral_navigation.png" alt="Vignette of the new lateral navigation links so visitors can go to the previous and next page within a group. In this case, the links are within the &quot;What we do&quot; section and lead to &quot;Preservation&quot; and &quot;Restoration&quot;.">
-                        <figcaption class="caption">New navigation buttons at the bottom of pages let visitors step through the pages of a section. In this case, the “What we do” subsection of “About FNPS”.</figcaption>
-                    </figure>
-                    <h4>
-                        Fresh coat of paint with new typefaces and Material&nbsp;Design&nbsp;3
-                    </h4>
-                    <p>
-                        The original website used the Roboto typeface and Material Design 1 aesthetics. I could have just made do and reigned in what they already had, but since this was a personal project, I decided to refresh the website's looks as well.
-                    </p>
-                    <figure class="wide">
-                        <img class="borderless" loading="lazy" srcset="../img/projects/fnps/style_guide.webp" src="../img/projects/fnps/style_guide.png" alt="New FNPS style guide. The first section shows the most commonly used colors throughout. The second section shows the type scale. Corben is used for display and headlines and Karla is used for all other text.">
-                        <figcaption class="caption">The Style Guide for the redesigned FNPS. Colors are more restrained than before, allowing important elements to stand out as they should.</figcaption>
-                    </figure>
-                    <h2 id="prototypes">
-                        Prototypes
-                    </h2>
-                    <p>
-                        Screenshots not enough? I also made click-through prototypes at desktop and mobile breakpoints, if you'd like to see what the redesign would be like to use.
-                    </p>
-                    <div class="card-collection grid max-2">
-                        <a class="card-link" href="https://www.figma.com/proto/CMMOyxoBscIn77DQ46Jcow/FNPS-Redesign?page-id=1381%3A40291&node-id=1381-42073&viewport=-2222%2C276%2C0.38&scaling=min-zoom&starting-point-node-id=1381%3A42073" target="_blank" rel="noopener noreferrer">
-                            <div class="prototype card">
-                                <img loading="lazy" srcset="../img/projects/fnps/thumb_prototype_desktop.webp" src="../img/projects/fnps/thumb_prototype_desktop.png" alt="">
-                                <div class="vertical content">
-                                    <h4>
-                                        Desktop prototype
-                                    </h4>
-                                    <p>
-                                        See how the new tabular layout makes the plant list easier to browse on large screens.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="card-link" href="https://www.figma.com/proto/CMMOyxoBscIn77DQ46Jcow/FNPS-Redesign?page-id=1381%3A40289&node-id=1421-47731&viewport=2164%2C1467%2C0.62&scaling=min-zoom&starting-point-node-id=1421%3A47731" target="_blank" rel="noopener noreferrer">
-                            <div class="prototype card">
-                                <img loading="lazy" srcset="../img/projects/fnps/thumb_prototype_mobile.webp" src="../img/projects/fnps/thumb_prototype_mobile.png" alt="">
-                                <div class="vertical content">
-                                    <h4>
-                                        Mobile prototype
-                                    </h4>
-                                    <p>
-                                        Try the new stacked layout for the plant list on small screens.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="block snug">
+                        <div>
+                            <h4>
+                                Breadcrumbs
+                            </h4>
+                            <p>
+                                Nested pages, like plant profiles, now include Breadcrumbs at the top so visitors linked there directly can find their way back to the parent page.
+                            </p>
+                        </div>
+                        <figure class="snug">
+                            <img loading="lazy" srcset="../img/projects/fnps/vignette_breadcrumbs.webp" src="../img/projects/fnps/vignette_breadcrumbs.png" alt="" data-action="zoom" style>
+                            <figcaption class="caption">Breadcrumbs make it easy for visitors to return to search results or go up a level to categorical pages.</figcaption>
+                        </figure>
                     </div>
-                    <h2>
-                        Reflection
-                    </h2>
-                    <p>
-                        Ideas can sound great in your head or as isolated sketches, but sometimes you don't realize that they aren't practical until you prototype them.
-                    </p>
-                    <p>
-                        There were so many ideas I had for how to enrich the entries of the plant database that had to be scrapped. I started with sunlight requirements and what wildlife the plant attracted; notable features from the profiles like “showy flowers” sounded good, too. At one point, I was even making custom icons for the animals because the ones FNPS already had were a bit too detailed for smaller sizes. But putting all these things on the list entries just added clutter.
-                    </p>
-                    <figure>
-                        <img loading="lazy" srcset="../img/projects/fnps/unused_icons.webp" src="../img/projects/fnps/unused_icons.png" alt="Five animal icons that I made but didn't use for this project. There is a hummingbird, two butterflies, a normal bird, and a chunky bee.">
-                        <figcaption class="caption">Animal icons that I didn't end up using. I'm especially fond of the hummingbird.</figcaption>
+                    <div class="block snug">
+                        <div>
+                            <h4>
+                                End-of-page navigation buttons
+                            </h4>
+                            <p>
+                                New navigation buttons let visitors step through sibling pages or return to a parent page. For example, moving to the next page in a section or returning to the plant database from a plant profile.
+                            </p>
+                        </div>
+                        <figure class="snug">
+                            <img loading="lazy" srcset="../img/projects/fnps/vignette_lateral_navigation.webp" src="../img/projects/fnps/vignette_lateral_navigation.png" alt="Vignette of the new lateral navigation links so visitors can go to the previous and next page within a group. In this case, the links are within the &quot;What we do&quot; section and lead to &quot;Preservation&quot; and &quot;Restoration&quot;.">
+                            <figcaption class="caption">New navigation buttons at the bottom of pages let visitors step through the pages of a section. In this case, the “What we do” subsection of “About FNPS”.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="block snug">
+                        <div>
+                            <h4>
+                                Fresh coat of paint with new typefaces and Material&nbsp;Design&nbsp;3
+                            </h4>
+                            <p>
+                                The original website used the Roboto typeface and Material Design 1 aesthetics. I could have just made do and reigned in what they already had, but since this was a personal project, I decided to refresh the website's looks as well.
+                            </p>
+                        </div>
+                        <!--
+                        <figure class="wide">
+                            <img class="borderless" loading="lazy" srcset="../img/projects/fnps/style_guide.webp" src="../img/projects/fnps/style_guide.png" alt="New FNPS style guide. The first section shows the most commonly used colors throughout. The second section shows the type scale. Corben is used for display and headlines and Karla is used for all other text.">
+                            <figcaption class="caption">The Style Guide for the redesigned FNPS. Colors are more restrained than before, allowing important elements to stand out as they should.</figcaption>
+                        </figure>-->
+                    </div>
+                    <figure class="u-max-full-width">
+                        <div class="grid max-2">
+                            <img loading="lazy" srcset="../img/projects/fnps/vignette_colors.webp" src="../img/projects/fnps/vignette_colors.png" alt="Selected color samples from the redesign. The primary green, secondary gray-green, and tertiary blue are shown along with the beige surface and background colors.">
+                            <img loading="lazy" srcset="../img/projects/fnps/vignette_typefaces.webp" src="../img/projects/fnps/vignette_typefaces.png" alt="Type samples of the new fonts, Corben and Karla.">
+                        </div>
+                        <figcaption>Selected color and typeface samples from the redesign. Color is used more sparingly than before so important elements stand out as they should.</figcaption>
                     </figure>
-                    <p>
-                        At one point, in my effort to elevate them, Landscaping Favorites were going to be a lane of cards above the rest of the plants. There are 156 landscaping favorites in the database. Imagine scrolling through that — <em>horizontally</em> — on a phone. And if that wasn't bad enough, some of the scientific plant names have subspecies so the whole thing is like a run-on sentence. They really needed their own line and as much width as the screen would allow. Narrow cards were out. Grids were out. Lists! Lists are good!
-                    </p>
-                    <p>
-                        This project was a lesson in eliminating possibilities for the sake of edge cases and practicality.
-                    </p>
-                    <p>
-                        I also learned to really appreciate research — not just for the insights, but more so the peace of mind it provides. When I was unsure of how to order the filters, for example, I could lean on my plant profile card sort results (which contains largely the same categories). Instead of hemming and hawing over what should go where, I could just look at my data and be done and stop worrying about it. My only regret was not doing the research sooner.
-                    </p>
-                    <p class="last"></p>
+                    <div class="block snug">
+                        <div>
+                            <h2 id="prototypes">
+                                Prototypes
+                            </h2>
+                            <p>
+                                Screenshots not enough? I also made click-through prototypes at desktop and mobile breakpoints, if you'd like to see what the redesign would be like to use.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block full">
+                        <div class="card-collection grid max-2 u-max-full-width">
+                            <a class="card-link" href="https://www.figma.com/proto/CMMOyxoBscIn77DQ46Jcow/FNPS-Redesign?page-id=1381%3A40291&node-id=1381-42073&viewport=-2222%2C276%2C0.38&scaling=min-zoom&starting-point-node-id=1381%3A42073" target="_blank" rel="noopener noreferrer">
+                                <div class="prototype card u-max-full-width">
+                                    <img loading="lazy" srcset="../img/projects/fnps/thumb_prototype_desktop.webp" src="../img/projects/fnps/thumb_prototype_desktop.png" alt="">
+                                    <div class="vertical content">
+                                        <h4>
+                                            Desktop prototype
+                                        </h4>
+                                        <p>
+                                            See how the new tabular layout makes the plant list easier to browse on large screens.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="card-link" href="https://www.figma.com/proto/CMMOyxoBscIn77DQ46Jcow/FNPS-Redesign?page-id=1381%3A40289&node-id=1421-47731&viewport=2164%2C1467%2C0.62&scaling=min-zoom&starting-point-node-id=1421%3A47731" target="_blank" rel="noopener noreferrer">
+                                <div class="prototype card u-max-full-width">
+                                    <img loading="lazy" srcset="../img/projects/fnps/thumb_prototype_mobile.webp" src="../img/projects/fnps/thumb_prototype_mobile.png" alt="">
+                                    <div class="vertical content">
+                                        <h4>
+                                            Mobile prototype
+                                        </h4>
+                                        <p>
+                                            Try the new stacked layout for the plant list on small screens.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div>
+                            <h2>
+                                Reflection
+                            </h2>
+                            <p>
+                                <strong>Ideas can sound great in your head or as isolated sketches, but sometimes you don't realize that they aren't practical until you prototype them.</strong>
+                            </p>
+                            <p>
+                                There were so many ideas I had for how to enrich the entries of the plant database that had to be scrapped. I started with sunlight requirements and what wildlife the plant attracted; notable features from the profiles like “showy flowers” sounded good, too. At one point, I was even making custom icons for the animals because the ones FNPS already had were a bit too detailed for smaller sizes. But putting all these things on the list entries just added clutter.
+                            </p>
+                            <figure class="snug">
+                                <img loading="lazy" srcset="../img/projects/fnps/unused_icons.webp" src="../img/projects/fnps/unused_icons.png" alt="Five animal icons that I made but didn't use for this project. There is a hummingbird, two butterflies, a normal bird, and a chunky bee.">
+                                <figcaption class="caption">Animal icons that I didn't end up using. I'm especially fond of the hummingbird and the chunky little bee.</figcaption>
+                            </figure>
+                            <p>
+                                At one point, in my effort to elevate them, Landscaping Favorites were going to be a lane of cards above the rest of the plants. There are 156 landscaping favorites in the database. Imagine scrolling through that — <em>horizontally</em> — on a phone. And if that wasn't bad enough, some of the scientific plant names have subspecies so the whole thing is like a run-on sentence. They really needed their own line and as much width as the screen would allow. Narrow cards were out. Grids were out. Lists! Lists are good!
+                            </p>
+                            <p>
+                                <strong>I needed to think big picture while accounting for edge cases.</strong>
+                            </p>
+                            <p>
+                                <strong>I also learned to really appreciate research — not just for the insights, but more so the peace of mind it provides.</strong> When I was unsure of how to order the filters, for example, I could lean on my plant profile card sort results (which contains largely the same categories). <strong>Instead of hemming and hawing over what should go where, I could just look at my data and be done and stop worrying about it. My only regret was not doing the research sooner.</strong>
+                            </p>
+                            <p class="last"></p>
+                        </div>
+                    </div>
+                    
                     <!--<figure>
                         <img loading="lazy" srcset="../img/projects/fnps/" src="../img/projects/fnps/" alt="" data-action="zoom" style>
                         <figcaption class="caption"></figcaption>
@@ -480,9 +703,9 @@
                                 <div class="grid project gapless">
                                     <div class="project-image"></div>
                                     <div class="vertical content">
-                                        <h3>
+                                        <h4>
                                             Title
-                                        </h3>
+                                        </h4>
                                         <p>
                                             Blurb
                                         </p>
@@ -495,9 +718,9 @@
                                 <div class="grid project gapless">
                                     <div class="project-image"></div>
                                     <div class="vertical content">
-                                        <h3>
+                                        <h4>
                                             Title
-                                        </h3>
+                                        </h4>
                                         <p>
                                             Blurb
                                         </p>
@@ -507,9 +730,9 @@
                         </a>
                         <a href="../index.html" class="card-link span2">
                             <div class="card">
-                                <div class="horizontal content">
+                                <div class="horizontal content center">
                                     <span class="material-symbols-outlined">home</span>
-                                    <h4>Return to home</h4>
+                                    <h5>Return to home</h5>
                                 </div>
                             </div>
                         </a>
@@ -520,17 +743,17 @@
                     <div class="grid restrained">
                         <a href="mailto:stevendolbey@gmail.com?subject=Hello!" target="_blank" class="card-link">
                             <div class="card">
-                                <div class="horizontal content">
+                                <div class="horizontal content center">
                                     <span class="material-symbols-outlined">mail</span>
-                                    <h4>Email me</h4>
+                                    <h5>Email me</h5>
                                 </div>
                             </div>
                         </a>
                         <a href="../static/Steven Dolbey Resume.pdf" target="_blank" class="card-link">
                             <div class="card">
-                                <div class="horizontal content">
+                                <div class="horizontal content center">
                                     <span class="material-symbols-outlined">description</span>
-                                    <h4>See my résumé</h4>
+                                    <h5>See my résumé</h5>
                                 </div>
                             </div>
                         </a>

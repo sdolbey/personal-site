@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>Steven Dolbey / Project</title>
+    <title>Project - Steven Dolbey</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name="theme-color" content="">
     <link rel="stylesheet" href="../css/normalize.css">
@@ -12,7 +12,7 @@
     <!--<script src="../js/navstyle.js"></script>-->
     <script src="../js/suggestprojects.js"></script>
 </head>
-<body>
+<body class="?">
     <div class="navbar">
         <div class="navbar-content">
             <ul>
@@ -26,7 +26,11 @@
     </div>
     <article id="?" class="project">
         <div class="header">
-            <header>
+            <header class="grid">
+                <!--
+                <div class="header-image project-image">
+                    <img loading="lazy" srcset="../img/thumbs/thumb.webp" src="../img/thumbs/thumb.png" alt="Project thumbnail">
+                </div>-->
                 <hgroup>
                     <h1 class="section-title">
                         Project title
@@ -37,10 +41,21 @@
                 </hgroup>
             </header>
         </div>
-        <div class="article-body">
+        <div class="article-body container">
             <div class="article-content">
-                <h2>First section</h2>
-                <p>Body text</p>
+                <div class="block">
+                    <div>
+                        <h2>First section</h2>
+                        <p>Body text</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <div>
+                        <h2>Last section</h2>
+                        <p>Body text</p>
+                        <p class="last"></p>
+                    </div>
+                </div>
             </div>
         </div>
     </article>

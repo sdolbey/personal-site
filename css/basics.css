@@ -259,7 +259,7 @@
 
 /* Grid
 -------------------------------------------------- */
-.header .text-content, .container, .navbar-content, .footer-content {
+.header header, .header .text-content, .container, .navbar-content, .footer-content {
     position: relative;
     width: 100%;
     max-width: 1280px;
@@ -287,7 +287,7 @@
 }
 /* For devices larger than 600px */
 @media (min-width: 600px) {
-    .header .text-content, .container, .navbar-content, .footer-content, .block {
+    .header header, .header .text-content, .container, .navbar-content, .footer-content {
         padding: 0 2rem;
     }
     .grid .column,
@@ -389,10 +389,12 @@ img {
     display: block;
 }
 ::selection {
-    background: var(--color-primary-bright);
+    background: var(--color-primary);
+    color: #fff;
 }
 ::-moz-selection {
-    background: var(--color-primary-bright);
+    background: var(--color-primary);
+    color: #fff;
 }
 html {
     scroll-behavior: smooth;
@@ -421,7 +423,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-top: 2em;
+    margin-top: 0;
     margin-bottom: 2rem;
     font-family: 'Fraunces', serif;
     color: var(--color-primary-rich-black);
@@ -435,7 +437,36 @@ h1 {
     font-variation-settings: "SOFT" 100, "WONK" 1;
 }
 
-/* Desktop type scale -- Golden Ratio, Tetratonic Scale, Fibonacci Series */
+/* Desktop type scale */
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.29rem;
+}
+h6 {
+    font-size: 1rem;
+}
+blockquote, p {
+    font-size: 1rem;
+    line-height: 1.8em;
+}
+.caption, figcaption {
+    font-size: 0.7917rem;
+    font-style: italic;
+}
+
+/* Desktop type scale -- Golden Ratio, Tetratonic Scale, Fibonacci Series 
 h1 {
     font-size: 4.25rem;
     font-weight: 700;
@@ -462,7 +493,7 @@ blockquote, p {
 .caption, figcaption {
     font-size: 0.7917rem;
     font-style: italic;
-}
+}*/
 .overline {
     font-variant-caps: all-small-caps;
     font-feature-settings: "smcp" on;
@@ -497,7 +528,36 @@ blockquote, p {
     font-style: italic;
 }*/
 
-/* Mobile type scale -- Golden Ratio, Octatonic Scale, Fibonacci Series */
+/* Mobile type scale */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.3rem;
+    }
+    h5 {
+        font-size: 1.2rem;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+    blockquote, p {
+        font-size: 1rem;
+    }
+    .caption {
+        font-size: 0.8958rem;
+        font-style: italic;
+    }
+}
+/* Mobile type scale -- Golden Ratio, Octatonic Scale, Fibonacci Series 
 @media (max-width: 600px) {
     h1 {
         font-size: 2.0625rem;
@@ -525,7 +585,7 @@ blockquote, p {
         font-size: 0.8958rem;
         font-style: italic;
     }
-}
+}*/
 
 /* Old desktop Type Scale 
 h1.display {
@@ -597,6 +657,10 @@ p.section-subtitle {
     font-weight: 400;
 }
 
+strong {
+    background: var(--color-primary-bright);
+    font-weight: 400;
+}
 
 /* Links
 -------------------------------------------------- */
@@ -609,7 +673,7 @@ p a:hover {
     text-decoration: solid 2px underline;
 }
 
-a[target="_blank"] h4::after {
+a[target="_blank"] h4::after, a[target="_blank"] h5::after {
     content: " ↗";
 }
 
@@ -820,6 +884,17 @@ div.header {
     padding: 6rem 0 4rem 0;
     margin-bottom: 4rem;
     border-bottom: 1rem solid var(--color-primary);
+    /* grid pattern 
+    background-image:  linear-gradient(var(--color-primary-tint) 1px, transparent 1px), linear-gradient(to right, var(--color-primary-tint) 1px, var(--color-primary-off-white) 1px);
+    background-size: 20px 20px;
+    */
+    /* grid paper pattern 
+    background-color: var(--color-primary-off-white);
+    background-image:  linear-gradient(var(--color-primary-tint) 2px, transparent 2px), linear-gradient(90deg, var(--color-primary-tint) 2px, transparent 2px), linear-gradient(var(--color-primary-tint) 1px, transparent 1px), linear-gradient(90deg, var(--color-primary-tint) 1px, var(--color-primary-off-white) 1px);
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    */
+    
 }
 div.header h1 {
     margin: 0;
@@ -840,6 +915,9 @@ div.header h1 {
 }
 .header .img-content img {
     display: block;
+}
+.header-image {
+
 }
 .navbar {
     /* -webkit-backdrop-filter: blur(10px); */
@@ -970,10 +1048,12 @@ div.header h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 1rem;
     border-radius: 12px;
 }
-.project-wrapper img {
+.card .project-image {
+    margin: 1rem;
+}
+.card.project-wrapper img {
     /*
     position: absolute;
     top: 0;
@@ -983,11 +1063,11 @@ div.header h1 {
     transition: transform .4s cubic-bezier(.4,0,.2,1);
     object-fit: cover;
 }
-.project-wrapper:hover img {
+.card.project-wrapper:hover img {
     transform: scale(1.05);
 }
 /*
-.project-wrapper:hover .project-image {
+.card.project-wrapper:hover .project-image {
     background-color: var(--color-primary);
 }*/
 .project-title {
@@ -1071,7 +1151,7 @@ div.card {
 div.card-collection {
     gap: 1rem;
     box-sizing: border-box;
-    margin: 3.6rem auto;
+    margin: 0 auto 3.6rem auto;
 }
 
 .card-collection .card {
@@ -1083,6 +1163,10 @@ div.card-collection {
     flex-direction: row;
     align-items: flex-start;
     gap: 1rem;
+}
+
+.horizontal.center {
+    align-items: center;
 }
 
 .vertical {
@@ -1122,6 +1206,6 @@ div.content.reverse {
     flex-direction: column-reverse;
 }
 
-div.content h4, div.content h3, div.content p {
+div.content h4, div.content h5, div.content h3, div.content p {
     margin: 0;
 }
