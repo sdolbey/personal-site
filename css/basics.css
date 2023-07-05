@@ -203,7 +203,7 @@
     }
 }
 @media (min-width: 600px) {
-    .grid.max-4, .grid.max-5 {
+    .grid.max-3, .grid.max-4, .grid.max-5 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -223,16 +223,13 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (min-width: 960px) {
-    .footer .grid.max-3 {
-        grid-template-columns: repeat(3, 1fr);
+@media (min-width: 600px) and (max-width: 959px) {
+    .footer-content .grid.max-3 {
+        grid-template-columns: 1fr 1fr;
     }
 }
-
-/* for Smash Posters */
-
-@media (min-width: 600px) {    
-    .grid.max-3 {
+@media (min-width: 960px) {
+    .footer-content .grid.max-3 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
