@@ -163,7 +163,8 @@ article > .card-collection {
     }
     article .block {
         grid-template-columns: minmax(28rem, 32rem) 1fr;
-        gap: 1.8rem 2rem;
+        /*gap: 1.8rem 2rem;*/
+        column-gap: 2rem;
     }
     article .block.full {
         grid-template-columns: 1fr;
@@ -177,7 +178,7 @@ article > .card-collection {
     article .block > .right {
         grid-column: 2;
     }
-    article .block > .left > p:last-child  {
+    article .block > .left:last-child > p:last-child  {
         margin-bottom: 0;
     }
     /*

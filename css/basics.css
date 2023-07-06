@@ -154,10 +154,14 @@
 /* New Grid
 -------------------------------------------------- */
 
-.grid, .block {
+.grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+}
+.block {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .grid.gapless {
@@ -449,7 +453,7 @@ h5 {
 h6 {
     font-size: 1rem;
 }
-blockquote, p {
+blockquote, p, li {
     font-size: 1rem;
     line-height: 1.8em;
 }
@@ -686,7 +690,15 @@ a.card-link h3::after {
 /* Lists
 -------------------------------------------------- */
 li {
+    font-size: 1rem;
     line-height: 1.8em;
+    margin-bottom: .9em;
+}
+ul, ol {
+    margin: 0 auto 1.8em auto;
+}
+ul.check {
+    list-style-type: "\2713 ";
 }
 
 /* Code
