@@ -150,6 +150,14 @@
     --color-primary-off-white: #f4dddd; /* M3 surface-variant */
     --color-primary-backsplash: #c9a2a3; /* M3 secondary70 */
 }
+.wildflowers {
+    --color-primary: #7d479e;
+    --color-primary-bright: #f4d9ff; /* M3 primary-container */
+    --color-primary-tint: #efdcf5; /* M3 secondary-container */
+    --color-primary-rich-black: #1d1b1e; /* M3 on-surface */
+    --color-primary-off-white: #eadfea; /* M3 surface-variant */
+    --color-primary-backsplash: #b7a5bc; /* M3 secondary70 */
+}
 
 /* New Grid
 -------------------------------------------------- */
