@@ -675,6 +675,7 @@ p a {
 li > a {
     color: var(--color-primary);
     text-decoration: none;
+    -webkit-text-decoration: none;
 }
 p a:hover, li > a:hover {
     /* background: var(--color-primary-backsplash); */
