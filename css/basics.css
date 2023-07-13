@@ -679,6 +679,7 @@ p a:hover {
 
 a[target="_blank"] h4::after, a[target="_blank"] h5::after {
     content: " ↗";
+    font-family: monospace;
 }
 
 /*
@@ -813,13 +814,72 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+  }
+  
+  .image-gallery > li {
+    flex: 1 1 auto; /* or flex: auto; */
+    height: 300px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .image-gallery::after {
+    content: "";
+    flex-grow: 999;
+  }
+  
+  .image-gallery li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+  }
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gallery::after {
+    content: "";
+    flex-grow: 999;
+}
+.gallery > .image {
+    height: 300px;
+    position: relative;
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.gallery .image img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 4px;
+    outline: 1px solid var(--color-surface);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
 .gallery {
     background-color: var(--color-section-background);
 }
 .gallery .wrapper {
     max-width: 1280px;
     padding: 2rem;
-}
+}*/
 @media (min-width: 600px) {
     /*
     .full-bleed {
@@ -1116,6 +1176,7 @@ div.header h1 {
 .last::after {
     display: block;
     content: "܀";
+    font-family: monospace;
     font-size: 2em;
     color: var(--color-primary);
     text-align: center;
