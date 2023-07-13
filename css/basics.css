@@ -55,8 +55,6 @@
     --color-section-background: none;
     /* --color-navbar-background: rgba(250,250,250,0.9); 
     --color-navbar-background: rgb(250,250,250); */
-    --color-img-placeholder: var(--color-surface);
-    --color-link: var(--color-primary);
 
     /* Warm caramel theme 
     --color-primary: #D38542;
@@ -118,6 +116,7 @@
     } */
 }
 
+/* Project themes */
 .fnps {
     --color-primary: #4B6709;
     --color-primary-bright: #CCEF86;
@@ -669,12 +668,19 @@ strong {
 /* Links
 -------------------------------------------------- */
 p a {
-    color: var(--color-link);
+    color: var(--color-primary);
     text-decoration: wavy underline;
+    -webkit-text-decoration: wavy underline;
 }
-p a:hover {
-    text-decoration-color: var(--color-link);
+li > a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+p a:hover, li > a:hover {
+    /* background: var(--color-primary-backsplash); */
+    color: var(--color-text-base);
     text-decoration: solid 2px underline;
+    -webkit-text-decoration: solid 2px underline;
 }
 
 a[target="_blank"] h4::after, a[target="_blank"] h5::after {
@@ -705,6 +711,7 @@ li {
 }
 ul, ol {
     margin: 0 auto 1.8em auto;
+    box-sizing: border-box;
 }
 ul.check {
     list-style-type: "\2713 ";
@@ -720,7 +727,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid var(--color-img-placeholder); 
+  border-bottom: 1px solid var(--color-surface); 
 }
 th:first-child,
 td:first-child {
@@ -745,7 +752,7 @@ td:last-child {
     max-width: 25%;
     white-space: normal;
     font-weight: bold;
-    border-right: 1px solid var(--color-img-placeholder);
+    border-right: 1px solid var(--color-surface);
 }
 
 
@@ -923,7 +930,7 @@ figcaption {
     text-align: center;
 }
 .wave {
-    background-color: var(--color-link);
+    background-color: var(--color-primary);
     height: 2rem;
     --mask:
         radial-gradient(24.07px at 50% calc(100% + 15.20px),#0000 calc(99% - 4px),#000 calc(101% - 4px) 99%,#0000 101%) calc(50% - 32px) calc(50% - 10px + .5px)/64px 20px repeat-x,
@@ -988,7 +995,7 @@ div.header h1 {
 .navbar {
     /* -webkit-backdrop-filter: blur(10px); */
     /* backdrop-filter: blur(10px); */
-    /* background-color: var(--color-section-background); */
+    background-color: var(--color-section-background);
     height: 4rem;
     overflow: hidden;
     width: 100%;
@@ -1041,6 +1048,7 @@ div.header h1 {
 
 .navbar-content li a:hover {
     text-decoration: solid 2px underline;
+    -webkit-text-decoration: solid 2px underline;
 }
 
 .light-text {
