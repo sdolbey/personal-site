@@ -24,9 +24,6 @@ article > div.header .header-image {
     max-width: 40rem;
     margin: 0 auto;
 }
-.first-heading {
-    margin-top: 4rem;
-}
 
 article {
     margin-left: auto;
@@ -42,17 +39,26 @@ div.article-body:not(.container) {
     
 }
 
-.article-outline {
-    display: none;
+.article-outline.card {
+    display: block;
+    height: fit-content;
 }
 
-.article-outline ul {
-    list-style-type: none;
+.article-outline li {
+    margin-bottom: 0;
 }
 
-.article-outline > ul {
-    position: sticky;
-    top: 4rem;
+.article-outline ol, .article-outline ul {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.article-outline > .content > ol {
+    list-style-type: decimal;
+}
+
+.article-outline > .content > ol > ol {
+    list-style-type: lower-alpha;
 }
 
 @media (min-width: 600px) {
@@ -161,6 +167,9 @@ article > .card-collection {
         grid-template-columns: minmax(28rem, 32rem) 1fr;
         gap: 2rem;
         align-items: center;
+    }
+    article > div.header {
+        margin-bottom: 8rem;
     }
     article .block {
         grid-template-columns: minmax(28rem, 32rem) 1fr;
