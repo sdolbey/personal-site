@@ -412,6 +412,9 @@ html {
         scroll-margin-top: 6rem;
     }
 }
+hgroup, h2, h3, h4 {
+    scroll-margin-top: 2rem;
+}
 body {
     overflow-x: hidden;
 }
@@ -498,8 +501,9 @@ blockquote, p {
     font-style: italic;
 }*/
 .overline {
-    font-variant-caps: all-small-caps;
-    font-feature-settings: "smcp" on;
+    margin-bottom: 1rem;
+    /* font-variant-caps: all-small-caps;
+    font-feature-settings: "smcp" on; */
 }
 
 /* Desktop type scale -- Golden Ratio, Tetratonic Scale, Pentagonal Series 
@@ -929,6 +933,7 @@ figure {
 }
 figcaption {
     text-align: center;
+    text-wrap: balance;
 }
 .wave {
     background-color: var(--color-primary);
