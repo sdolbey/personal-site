@@ -1214,7 +1214,6 @@ div.card {
     /*
     max-width: 576px;
     max-width: 36rem; */
-    height: 100%;
     margin: 1rem auto;
     background-color: var(--color-surface);
     border-radius: 12px;
@@ -1241,6 +1240,7 @@ div.card-collection {
 
 .card-collection .card {
     margin: 0;
+    height: 100%;
 }
 
 .horizontal {
