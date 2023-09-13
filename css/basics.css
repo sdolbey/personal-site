@@ -666,8 +666,12 @@ p.section-subtitle {
 }
 
 strong {
-    background: var(--color-primary-bright);
+    background: var(--color-primary-tint);
     font-weight: 400;
+}
+
+strong.extra {
+    background: var(--color-primary-bright);
 }
 
 /* Links
