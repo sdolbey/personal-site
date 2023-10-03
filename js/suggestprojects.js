@@ -26,6 +26,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 "style": "kirby"
             },
             {
+                "id": "wildflowers",
+                "title": "Wildflower Photos",
+                "blurb": "The pretty things I see when I go outside.",
+                "thumbnail": "../img/thumbs/wildflowers.jpg",
+                "url": "wildflowers.html",
+                "style": "wildflowers"
+            },
+            {
                 "id": "fnps",
                 "title": "Florida Native Plant Society",
                 "blurb": "Making planting native easier than ever.",
