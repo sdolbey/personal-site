@@ -61,16 +61,6 @@ div.article-body:not(.container) {
     list-style-type: lower-alpha;
 }
 
-@media (min-width: 600px) {
-    article p, article h1, article h2, article h3, article h4, article h5, article ul, article ol {
-        max-width: 512px;
-        max-width: 32rem;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
-    }
-}
-
 article p {
     font-size: 1rem;
     line-height: 1.8em;
@@ -146,6 +136,19 @@ article > .card-collection {
     margin-bottom: 4rem;
 }
 
+@media (min-width: 600px) {
+    article p, article h1, article h2, article h3, article h4, article h5, article ul, article ol {
+        max-width: 512px;
+        max-width: 32rem;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+    article .u-max-full-width {
+        max-width: unset;
+    }
+}
+
 @media (min-width: 1024px) {
     .block {
         display: grid;
@@ -197,9 +200,6 @@ article > .card-collection {
     }*/
     article .block.center {
         align-items: center;
-    }
-    article .u-max-full-width {
-        max-width: unset;
     }
     article .block > figure, article .block > .card-collection {
         margin-bottom: 0;
