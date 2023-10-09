@@ -113,8 +113,6 @@ img.borderless {
     box-shadow: none;
 }
 
-
-
 .wide {
     max-width: 60rem;
 }
@@ -122,10 +120,6 @@ img.borderless {
 article .card, article .card-collection {
     max-width: 576px;
     max-width: 36rem;
-}
-
-article > .card-collection {
-    background-color: aqua;
 }
 
 .block {
