@@ -50,7 +50,9 @@
     --color-secondary-off-white: #F4EEEF;
     --color-shadow: rgba(6, 28, 28, 0.15);
     --color-background: #FDFDFD;
+    --color-background-raw: 253,253,253;
     --color-surface: #F5F5F5;
+    --color-surface-raw: 245,245,245;
     --color-outline: #6f7977;
     --color-text-base: #000;
     --color-section-background: none;
@@ -217,6 +219,9 @@
 @media (min-width: 600px) {
     .grid.max-3, .grid.max-4, .grid.max-5 {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .photo-grid.grid.max-4 {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 @media (min-width: 960px) {
@@ -420,6 +425,24 @@ body {
     overflow-x: hidden;
 }
 
+/* Elevation */
+/* M3/Elevation */
+:root {
+    --elevation1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+    --elevation2: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+    --elevation3: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+}
+.elevated1 {
+    box-shadow: var(--elevation1);
+}
+.elevated2 {
+    box-shadow: var(--elevation2);
+}
+.elevated3 {
+    box-shadow: var(--elevation3);
+}
+
+
 /* Typography
 -------------------------------------------------- */
 
@@ -468,8 +491,10 @@ blockquote, p, li {
     font-size: 1rem;
     line-height: 1.8em;
 }
-.caption, figcaption {
+.caption, figcaption, .button {
     font-size: 0.7917rem;
+}
+.caption, figcaption {
     font-style: italic;
 }
 
@@ -707,7 +732,51 @@ a.card-link h3::after {
 
 /* Buttons
 -------------------------------------------------- */
-
+.button {
+    font-size: 0.875rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 3rem;
+    transition: all .4s;
+}
+.button.with-icon {
+    padding: 0.5rem 1.5rem 0.5rem 1rem;
+}
+.button, .button:hover {
+    text-decoration: none;
+}
+.button.primary {
+    background-color: var(--color-primary);
+    color: var(--color-primary-off-white);
+}
+.button.primary-off-white {
+    background-color: var(--color-primary-off-white);
+    color: var(--color-primary-rich-black);
+}
+.button.primary-off-white:hover {
+    background-color: var(--color-primary-tint);
+}
+.button.surface {
+    background-color: var(--color-surface);
+    color: var(--color-text-base);
+}
+.button.surface.overlay {
+    background-color: rgba(var(--color-surface-raw), 0.5);
+    color: var(--color-text-base);
+}
+.button.outlined {
+    outline: var(--color-outline) solid 1px;
+}
+.button.elevated {
+    box-shadow: var(--elevation1);
+}
+.button:hover {
+    box-shadow: var(--elevation3);
+}
 
 /* Chips
 -------------------------------------------------- */
@@ -908,6 +977,13 @@ figcaption {
         radial-gradient(24.07px at 50% -15.2px,#0000 calc(99% - 4px),#000 calc(101% - 4px) 99%,#0000 101%) 50% calc(50% + 10px)/64px 20px repeat-x;
     -webkit-mask: var(--mask);
             mask: var(--mask);
+}
+.ratio-16-9 {
+    aspect-ratio: 16 / 9;
+}
+
+.ratio-3-2 {
+    aspect-ratio: 3 / 2;
 }
 
 /* Clearing
