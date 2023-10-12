@@ -44,6 +44,7 @@
     --color-primary-rich-black: #061C1C; /* M3 on-surface */
     --color-primary-off-white: #E5F3F0; /* M3 surface-variant */
     --color-primary-backsplash: #96b1ac;
+    --color-primary-glass: rgba(229, 243, 240, 0.7); /* primary-off-white at 70% opacity */
     --color-secondary: #A07178;
     --color-secondary-tint: #D0B8BC;
     --color-secondary-rich-black: #2E0014;
@@ -127,6 +128,7 @@
     --color-primary-rich-black: #1B1C18;
     --color-primary-off-white: #E2E4D4;
     --color-primary-backsplash: #A6AF90;
+    --color-primary-glass: rgba(226, 228, 212, 0.7);
 }
 .planet-9 {
     --color-primary: #1d4b66;
@@ -135,6 +137,7 @@
     --color-primary-rich-black: #191c1e;
     --color-primary-off-white: #dde3ea;
     --color-primary-backsplash: #9badbd;
+    --color-primary-glass: rgba(221, 227, 234, 0.7);
 }
 .wheelies {
     --color-primary: #99461a;
@@ -143,6 +146,7 @@
     --color-primary-rich-black: #201a18;
     --color-primary-off-white: #f4ded5;
     --color-primary-backsplash: #c9a393;
+    --color-primary-glass: rgba(244, 222, 213, 0.7);
 }
 .kirby {
     --color-primary: #b1293f;
@@ -151,6 +155,7 @@
     --color-primary-rich-black: #201a1a; /* M3 on-surface */
     --color-primary-off-white: #f4dddd; /* M3 surface-variant */
     --color-primary-backsplash: #c9a2a3; /* M3 secondary70 */
+    --color-primary-glass: rgba(244, 221, 221, 0.7)
 }
 .wildflowers {
     --color-primary: #7d479e;
@@ -159,6 +164,7 @@
     --color-primary-rich-black: #1d1b1e; /* M3 on-surface */
     --color-primary-off-white: #eadfea; /* M3 surface-variant */
     --color-primary-backsplash: #b7a5bc; /* M3 secondary70 */
+    --color-primary-glass: rgba(234, 223, 234, 0.7);
 }
 
 /* New Grid
@@ -419,7 +425,7 @@ html {
     }
 }
 hgroup, h2, h3, h4 {
-    scroll-margin-top: 2rem;
+    scroll-margin-top: 6rem;
 }
 body {
     overflow-x: hidden;
@@ -1050,17 +1056,22 @@ div.header {
     display: block;
 }
 .navbar {
-    /* -webkit-backdrop-filter: blur(10px); */
-    /* backdrop-filter: blur(10px); */
-    background-color: var(--color-section-background);
+    backface-visibility: hidden;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background-color: var(--color-primary-off-white);
+    background-color: var(--color-primary-glass);
     height: 4rem;
     overflow: hidden;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 8;
     top: 0;
     box-shadow: none;
     transition: all 100ms ease;
+}
+.navbar.scrolled {
+    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,.26);
 }
 /*
 .navbar.scrolled {
@@ -1075,7 +1086,7 @@ div.header {
         background-color: var(--color-background);
     }
 } */
-.navbar-content {
+/* .navbar-content {
     width: 100%;
     float: left;
     padding-top: 1.375rem;
@@ -1083,6 +1094,39 @@ div.header {
     position: absolute;
     left: 0;
     right: 0;
+} */
+.navbar-content {
+    width: 100%;
+    padding-top: 1.375rem;
+    padding-bottom: 1.375rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.navbar-menu {
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+    gap: 1rem;
+}
+
+.navbar-content .navbar-item {
+    display: inline-block;
+}
+
+.navbar-content .navbar-item > a {
+    display: inline;
+    color: var(--color-text-base);
+    text-align: center;
+    text-decoration: none;
+}
+.navbar-content .navbar-item > a:hover {
+    text-decoration: solid 2px underline;
+    -webkit-text-decoration: solid 2px underline;
 }
 
 .navbar-content ul {
@@ -1289,7 +1333,13 @@ div.card {
 div.card-collection {
     gap: 1rem;
     box-sizing: border-box;
+    /* This margin is necessary for the home page project cards. For now, anyway. Also used in articles. */
     margin: 0 auto 3.6rem auto;
+}
+
+.grid .card-collection {
+    /* Margins don't collapse when grids are involved, so this removes extra margin in the footer when project suggestions are in place */
+    margin-bottom: 0;
 }
 
 .card-collection .card {

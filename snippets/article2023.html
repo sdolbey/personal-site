@@ -10,19 +10,32 @@
     <link rel="stylesheet" href="../css/basics.css">
     <link rel='stylesheet' type='text/css' media='screen' href='../css/article.css'>
     <link rel="stylesheet" href="../css/zoom.css">
-    <!--<script src="../js/navstyle.js"></script>-->
+    <script src="../js/navstyle.js"></script>
     <script src="../js/suggestprojects.js"></script>
 </head>
 <body class="?">
     <div class="navbar">
         <div class="navbar-content">
-            <ul>
-                <li>
-                    <a href="../index.html" class="name"></a>
-                    <span> / </span>
-                    <a href="#" class="page">Project</a>
-                </li>
-            </ul>
+            <div class="navbar-item">
+                <a href="../index.html" class="name"></a>
+            </div>
+            <nav role="navigation" class="navbar-menu">
+                <div class="navbar-item">
+                    <a href="../index.html#work">
+                        Work
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a href="../about.html">
+                        About
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </div>
+            </nav>
         </div>
     </div>
     <article id="?" class="project">
@@ -107,7 +120,7 @@
                     </a>
                 </div>
             </div>
-            <div class="section span1">
+            <div id="contact" class="section span1">
                 <h2 class="section-title">Let's connect</h2>
                 <div class="grid restrained">
                     <a href="mailto:stevendolbey@gmail.com?subject=Hello!" target="_blank" class="card-link">
