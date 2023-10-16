@@ -962,6 +962,27 @@ img.remove-background {
         mix-blend-mode: screen;
     }
 }*/
+img.round {
+    border-radius: 1000px;
+}
+.backsplash > img {
+    box-sizing: inherit;
+    padding: 2rem;
+    margin: 0 auto;
+    outline: none;
+}
+.backsplash {
+    box-sizing: border-box;
+    border-radius: 12px;
+    outline: 1px solid var(--color-primary);
+}
+.backsplash.polka {
+    background-color: var(--color-primary-off-white);
+    opacity: 1;
+    background-image:  radial-gradient(var(--color-primary-backsplash) 1px, transparent 1px), radial-gradient(var(--color-primary-backsplash) 1px, var(--color-primary-off-white) 1px);
+    background-size: 2rem 2rem;
+    background-position: 0.5rem 0.5rem, 1.5rem 1.5rem;
+}
 
 /* Misc
 -------------------------------------------------- */
