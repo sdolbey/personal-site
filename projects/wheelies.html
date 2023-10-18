@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/basics.css">
     <link rel='stylesheet' type='text/css' media='screen' href='../css/article.css'>
-    <link rel="stylesheet" href="../css/zoom.css">
+    <!-- <link rel="stylesheet" href="../css/zoom.css"> -->
+    <link rel="stylesheet" href="../css/photoswipe.css">
+    <link rel="stylesheet" href="../css/gallery.css">
     <script src="../js/navstyle.js"></script>
     <script src="../js/suggestprojects.js"></script>
 </head>
@@ -251,10 +253,37 @@
                         </p>
                     </div>
                     <figure class="midblock right">
-                        <div class="grid min-2 max-3">
-                            <img srcset="../img/projects/wheelies/p1_map.webp" src="../img/projects/wheelies/p1_map.png" alt="Map screen from the first prototype." data-action="zoom" style>
-                            <img srcset="../img/projects/wheelies/p1_explore.webp" src="../img/projects/wheelies/p1_explore.png" alt="Explore screen from the first prototype." data-action="zoom" style>
-                            <img srcset="../img/projects/wheelies/p1_bookmarks.webp" src="../img/projects/wheelies/p1_bookmarks.png" alt="Bookmarks screen from the first prototype." data-action="zoom" style>
+                        <div class="grid min-2 max-3 pswp-gallery">
+                            <a 
+                                class="gallery-item"
+                                href="../img/projects/wheelies/p1_map.png" 
+                                data-pswp-srcset="../img/projects/wheelies/p1_map.webp" 
+                                data-pswp-width="360" 
+                                data-pswp-height="640" 
+                                data-cropped="false"
+                                target="_blank">
+                                <img srcset="../img/projects/wheelies/p1_map.webp" src="../img/projects/wheelies/p1_map.png" alt="Map screen from the first prototype.">
+                            </a>
+                            <a 
+                                class="gallery-item"
+                                href="../img/projects/wheelies/p1_explore.png" 
+                                data-pswp-srcset="../img/projects/wheelies/p1_explore.webp" 
+                                data-pswp-width="360" 
+                                data-pswp-height="640" 
+                                data-cropped="false"
+                                target="_blank">
+                                <img srcset="../img/projects/wheelies/p1_explore.webp" src="../img/projects/wheelies/p1_explore.png" alt="Explore screen from the first prototype.">
+                            </a>
+                            <a 
+                                class="gallery-item"
+                                href="../img/projects/wheelies/p1_bookmarks.png" 
+                                data-pswp-srcset="../img/projects/wheelies/p1_bookmarks.webp" 
+                                data-pswp-width="360" 
+                                data-pswp-height="640" 
+                                data-cropped="false"
+                                target="_blank">
+                                <img srcset="../img/projects/wheelies/p1_bookmarks.webp" src="../img/projects/wheelies/p1_bookmarks.png" alt="Bookmarks screen from the first prototype.">
+                            </a>
                         </div>
                         <figcaption>Early prototypes featured a bottom search bar.</figcaption>
                     </figure>
@@ -265,11 +294,47 @@
                     </div>
                 </div>
                 <figure class="u-max-full-width">
-                    <div class="grid min-2 max-4">
-                        <img srcset="../img/projects/wheelies/p1_search.webp" src="../img/projects/wheelies/p1_search.png" alt="Search screen from the first prototype." data-action="zoom" style>
-                        <img srcset="../img/projects/wheelies/p1_search_results.webp" src="../img/projects/wheelies/p1_search_results.png" alt="Search results screen from the first prototype." data-action="zoom" style>
-                        <img srcset="../img/projects/wheelies/p1_place.webp" src="../img/projects/wheelies/p1_place.png" alt="Place profile screen from the first prototype." data-action="zoom" style>
-                        <img srcset="../img/projects/wheelies/p1_navigate.webp" src="../img/projects/wheelies/p1_navigate.png" alt="Navigate modal from the first prototype." data-action="zoom" style>
+                    <div class="grid min-2 max-4 pswp-gallery">
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p1_search.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p1_search.webp" 
+                            data-pswp-width="360" 
+                            data-pswp-height="640" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/wheelies/p1_search.webp" src="../img/projects/wheelies/p1_search.png" alt="Search screen from the first prototype.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p1_search_results.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p1_search_results.webp" 
+                            data-pswp-width="360" 
+                            data-pswp-height="640" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/wheelies/p1_search_results.webp" src="../img/projects/wheelies/p1_search_results.png" alt="Search results screen from the first prototype.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p1_place.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p1_place.webp" 
+                            data-pswp-width="360" 
+                            data-pswp-height="640" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/wheelies/p1_place.webp" src="../img/projects/wheelies/p1_place.png" alt="Place profile screen from the first prototype.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p1_navigate.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p1_navigate.webp" 
+                            data-pswp-width="360" 
+                            data-pswp-height="640" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/wheelies/p1_navigate.webp" src="../img/projects/wheelies/p1_navigate.png" alt="Navigate modal from the first prototype.">
+                        </a>
                     </div>
                     <figcaption>A simple search flow was added for testing. Tapping the address would open the user's default navigation app.</figcaption>
                 </figure>
@@ -297,17 +362,107 @@
                     </div>
                 </div>
                 <figure class="u-max-full-width snug">
-                    <div class="grid min-2 max-5">
-                        <img srcset="../img/projects/wheelies/p2_splash.webp" src="../img/projects/wheelies/p2_splash.png" alt="Splash screen featuring the Wheelies logo made by a teammate." data-action="zoom" style>
-                        <img srcset="../img/projects/wheelies/p2_map.webp" src="../img/projects/wheelies/p2_map.png" alt="Map screen from the final prototype." data-action="zoom" style>
-                        <img srcset="../img/projects/wheelies/p2_explore.webp" src="../img/projects/wheelies/p2_explore.png" alt="Explore screen from the final prototype." data-action="zoom" style>
-                        <img srcset="../img/projects/wheelies/p2_bookmarks.webp" src="../img/projects/wheelies/p2_bookmarks.png" alt="Bookmarks screen from the final prototype." data-action="zoom" style>
-                        <img srcset="../img/projects/wheelies/p2_settings.webp" src="../img/projects/wheelies/p2_settings.png" alt="Settings screen from the final prototype." data-action="zoom" style>
-                        <img srcset="../img/projects/wheelies/p2_search.webp" src="../img/projects/wheelies/p2_search.png" alt="Search screen from the final prototype." data-action="zoom" style>
-                        <img srcset="../img/projects/wheelies/p2_search_results.webp" src="../img/projects/wheelies/p2_search_results.png" alt="Search results screen from the final prototype." data-action="zoom" style>
-                        <img srcset="../img/projects/wheelies/p2_place.webp" src="../img/projects/wheelies/p2_place.png" alt="Place profile from the final prototype. A Publix grocery store is shown." data-action="zoom" style>
-                        <img srcset="../img/projects/wheelies/p2_navigate.webp" src="../img/projects/wheelies/p2_navigate.png" alt="Navigation modal from the place profile screen from the final prototype." data-action="zoom" style>
-                        <img srcset="../img/projects/wheelies/p2_review.webp" src="../img/projects/wheelies/p2_review.png" alt="accessibility review screen from the final prototype." data-action="zoom" style>
+                    <div class="grid min-2 max-5 pswp-gallery">
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p2_splash.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p2_splash.webp" 
+                            data-pswp-width="360" 
+                            data-pswp-height="640" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/wheelies/p2_splash.webp" src="../img/projects/wheelies/p2_splash.png" alt="Splash screen featuring the Wheelies logo made by a teammate.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p2_map.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p2_map.webp" 
+                            data-pswp-width="360" 
+                            data-pswp-height="640" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/wheelies/p2_map.webp" src="../img/projects/wheelies/p2_map.png" alt="Map screen from the final prototype.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p2_explore.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p2_explore.webp" 
+                            data-pswp-width="360" 
+                            data-pswp-height="640" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/wheelies/p2_explore.webp" src="../img/projects/wheelies/p2_explore.png" alt="Explore screen from the final prototype.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p2_bookmarks.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p2_bookmarks.webp" 
+                            data-pswp-width="360" 
+                            data-pswp-height="640" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/wheelies/p2_bookmarks.webp" src="../img/projects/wheelies/p2_bookmarks.png" alt="Bookmarks screen from the final prototype.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p2_settings.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p2_settings.webp" 
+                            data-pswp-width="360" 
+                            data-pswp-height="640" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/wheelies/p2_settings.webp" src="../img/projects/wheelies/p2_settings.png" alt="Settings screen from the final prototype.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p2_search.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p2_search.webp" 
+                            data-pswp-width="360" 
+                            data-pswp-height="640" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/wheelies/p2_search.webp" src="../img/projects/wheelies/p2_search.png" alt="Search screen from the final prototype.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p2_search_results.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p2_search_results.webp" 
+                            data-pswp-width="360" 
+                            data-pswp-height="640" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/wheelies/p2_search_results.webp" src="../img/projects/wheelies/p2_search_results.png" alt="Search results screen from the final prototype.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p2_place.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p2_place.webp" 
+                            data-pswp-width="360" 
+                            data-pswp-height="640" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/wheelies/p2_place.webp" src="../img/projects/wheelies/p2_place.png" alt="Place profile from the final prototype. A Publix grocery store is shown.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p2_navigate.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p2_navigate.webp" 
+                            data-pswp-width="360" 
+                            data-pswp-height="640" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/wheelies/p2_navigate.webp" src="../img/projects/wheelies/p2_navigate.png" alt="Navigation modal from the place profile screen from the final prototype.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p2_review.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p2_review.webp" 
+                            data-pswp-width="360" 
+                            data-pswp-height="640" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/wheelies/p2_review.webp" src="../img/projects/wheelies/p2_review.png" alt="Accessibility review screen from the final prototype.">
+                        </a>
                     </div>
                     <figcaption>The final set of wireframes we turned in. The search bar was moved to the top, which performed better in testing.</figcaption>
                 </figure>
@@ -346,11 +501,47 @@
                     </div>
                 </div>
                 <figure class="u-max-full-width">
-                    <div class="grid min-2 max-4">
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_map.webp" src="../img/projects/wheelies/p3_map.png" alt="The Map tab has a top-anchored search bar and bottom navigation tabs." data-action="zoom" style>
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_explore_new_framed.webp" src="../img/projects/wheelies/p3_explore_new_framed.png" alt="The top of the new Explore tab surfaces nearby places that have recently been reviewed for the first time." data-action="zoom" style>
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_place_top_framed.webp" src="../img/projects/wheelies/p3_place_top_framed.png" alt="Top of the place profile for a Publix grocery store. The accessibility rating, address and contact information are visible." data-action="zoom" style>
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_review_1_framed.webp" src="../img/projects/wheelies/p3_review_1_framed.png" alt="Step 1 of the reivew process asks users to confirm the location of the entrance on a satellite map." data-action="zoom" style>
+                    <div class="grid min-2 max-4 pswp-gallery">
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_map.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_map.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_map.webp" src="../img/projects/wheelies/p3_map.png" alt="The Map tab has a top-anchored search bar and bottom navigation tabs.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_explore_new_framed.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_explore_new_framed.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_explore_new_framed.webp" src="../img/projects/wheelies/p3_explore_new_framed.png" alt="The top of the new Explore tab surfaces nearby places that have recently been reviewed for the first time.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_place_top_framed.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_place_top_framed.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_place_top_framed.webp" src="../img/projects/wheelies/p3_place_top_framed.png" alt="Top of the place profile for a Publix grocery store. The accessibility rating, address and contact information are visible.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_review_1_framed.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_review_1_framed.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_review_1_framed.webp" src="../img/projects/wheelies/p3_review_1_framed.png" alt="Step 1 of the reivew process asks users to confirm the location of the entrance on a satellite map.">
+                        </a>
                     </div>
                     <figcaption>
                         The revised Wheelies includes lots of detail that was glossed over in prior iterations.
@@ -373,10 +564,37 @@
                     </div>
                 </div>
                 <figure class="u-max-full-width snug">
-                    <div class="grid min-2 max-3">
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_place_top_framed.webp" src="../img/projects/wheelies/p3_place_top_framed.png" alt="Top of the place profile for a Publix grocery store. The accessibility rating, address and contact information are visible." data-action="zoom" style>
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_place_ratings_framed.webp" src="../img/projects/wheelies/p3_place_ratings_framed.png" alt="Section of the place profile showing the main entrance location and photos, plus ratings for accessibility features the store either has or doesn't have." data-action="zoom" style>
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_place_comments_framed.webp" src="../img/projects/wheelies/p3_place_comments_framed.png" alt="The comments section on the place profile. Two users have left comments. One about how helpful the staff were, and another about which parts of the store are difficult to navigate in a wheelchair." data-action="zoom" style>
+                    <div class="grid min-2 max-3 pswp-gallery">
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_place_top_framed.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_place_top_framed.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_place_top_framed.webp" src="../img/projects/wheelies/p3_place_top_framed.png" alt="Top of the place profile for a Publix grocery store. The accessibility rating, address and contact information are visible.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_place_ratings_framed.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_place_ratings_framed.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_place_ratings_framed.webp" src="../img/projects/wheelies/p3_place_ratings_framed.png" alt="Section of the place profile showing the main entrance location and photos, plus ratings for accessibility features the store either has or doesn't have.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_place_comments_framed.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_place_comments_framed.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_place_comments_framed.webp" src="../img/projects/wheelies/p3_place_comments_framed.png" alt="The comments section on the place profile. Two users have left comments. One about how helpful the staff were, and another about which parts of the store are difficult to navigate in a wheelchair.">
+                        </a>
                     </div>
                     <figcaption>The revised place profile has the information our users care about front-and-center.</figcaption>
                 </figure>
@@ -387,9 +605,27 @@
                         </p>
                     </div>
                     <figure class="midblock right">
-                        <div class="grid min-2">
-                            <img class="borderless" srcset="../img/projects/wheelies/p3_place_menu_framed.webp" src="../img/projects/wheelies/p3_place_menu_framed.png" alt="The overflow menu at the top of the place profile. Options include correcting details of, sharing, reporting, and claiming the business." data-action="zoom" style>
-                            <img class="borderless" srcset="../img/projects/wheelies/p3_place_add_entrance_photo_framed.webp" src="../img/projects/wheelies/p3_place_add_entrance_photo_framed.png" alt="A button to upload another entrance photo sits at the end of the photo row." data-action="zoom" style>
+                        <div class="grid min-2 pswp-gallery">
+                            <a 
+                                class="gallery-item"
+                                href="../img/projects/wheelies/p3_place_menu_framed.png" 
+                                data-pswp-srcset="../img/projects/wheelies/p3_place_menu_framed.webp" 
+                                data-pswp-width="460" 
+                                data-pswp-height="940" 
+                                data-cropped="false"
+                                target="_blank">
+                                <img class="borderless" srcset="../img/projects/wheelies/p3_place_menu_framed.webp" src="../img/projects/wheelies/p3_place_menu_framed.png" alt="The overflow menu at the top of the place profile. Options include correcting details of, sharing, reporting, and claiming the business.">
+                            </a>
+                            <a 
+                                class="gallery-item"
+                                href="../img/projects/wheelies/p3_place_add_entrance_photo_framed.png" 
+                                data-pswp-srcset="../img/projects/wheelies/p3_place_add_entrance_photo_framed.webp" 
+                                data-pswp-width="460" 
+                                data-pswp-height="940" 
+                                data-cropped="false"
+                                target="_blank">
+                                <img class="borderless" srcset="../img/projects/wheelies/p3_place_add_entrance_photo_framed.webp" src="../img/projects/wheelies/p3_place_add_entrance_photo_framed.png" alt="A button to upload another entrance photo sits at the end of the photo row.">
+                            </a>
                         </div>
                         <figcaption>Photographing entrances and reporting inaccessible locations were features our users were excited about, but they weren't shown in the original prototypes. Now they're here!</figcaption>
                     </figure>
@@ -410,11 +646,47 @@
                     </div>
                 </div>
                 <figure class="u-max-full-width">
-                    <div class="grid min-2 max-4">
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_review_1_framed.webp" src="../img/projects/wheelies/p3_review_1_framed.png" alt="Step 1 of the reivew process asks users to confirm the location of the entrance on a satellite map." data-action="zoom" style>
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_review_2_framed.webp" src="../img/projects/wheelies/p3_review_2_framed.png" alt="Step 2 of the review process asks users if the entrance is easy to find, has powered doors, and is wheelchair accessible." data-action="zoom" style>
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_review_3_framed.webp" src="../img/projects/wheelies/p3_review_3_framed.png" alt="Step 3 of the review process asks users to rate other aspects of the place, such as whether there is an accessible restroom, accessible vehicle parking, accommodating staff, enough space for wheelchair users to get around, and if low counters and tables are available for wheelchair users." data-action="zoom" style>
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_review_4_framed.webp" src="../img/projects/wheelies/p3_review_4_framed.png" alt="The final step of the review process gives users a comment box to add anything they think other people should know before they go." data-action="zoom" style>
+                    <div class="grid min-2 max-4 pswp-gallery">
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_review_1_framed.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_review_1_framed.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_review_1_framed.webp" src="../img/projects/wheelies/p3_review_1_framed.png" alt="Step 1 of the reivew process asks users to confirm the location of the entrance on a satellite map.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_review_2_framed.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_review_2_framed.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_review_2_framed.webp" src="../img/projects/wheelies/p3_review_2_framed.png" alt="Step 2 of the review process asks users if the entrance is easy to find, has powered doors, and is wheelchair accessible.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_review_3_framed.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_review_3_framed.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_review_3_framed.webp" src="../img/projects/wheelies/p3_review_3_framed.png" alt="Step 3 of the review process asks users to rate other aspects of the place, such as whether there is an accessible restroom, accessible vehicle parking, accommodating staff, enough space for wheelchair users to get around, and if low counters and tables are available for wheelchair users.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_review_4_framed.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_review_4_framed.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_review_4_framed.webp" src="../img/projects/wheelies/p3_review_4_framed.png" alt="The final step of the review process gives users a comment box to add anything they think other people should know before they go.">
+                        </a>
                     </div>
                     <figcaption>The expanded review process uses a stepper pattern to guide users through.</figcaption>
                 </figure>
@@ -435,9 +707,27 @@
                         </p>
                     </div>
                     <figure>
-                        <div class="grid min-2">
-                            <img class="borderless" srcset="../img/projects/wheelies/p3_explore_new_framed.webp" src="../img/projects/wheelies/p3_explore_new_framed.png" alt="The top of the new Explore tab surfaces nearby places that have recently been reviewed for the first time." data-action="zoom" style>
-                            <img class="borderless" srcset="../img/projects/wheelies/p3_explore_favorites_framed.webp" src="../img/projects/wheelies/p3_explore_favorites_framed.png" alt="The next row on the new Explore tab has nearby places that are highly rated for their accessibility, followed by a list of categories." data-action="zoom" style>
+                        <div class="grid min-2 pswp-gallery">
+                            <a 
+                                class="gallery-item"
+                                href="../img/projects/wheelies/p3_explore_new_framed.png" 
+                                data-pswp-srcset="../img/projects/wheelies/p3_explore_new_framed.webp" 
+                                data-pswp-width="460" 
+                                data-pswp-height="940" 
+                                data-cropped="false"
+                                target="_blank">
+                                <img class="borderless" srcset="../img/projects/wheelies/p3_explore_new_framed.webp" src="../img/projects/wheelies/p3_explore_new_framed.png" alt="The top of the new Explore tab surfaces nearby places that have recently been reviewed for the first time.">
+                            </a>
+                            <a 
+                                class="gallery-item"
+                                href="../img/projects/wheelies/p3_explore_favorites_framed.png" 
+                                data-pswp-srcset="../img/projects/wheelies/p3_explore_favorites_framed.webp" 
+                                data-pswp-width="460" 
+                                data-pswp-height="940" 
+                                data-cropped="false"
+                                target="_blank">
+                                <img class="borderless" srcset="../img/projects/wheelies/p3_explore_favorites_framed.webp" src="../img/projects/wheelies/p3_explore_favorites_framed.png" alt="The next row on the new Explore tab has nearby places that are highly rated for their accessibility, followed by a list of categories.">
+                            </a>
                         </div>
                         <figcaption>
                             In addition to categories, the new Explore tab surfaces local places that have been recently reviewed for the first time, as well as places that are highly regarded by reviewers.
@@ -454,9 +744,27 @@
                         </p>
                     </div>
                     <figure>
-                        <div class="grid min-2">
-                            <img class="borderless" srcset="../img/projects/wheelies/p3_search_framed.webp" src="../img/projects/wheelies/p3_search_framed.png" alt="The search modal is largely unchanged from the previous iteration, though a microphone icon button has been added to the right side of the input field for voice search." data-action="zoom" style>
-                            <img class="borderless" srcset="../img/projects/wheelies/p3_search_results_framed.webp" src="../img/projects/wheelies/p3_search_results_framed.png" alt="Search results are presented as a list. Details include category, address, distance, and accessibility. Filters above the list let users see only places that have been rated as accessible or are currently open. A floating action button lets users see their search results on a map." data-action="zoom" style>
+                        <div class="grid min-2 pswp-gallery">
+                            <a 
+                                class="gallery-item"
+                                href="../img/projects/wheelies/p3_search_framed.png" 
+                                data-pswp-srcset="../img/projects/wheelies/p3_search_framed.webp" 
+                                data-pswp-width="460" 
+                                data-pswp-height="940" 
+                                data-cropped="false"
+                                target="_blank">
+                                <img class="borderless" srcset="../img/projects/wheelies/p3_search_framed.webp" src="../img/projects/wheelies/p3_search_framed.png" alt="The search modal is largely unchanged from the previous iteration, though a microphone icon button has been added to the right side of the input field for voice search.">
+                            </a>
+                            <a 
+                                class="gallery-item"
+                                href="../img/projects/wheelies/p3_search_results_framed.png" 
+                                data-pswp-srcset="../img/projects/wheelies/p3_search_results_framed.webp" 
+                                data-pswp-width="460" 
+                                data-pswp-height="940" 
+                                data-cropped="false"
+                                target="_blank">
+                                <img class="borderless" srcset="../img/projects/wheelies/p3_search_results_framed.webp" src="../img/projects/wheelies/p3_search_results_framed.png" alt="Search results are presented as a list. Details include category, address, distance, and accessibility. Filters above the list let users see only places that have been rated as accessible or are currently open. A floating action button lets users see their search results on a map.">
+                            </a>
                         </div>
                         <figcaption>
                             The updated search process gives users more ways to find what they're looking for.
@@ -472,8 +780,17 @@
                             The list can be sorted by date added, name, or distance.
                         </p>
                     </div>
-                    <figure>
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_bookmarks_framed.webp" src="../img/projects/wheelies/p3_bookmarks_framed.png" alt="The bookmarks list included a thumbnail, the place category and its address. By default, it's sorted by recently added." data-action="zoom" style>
+                    <figure class="pswp-gallery">
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_bookmarks_framed.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_bookmarks_framed.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_bookmarks_framed.webp" src="../img/projects/wheelies/p3_bookmarks_framed.png" alt="The bookmarks list included a thumbnail, the place category and its address. By default, it's sorted by recently added.">
+                        </a>
                         <figcaption>
                             Bookmarks can be sorted to user preference. By default, it's by recently added.
                         </figcaption>
@@ -493,11 +810,47 @@
                     </div>
                 </div>
                 <figure class="u-max-full-width">
-                    <div class="grid min-2 max-4">
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_contribute_top_framed.webp" src="../img/projects/wheelies/p3_contribute_top_framed.png" alt="The top of the Contribute tab encourages users to add reviews, photos, and comments. The user's stats are visible." data-action="zoom" style>
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_contribute_recent_framed.webp" src="../img/projects/wheelies/p3_contribute_recent_framed.png" alt="The Contribute tab includes the user's recently viewed places to remind them to review the places after they visit." data-action="zoom" style>
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_contribute_comments_framed.webp" src="../img/projects/wheelies/p3_contribute_comments_framed.png" alt="Comments from previous reviews of recently viewed places appear so the user can quickly rate the ones that helped them." data-action="zoom" style>
-                        <img class="borderless" srcset="../img/projects/wheelies/p3_contribute_photos_framed.webp" src="../img/projects/wheelies/p3_contribute_photos_framed.png" alt="The Contribute tab surfaces places that have no entrance photos." data-action="zoom" style>
+                    <div class="grid min-2 max-4 pswp-gallery">
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_contribute_top_framed.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_contribute_top_framed.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_contribute_top_framed.webp" src="../img/projects/wheelies/p3_contribute_top_framed.png" alt="The top of the Contribute tab encourages users to add reviews, photos, and comments. The user's stats are visible.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_contribute_recent_framed.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_contribute_recent_framed.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_contribute_recent_framed.webp" src="../img/projects/wheelies/p3_contribute_recent_framed.png" alt="The Contribute tab includes the user's recently viewed places to remind them to review the places after they visit.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_contribute_comments_framed.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_contribute_comments_framed.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_contribute_comments_framed.webp" src="../img/projects/wheelies/p3_contribute_comments_framed.png" alt="Comments from previous reviews of recently viewed places appear so the user can quickly rate the ones that helped them.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/wheelies/p3_contribute_photos_framed.png" 
+                            data-pswp-srcset="../img/projects/wheelies/p3_contribute_photos_framed.webp" 
+                            data-pswp-width="460" 
+                            data-pswp-height="940" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img class="borderless" srcset="../img/projects/wheelies/p3_contribute_photos_framed.webp" src="../img/projects/wheelies/p3_contribute_photos_framed.png" alt="The Contribute tab surfaces places that have no entrance photos.">
+                        </a>
                     </div>
                     <figcaption>
                         User contributions are the lifeblood of an app like Wheelies, so the Contribute tab serves to encourage users to add what they can.
@@ -566,7 +919,31 @@
             </div>
         </div>
     </article>
-    <script src="../js/zoom-vanilla.min.js"></script>
+    <script type="module">
+        import PhotoSwipeLightbox from '../js/photoswipe-lightbox.esm.js';
+        import ObjectPosition from '../js/photoswipe-object-position.js';
+
+        const smallScreenPadding = {
+            top: 0, bottom: 0, left: 0, right: 0
+        };
+        const largeScreenPadding = {
+            top: 60, bottom: 60, left: 80, right: 80
+        };
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '.pswp-gallery',
+            children: '.gallery-item',
+            initialZoomLevel: 'fit',
+            // secondaryZoomLevel: 'fill',
+            // wheelToZoom: true,
+            paddingFn: (viewportSize) => {
+                return viewportSize.x < 700 ? smallScreenPadding : largeScreenPadding
+            },
+            pswpModule: () => import('../js/photoswipe.esm.js')
+        });
+        new ObjectPosition(lightbox);
+        lightbox.init();
+    </script>
+    <!-- <script src="../js/zoom-vanilla.min.js"></script> -->
     <div class="footer">
         <div class="footer-content">
             <div class="grid max-3">
