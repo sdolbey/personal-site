@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/basics.css">
     <link rel='stylesheet' type='text/css' media='screen' href='../css/article.css'>
-    <link rel="stylesheet" href="../css/zoom.css">
+    <!-- <link rel="stylesheet" href="../css/zoom.css"> -->
+    <link rel="stylesheet" href="../css/photoswipe.css">
+    <link rel="stylesheet" href="../css/gallery.css">
     <script src="../js/navstyle.js"></script>
     <script src="../js/suggestprojects.js"></script>
 </head>
@@ -220,13 +222,31 @@
                         </p>
                     </div>
                 </div>
-                <div class="grid max-2 u-max-full-width">
+                <div class="grid max-2 u-max-full-width pswp-gallery">
                     <figure class="snug">
-                        <img class="dark-invert" srcset="../img/projects/planet-9/sitemap.webp" src="../img/projects/planet-9/sitemap.png" alt="Mindmap chart showing an early sitemap" data-action="zoom" style>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/planet-9/sitemap.png" 
+                            data-pswp-srcset="../img/projects/planet-9/sitemap.webp" 
+                            data-pswp-width="1265" 
+                            data-pswp-height="1031" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/planet-9/sitemap.webp" src="../img/projects/planet-9/sitemap.png" alt="Mindmap chart showing an early sitemap">
+                        </a>
                         <figcaption class="caption">Early sitemap.</figcaption>
                     </figure>
                     <figure class="snug">
-                        <img class="dark-invert" srcset="../img/projects/planet-9/sketches.webp" src="../img/projects/planet-9/sketches.png" alt="Simple sketches of our five pages at desktop and mobile breakpoints." data-action="zoom" style>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/planet-9/sketches.png" 
+                            data-pswp-srcset="../img/projects/planet-9/sketches.webp" 
+                            data-pswp-width="1442" 
+                            data-pswp-height="1557" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/planet-9/sketches.webp" src="../img/projects/planet-9/sketches.png" alt="Simple sketches of our five pages at desktop and mobile breakpoints.">
+                        </a>
                         <figcaption class="caption">I sketched out how our five pages might look and adapt to different screen sizes.</figcaption>
                     </figure>
                 </div>
@@ -239,8 +259,17 @@
                             <strong>Our visual designer made color and typeface choices before any UI work was done.</strong> Making higher fidelity mock-ups in Adobe XD gave us an opportunity to see how those choices looked in practice and adjust. <strong>The colors were maintained, but typefaces were replaced for better readability.</strong>
                         </p>
                     </div>
-                    <figure>
-                        <img srcset="../img/projects/planet-9/high-fidelity-home.webp" src="../img/projects/planet-9/high-fidelity-home.png" alt="Screenshot of high fidelity mockups in Adobe XD.">
+                    <figure class="pswp-gallery">
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/planet-9/home_high_fidelity.png" 
+                            data-pswp-srcset="../img/projects/planet-9/home_high_fidelity.webp" 
+                            data-pswp-width="1920" 
+                            data-pswp-height="1080" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/planet-9/home_high_fidelity.webp" src="../img/projects/planet-9/home_high_fidelity.png" alt="High fidelity prototype of the home page using final fonts and colors.">
+                        </a>
                         <figcaption class="caption">Working at a higher fidelity gave us an opportunity to adjust our typefaces.</figcaption>
                     </figure>
                 </div>
@@ -257,20 +286,83 @@
                         </p>
                     </div>
                 </div>
-                <figure class="u-max-full-width">
+                <figure class="u-max-full-width pswp-gallery">
                     <div class="grid min-2 max-3">
-                        <img srcset="../img/projects/planet-9/home_desktop_cropped.webp" src="../img/projects/planet-9/home_desktop_cropped.png" alt="" data-action="zoom" style>
-                        <img srcset="../img/projects/planet-9/history_desktop_cropped.webp" src="../img/projects/planet-9/history_desktop_cropped.png" alt="" data-action="zoom" style>
-                        <img srcset="../img/projects/planet-9/controversies_desktop_cropped.webp" src="../img/projects/planet-9/controversies_desktop_cropped.png" alt="" data-action="zoom" style>
-                        <img srcset="../img/projects/planet-9/join_desktop_cropped.webp" src="../img/projects/planet-9/join_desktop_cropped.png" alt="" data-action="zoom" style>
-                        <img srcset="../img/projects/planet-9/shop_desktop_cropped.webp" src="../img/projects/planet-9/shop_desktop_cropped.png" alt="" data-action="zoom" style>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/planet-9/home_desktop_cropped.png" 
+                            data-pswp-srcset="../img/projects/planet-9/home_desktop_cropped.webp" 
+                            data-pswp-width="1440" 
+                            data-pswp-height="810" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/planet-9/home_desktop_cropped.webp" src="../img/projects/planet-9/home_desktop_cropped.png" alt="Screenshot of the home page.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/planet-9/history_desktop_cropped.png" 
+                            data-pswp-srcset="../img/projects/planet-9/history_desktop_cropped.webp" 
+                            data-pswp-width="1440" 
+                            data-pswp-height="810" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/planet-9/history_desktop_cropped.webp" src="../img/projects/planet-9/history_desktop_cropped.png" alt="Screenshot of the History page and timeline of events.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/planet-9/controversies_desktop_cropped.png" 
+                            data-pswp-srcset="../img/projects/planet-9/controversies_desktop_cropped.webp" 
+                            data-pswp-width="1440" 
+                            data-pswp-height="810" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/planet-9/controversies_desktop_cropped.webp" src="../img/projects/planet-9/controversies_desktop_cropped.png" alt="Screenshot of the Controversies page, which outlines the arguments for and against Pluto's planethood.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/planet-9/join_desktop_cropped.png" 
+                            data-pswp-srcset="../img/projects/planet-9/join_desktop_cropped.webp" 
+                            data-pswp-width="1440" 
+                            data-pswp-height="810" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/planet-9/join_desktop_cropped.webp" src="../img/projects/planet-9/join_desktop_cropped.png" alt="Screenshot of the Join Us page, which invites visitors to sign the petition for Pluto.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/planet-9/shop_desktop_cropped.png" 
+                            data-pswp-srcset="../img/projects/planet-9/shop_desktop_cropped.webp" 
+                            data-pswp-width="1440" 
+                            data-pswp-height="810" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/planet-9/shop_desktop_cropped.webp" src="../img/projects/planet-9/shop_desktop_cropped.png" alt="Screenshot of the merchandise shop, showing custom shirts, stickers, and backpacks.">
+                        </a>
                     </div>
                     <figcaption>Desktop screenshots from the completed website.</figcaption>
                 </figure>
                 <figure>
-                    <div class="grid min-2">
-                        <img srcset="../img/projects/planet-9/timeline_mobile_cropped.webp" src="../img/projects/planet-9/timeline_mobile_cropped.png" alt="" data-action="zoom" style>
-                        <img srcset="../img/projects/planet-9/controversies_mobile_cropped.webp" src="../img/projects/planet-9/controversies_mobile_cropped.png" alt="" data-action="zoom" style>
+                    <div class="grid min-2 pswp-gallery">
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/planet-9/timeline_mobile_cropped.png" 
+                            data-pswp-srcset="../img/projects/planet-9/timeline_mobile_cropped.webp" 
+                            data-pswp-width="828" 
+                            data-pswp-height="1792" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/planet-9/timeline_mobile_cropped.webp" src="../img/projects/planet-9/timeline_mobile_cropped.png" alt="The timeline feature of the History page as seen on mobile devices.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/planet-9/controversies_mobile_cropped.png" 
+                            data-pswp-srcset="../img/projects/planet-9/controversies_mobile_cropped.webp" 
+                            data-pswp-width="828" 
+                            data-pswp-height="1792" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/planet-9/controversies_mobile_cropped.webp" src="../img/projects/planet-9/controversies_mobile_cropped.png" alt="The list of pros and cons of the Controversies page as seen on mobile devices.">
+                        </a>
                     </div>
                     <figcaption>Timeline and Pro/Con list on mobile.</figcaption>
                 </figure>
@@ -321,7 +413,31 @@
             </div>
         </div>
     </article>
-    <script src="../js/zoom-vanilla.min.js"></script>
+    <script type="module">
+        import PhotoSwipeLightbox from '../js/photoswipe-lightbox.esm.js';
+        import ObjectPosition from '../js/photoswipe-object-position.js';
+
+        const smallScreenPadding = {
+            top: 0, bottom: 0, left: 0, right: 0
+        };
+        const largeScreenPadding = {
+            top: 60, bottom: 60, left: 80, right: 80
+        };
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '.pswp-gallery',
+            children: '.gallery-item',
+            initialZoomLevel: 'fit',
+            secondaryZoomLevel: 'fill',
+            // wheelToZoom: true,
+            paddingFn: (viewportSize) => {
+                return viewportSize.x < 700 ? smallScreenPadding : largeScreenPadding
+            },
+            pswpModule: () => import('../js/photoswipe.esm.js')
+        });
+        new ObjectPosition(lightbox);
+        lightbox.init();
+    </script>
+    <!-- <script src="../js/zoom-vanilla.min.js"></script> -->
     <div class="footer">
         <div class="footer-content">
             <div class="grid max-3">
