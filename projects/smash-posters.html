@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/basics.css">
     <link rel='stylesheet' type='text/css' media='screen' href='../css/article.css'>
-    <link rel="stylesheet" href="../css/zoom.css">
+    <!-- <link rel="stylesheet" href="../css/zoom.css"> -->
+    <link rel="stylesheet" href="../css/photoswipe.css">
+    <link rel="stylesheet" href="../css/gallery.css">
     <script src="../js/navstyle.js"></script>
     <script src="../js/suggestprojects.js"></script>
 </head>
@@ -64,17 +66,68 @@
                     </div>
                 </div>
                 <figure class="u-max-full-width snug">
-                    <div class="grid max-3">
-                        <img srcset="../img/projects/smash-posters/mario-small.webp" src="../img/projects/smash-posters/mario-small.png" alt="Mario vector poster." data-action="zoom" style>
-                        <img srcset="../img/projects/smash-posters/kirby-small.webp" src="../img/projects/smash-posters/kirby-small.png" alt="Kirby vector poster." data-action="zoom" style>
-                        <img srcset="../img/projects/smash-posters/pikachu-small.webp" src="../img/projects/smash-posters/pikachu-small.png" alt="Pikachu vector poster." data-action="zoom" style>
+                    <div class="grid max-3 pswp-gallery">
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/smash-posters/mario-small.png" 
+                            data-pswp-srcset="../img/projects/smash-posters/mario-small.webp" 
+                            data-pswp-width="720" 
+                            data-pswp-height="1023" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/smash-posters/mario-small.webp" src="../img/projects/smash-posters/mario-small.png" alt="Mario vector poster.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/smash-posters/kirby-small.png" 
+                            data-pswp-srcset="../img/projects/smash-posters/kirby-small.webp" 
+                            data-pswp-width="720" 
+                            data-pswp-height="1023" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/smash-posters/kirby-small.webp" src="../img/projects/smash-posters/kirby-small.png" alt="Kirby vector poster.">
+                        </a>
+                        <a 
+                            class="gallery-item"
+                            href="../img/projects/smash-posters/pikachu-small.png" 
+                            data-pswp-srcset="../img/projects/smash-posters/pikachu-small.webp" 
+                            data-pswp-width="720" 
+                            data-pswp-height="1023" 
+                            data-cropped="false"
+                            target="_blank">
+                            <img srcset="../img/projects/smash-posters/pikachu-small.webp" src="../img/projects/smash-posters/pikachu-small.png" alt="Pikachu vector poster.">
+                        </a>
                     </div>
                 </figure>
                 <p class="last"></p>
             </div>
         </div>
     </article>
-    <script src="../js/zoom-vanilla.min.js"></script>
+    <script type="module">
+        import PhotoSwipeLightbox from '../js/photoswipe-lightbox.esm.js';
+        import ObjectPosition from '../js/photoswipe-object-position.js';
+
+        const smallScreenPadding = {
+            top: 0, bottom: 0, left: 0, right: 0
+        };
+        const largeScreenPadding = {
+            top: 60, bottom: 60, left: 80, right: 80
+        };
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '.pswp-gallery',
+            children: '.gallery-item',
+            initialZoomLevel: 'fit',
+            // secondaryZoomLevel: 'fill',
+            // wheelToZoom: true,
+            paddingFn: (viewportSize) => {
+                return viewportSize.x < 700 ? smallScreenPadding : largeScreenPadding
+            },
+            pswpModule: () => import('../js/photoswipe.esm.js')
+        });
+        new ObjectPosition(lightbox);
+        lightbox.init();
+    </script>
+    <!-- <script src="../js/zoom-vanilla.min.js"></script> -->
     <div class="footer">
         <div class="footer-content">
             <div class="grid max-3">
