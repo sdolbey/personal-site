@@ -709,8 +709,8 @@ strong.extra {
 -------------------------------------------------- */
 p a {
     color: var(--color-primary);
-    text-decoration: wavy underline;
-    -webkit-text-decoration: wavy underline;
+    text-decoration: solid 1px underline;
+    /* -webkit-text-decoration: wavy underline; */
 }
 li > a {
     color: var(--color-primary);
