@@ -424,7 +424,7 @@ html {
         scroll-margin-top: 6rem;
     }
 }
-hgroup, h2, h3, h4 {
+hgroup, h2, h3, h4, .section {
     scroll-margin-top: 6rem;
 }
 body {
