@@ -148,6 +148,7 @@
     --color-primary-glass: rgba(234, 223, 234, 0.7); /* primary-off-white at 70% opacity */
 }
 @media (prefers-color-scheme: dark) {
+    /* To get dark off-white, set off-white to primary-rgb at 15% opacity, then use a color picker in the browser to get the resulting HEX. Convert that to RGB and use RGBA for primary-glass. */
     :root {
         /* Teal theme */
         --color-primary: #51dbce;
@@ -156,9 +157,11 @@
         --color-primary-tint: #324b48; /* M3 secondary-container */
         --color-primary-rich-black: #e0e3e1; /* M3 on-surface */
         /* --color-primary-off-white: #3f4947; M3 surface-variant */
-        --color-primary-off-white: #1e2928; /* Primary at 8% */
+        /* --color-primary-off-white: #1e2928; Primary at 8% */
+        --color-primary-off-white: #223735; /* Primary at 15% */
+        /* --color-primary-off-white: rgb(var(--color-primary-rgb) / 0.15); */
         --color-primary-backsplash: #4a6360; /* M3 secondary40 */
-        --color-primary-glass: rgba(30, 41, 40, 0.7); /* primary-off-white at 70% opacity */
+        --color-primary-glass: rgba(34, 55, 53, 0.7); /* primary-off-white at 70% opacity */
         --color-background: #1a1a1a;
         --color-background-rgb: 26, 26, 26;
         --color-surface: #2e2e2e;
@@ -197,49 +200,64 @@
     /* Project themes */
     .fnps {
         --color-primary: #b0d26c;
+        --color-primary-rgb: 176 210 108;
         --color-primary-bright: #374e00; /* M3 primary-container */
         --color-primary-tint: #424a32; /* M3 secondary-container */
         --color-primary-rich-black: #e4e3db; /* M3 on-surface */
-        --color-primary-off-white: #282B22; /* primary at 8% */
+        /* --color-primary-off-white: #282B22; primary at 8% */
+        --color-primary-off-white: #303526; /* primary at 15% */
         /* --color-primary-off-white: #45483d; M3 surface-variant */
+        /* --color-primary-off-white: rgb(var(--color-primary-rgb) / 0.15); */
         --color-primary-backsplash: #596148; /* M3 secondary40 */
-        --color-primary-glass: rgba(40, 43, 34, 0.7); /* primary-off-white at 70% opacity */
+        --color-primary-glass: rgba(48, 53, 38, 0.7); /* primary-off-white at 70% opacity */
     }
     .planet-9 {
         --color-primary: #87ceff;
+        --color-primary-rgb: 135 206 255;
         --color-primary-bright: #004c6d; /* M3 primary-container */
         --color-primary-tint: #384956; /* M3 secondary-container */
         --color-primary-rich-black: #e2e2e5; /* M3 on-surface */
-        --color-primary-off-white: #23282C; /* primary at 8% */
+        /* --color-primary-off-white: #23282C; primary at 8% */
+        --color-primary-off-white: #2A353C; /* primary at 15% */
+        /* --color-primary-off-white: rgb(var(--color-primary-rgb) / 0.15); */
         --color-primary-backsplash: #4f606e; /* M3 secondary40 */
-        --color-primary-glass: rgba(35, 40, 44, 0.7); /* primary-off-white at 70% opacity */
+        --color-primary-glass: rgba(42, 53, 60, 0.7); /* primary-off-white at 70% opacity */
     }
     .wheelies {
         --color-primary: #ffb695;
+        --color-primary-rgb: 255 182 149;
         --color-primary-bright: #7a2f03; /* M3 primary-container */
         --color-primary-tint: #5d4034; /* M3 secondary-container */
         --color-primary-rich-black: #ede0db; /* M3 on-surface */
-        --color-primary-off-white: #2C2624; /* primary at 8% */
+        /* --color-primary-off-white: #2C2624; primary at 8% */
+        --color-primary-off-white: #3C312C; /* primary at 15% */
+        /* --color-primary-off-white: rgb(var(--color-primary-rgb) / 0.15); */
         --color-primary-backsplash: #76574a; /* M3 secondary40 */
-        --color-primary-glass: rgba(44, 38, 36, 0.7); /* primary-off-white at 70% opacity */
+        --color-primary-glass: rgba(60, 49, 44, 0.7); /* primary-off-white at 70% opacity */
     }
     .kirby {
         --color-primary: #ffb3b6;
+        --color-primary-rgb: 255 179 182;
         --color-primary-bright: #8f0a2a; /* M3 primary-container */
         --color-primary-tint: #5d3f40; /* M3 secondary-container */
         --color-primary-rich-black: #ece0df; /* M3 on-surface */
-        --color-primary-off-white: #2C2626; /* primary at 8% */
+        /* --color-primary-off-white: #2C2626; primary at 8% */
+        --color-primary-off-white: #3C3131; /* primary at 15% */
+        /* --color-primary-off-white: rgb(var(--color-primary-rgb) / 0.15); */
         --color-primary-backsplash: #765657; /* M3 secondary40 */
-        --color-primary-glass: rgba(44, 38, 38, 0.7); /* primary-off-white at 70% opacity */
+        --color-primary-glass: rgba(60, 49, 49, 0.7); /* primary-off-white at 70% opacity */
     }
     .wildflowers {
         --color-primary: #e5b4ff;
+        --color-primary-rgb: 229 180 255;
         --color-primary-bright: #632e84; /* M3 primary-container */
         --color-primary-tint: #4f4255; /* M3 secondary-container */
         --color-primary-rich-black: #e8e0e5; /* M3 on-surface */
-        --color-primary-off-white: #2A262C; /* primary at 8% */
+        /* --color-primary-off-white: #2A262C; primary at 8% */
+        --color-primary-off-white: #38313C; /* primary at 15% */
+        /* --color-primary-off-white: rgb(var(--color-primary-rgb) / 0.15); */
         --color-primary-backsplash: #68596e; /* M3 secondary40 */
-        --color-primary-glass: rgba(42, 38, 44, 0.7); /* primary-off-white at 70% opacity */
+        --color-primary-glass: rgba(56, 49, 60, 0.7); /* primary-off-white at 70% opacity */
     }
 }
 
