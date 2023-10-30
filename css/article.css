@@ -21,6 +21,7 @@ article > div.header p {
     text-wrap: balance;
 }
 article > div.header .header-image {
+    width: 100%;
     max-width: 60rem;
     margin: 0 auto;
 }
