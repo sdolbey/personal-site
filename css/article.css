@@ -36,10 +36,6 @@ div.article-body:not(.container) {
     padding-right: 1rem;
 }
 
-.article-content {
-    
-}
-
 .article-outline.card {
     display: block;
     height: fit-content;
