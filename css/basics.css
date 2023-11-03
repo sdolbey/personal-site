@@ -1351,6 +1351,7 @@ nav.navbar-menu {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 12px;
+    aspect-ratio: 3 / 2;
 }
 .card .project-image {
     margin: 1rem;
