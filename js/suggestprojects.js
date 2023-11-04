@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Insert image within div.project-image
     var firstImage = first.getElementsByClassName("project-image")[0];
     var newImage = document.createElement("img");
+    newImage.setAttribute("loading", "lazy");
     newImage.setAttribute("src", firstProject.thumbnail);
     var altText = firstProject.title + ' thumbnail';
     newImage.setAttribute("alt", altText);
@@ -120,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Insert image within div.project-image
     var secondImage = second.getElementsByClassName("project-image")[0];
     newImage = document.createElement("img");
+    newImage.setAttribute("loading", "lazy");
     newImage.setAttribute("src", secondProject.thumbnail);
     altText = secondProject.title + ' thumbnail';
     newImage.setAttribute("alt", altText);
