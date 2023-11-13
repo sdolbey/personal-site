@@ -887,6 +887,7 @@ a.card-link h3::after {
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
+    flex-wrap: wrap;
 }
 .chip {
     display: flex;
