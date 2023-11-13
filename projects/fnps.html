@@ -351,7 +351,7 @@
                             </p>
                         </div>
                     </div>
-                    <figure class="u-max-full-width pswp-gallery">
+                    <figure class="u-max-full-width pswp-gallery-deep">
                         <a 
                             class="gallery-item"
                             href="../img/projects/fnps/vignette_sketches.png" 
@@ -976,8 +976,21 @@
             },
             pswpModule: () => import('../js/photoswipe.esm.js')
         });
+        const deepLightbox = new PhotoSwipeLightbox({
+            gallery: '.pswp-gallery-deep',
+            children: '.gallery-item',
+            initialZoomLevel: 'fit',
+            // secondaryZoomLevel: 4,
+            wheelToZoom: true,
+            paddingFn: (viewportSize) => {
+                return viewportSize.x < 700 ? smallScreenPadding : largeScreenPadding
+            },
+            pswpModule: () => import('../js/photoswipe.esm.js')
+        });
         new ObjectPosition(lightbox);
         lightbox.init();
+        new ObjectPosition(deepLightbox);
+        deepLightbox.init();
     </script>
     <!-- <script src="../js/zoom-vanilla.min.js"></script> -->
     <div class="footer">
