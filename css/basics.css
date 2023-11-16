@@ -558,7 +558,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 2rem;
     font-family: 'Fraunces', serif;
-    color: var(--color-primary-rich-black);
     font-variation-settings: "WONK" 0;
     font-weight: 400;
     text-wrap: balance;
@@ -567,6 +566,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-variation-settings: "SOFT" 100, "WONK" 1;
+    color: var(--color-primary-rich-black);
 }
 
 /* Desktop type scale */
@@ -1238,7 +1238,7 @@ div.header {
 
 nav.navbar-menu {
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0;
     gap: 1rem;
 }
@@ -1257,6 +1257,9 @@ nav.navbar-menu {
     text-decoration: solid 2px underline;
     -webkit-text-decoration: solid 2px underline;
 }
+/* .navbar-item.active > a {
+    text-decoration: var(--color-primary) wavy 2px underline;
+} */
 
 .navbar-content ul {
     list-style-type: none;
