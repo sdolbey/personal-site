@@ -111,6 +111,10 @@
     --color-primary-backsplash: #A6AF90; /* M3 secondary70 */
     --color-primary-glass: rgba(226, 228, 212, 0.7); /* primary-off-white at 70% opacity */
 }
+body.fnps {
+    /*--color-background: #fafaee;  M3 surface */
+    /*--color-surface: #eeefe3;  M3 surface container */
+}
 .planet-9 {
     --color-primary: #1d4b66;
     --color-primary-bright: #c8e6ff; /* M3 primary-container */
@@ -119,6 +123,10 @@
     --color-primary-off-white: #dde3ea; /* M3 surface-variant */
     --color-primary-backsplash: #9badbd; /* M3 secondary70 */
     --color-primary-glass: rgba(221, 227, 234, 0.7); /* primary-off-white at 70% opacity */
+}
+body.planet-9 {
+    /*--color-background: #f6fafe;  M3 surface */
+    /*--color-surface: #ebeef3;  M3 surface container */
 }
 .wheelies {
     --color-primary: #99461a;
@@ -129,6 +137,10 @@
     --color-primary-backsplash: #c9a393; /* M3 secondary70 */
     --color-primary-glass: rgba(244, 222, 213, 0.7); /* primary-off-white at 70% opacity */
 }
+body.wheelies {
+    /*--color-background: #fff8f6;  M3 surface */
+    /*--color-surface: #fceae4;  M3 surface container */
+}
 .kirby {
     --color-primary: #b1293f;
     --color-primary-bright: #ffdada; /* M3 primary-container */
@@ -138,6 +150,10 @@
     --color-primary-backsplash: #c9a2a3; /* M3 secondary70 */
     --color-primary-glass: rgba(244, 221, 221, 0.7); /* primary-off-white at 70% opacity */
 }
+body.kirby {
+    /*--color-background: #fff8f7;  M3 surface */
+    /*--color-surface: #fceae9;  M3 surface container */
+}
 .wildflowers {
     --color-primary: #7d479e;
     --color-primary-bright: #f4d9ff; /* M3 primary-container */
@@ -146,6 +162,23 @@
     --color-primary-off-white: #eadfea; /* M3 surface-variant */
     --color-primary-backsplash: #b7a5bc; /* M3 secondary70 */
     --color-primary-glass: rgba(234, 223, 234, 0.7); /* primary-off-white at 70% opacity */
+}
+body.wildflowers {
+    /*--color-background: #fff7fc;  M3 surface */
+    /*--color-surface: #f4ebf3;  M3 surface container */
+}
+.wom {
+    --color-primary: #785a0b;
+    --color-primary-bright: #ffdf9f; /* M3 primary-container */
+    --color-primary-tint: #f5e0bb; /* M3 secondary-container */
+    --color-primary-rich-black: #1f1b13; /* M3 on-surface */
+    --color-primary-off-white: #f7ecdf; /* M3 surface-variant */
+    --color-primary-backsplash: #e2d9cc; /* M3 secondary70 */
+    --color-primary-glass: rgba(247, 236, 223, 0.7); /* primary-off-white at 70% opacity */
+}
+body.wom {
+    /*--color-background: #fff8f2;  M3 surface */
+    /*--color-surface: #f7ecdf;  M3 surface container */
 }
 @media (prefers-color-scheme: dark) {
     /* To get dark off-white, set off-white to primary-rgb at 15% opacity, then use a color picker in the browser to get the resulting HEX. Convert that to RGB and use RGBA for primary-glass. */
@@ -211,6 +244,10 @@
         --color-primary-backsplash: #596148; /* M3 secondary40 */
         --color-primary-glass: rgba(48, 53, 38, 0.7); /* primary-off-white at 70% opacity */
     }
+    body.fnps {
+        /*--color-background: #12140d;  M3 surface */
+        /*--color-surface: #1e2019;  M3 surface container */
+    }
     .planet-9 {
         --color-primary: #87ceff;
         --color-primary-rgb: 135 206 255;
@@ -222,6 +259,10 @@
         /* --color-primary-off-white: rgb(var(--color-primary-rgb) / 0.15); */
         --color-primary-backsplash: #4f606e; /* M3 secondary40 */
         --color-primary-glass: rgba(42, 53, 60, 0.7); /* primary-off-white at 70% opacity */
+    }
+    body.planet-9 {
+        /*--color-background: #101417;  M3 surface */
+        /*--color-surface: #1c2024;  M3 surface container */
     }
     .wheelies {
         --color-primary: #ffb695;
@@ -235,6 +276,10 @@
         --color-primary-backsplash: #76574a; /* M3 secondary40 */
         --color-primary-glass: rgba(60, 49, 44, 0.7); /* primary-off-white at 70% opacity */
     }
+    body.wheelies {
+        /*--color-background: #1a120e;  M3 surface */
+        /*--color-surface: #271e1a;  M3 surface container */
+    }
     .kirby {
         --color-primary: #ffb3b6;
         --color-primary-rgb: 255 179 182;
@@ -247,6 +292,10 @@
         --color-primary-backsplash: #765657; /* M3 secondary40 */
         --color-primary-glass: rgba(60, 49, 49, 0.7); /* primary-off-white at 70% opacity */
     }
+    body.kirby {
+        /*--color-background: #1a1111;  M3 surface */
+        /*--color-surface: #271d1e;  M3 surface container */
+    }
     .wildflowers {
         --color-primary: #e5b4ff;
         --color-primary-rgb: 229 180 255;
@@ -254,10 +303,30 @@
         --color-primary-tint: #4f4255; /* M3 secondary-container */
         --color-primary-rich-black: #e8e0e5; /* M3 on-surface */
         /* --color-primary-off-white: #2A262C; primary at 8% */
-        --color-primary-off-white: #38313C; /* primary at 15% */
+        --color-primary-off-white: #38313c; /* primary at 15% */
         /* --color-primary-off-white: rgb(var(--color-primary-rgb) / 0.15); */
         --color-primary-backsplash: #68596e; /* M3 secondary40 */
         --color-primary-glass: rgba(56, 49, 60, 0.7); /* primary-off-white at 70% opacity */
+    }
+    body.wildflowers {
+        /*--color-background: #161217;  M3 surface */
+        /*--color-surface: #221e24;  M3 surface container */
+    }
+    .wom {
+        --color-primary: #e9c16c;
+        --color-primary-rgb: 233 193 108;
+        --color-primary-bright: #5b4300; /* M3 primary-container */
+        --color-primary-tint: #52452a; /* M3 secondary-container */
+        --color-primary-rich-black: #ebe1d4; /* M3 on-surface */
+        /* --color-primary-off-white: ; primary at 8% */
+        --color-primary-off-white: #393327; /* primary at 15% */
+        /* --color-primary-off-white: rgb(var(--color-primary-rgb) / 0.15); */
+        --color-primary-backsplash: #6B5D3F; /* M3 secondary40 */
+        --color-primary-glass: rgba(57, 51, 39, .7); /* primary-off-white at 70% opacity */
+    }
+    body.wom {
+        /*--color-background: #17130b;  M3 surface */
+        /*--color-surface: #231f17;  M3 surface container */
     }
 }
 
@@ -632,6 +701,14 @@ blockquote, p {
     margin-bottom: 1rem;
     /* font-variant-caps: all-small-caps;
     font-feature-settings: "smcp" on; */
+}
+
+blockquote {
+    background-color: var(--color-primary-off-white);
+    border-left: 0.5rem solid var(--color-primary);
+    padding: 1rem;
+    margin-inline: 0;
+    margin-block: 0;
 }
 
 /* Desktop type scale -- Golden Ratio, Tetratonic Scale, Pentagonal Series 

@@ -40,6 +40,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 "thumbnail": "../img/thumbs/fnps.png",
                 "url": "fnps.html",
                 "style": "fnps"
+            },
+            {
+                "id": "wom",
+                "title": "Willys-Overland Motors",
+                "blurb": "More than doubling leads with tactical copy adjustments.",
+                "thumbnail": "../img/thumbs/willys-overland.png",
+                "url": "willys-overland.html",
+                "style": "wom"
             }
         ]
     }
