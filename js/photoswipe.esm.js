@@ -5730,6 +5730,7 @@ class PhotoSwipeBase extends Eventable {
         itemData.type = linkEl.dataset.pswpType;
       }
 
+      //thumbnailEl is the target image
       const thumbnailEl = element.querySelector('img');
 
       if (thumbnailEl) {
